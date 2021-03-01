@@ -7,4 +7,4 @@ nav:
     - Enemies: enemies.md
 markdown_extensions:
     - smarty
-theme: mkdocs
+theme: windmill-dark
