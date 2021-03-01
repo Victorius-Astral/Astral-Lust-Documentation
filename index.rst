@@ -10,9 +10,15 @@ Welcome to Astral Lust's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modding/get_started
    modding/cards
    modding/dreams
    modding/enemies
+   changelogs/modding
+   changelogs/game
+   changeolgs/full
+   changelogs/debug
+   changeolgs/dreams
 
 
 Indices and tables
