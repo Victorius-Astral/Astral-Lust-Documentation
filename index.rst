@@ -14,11 +14,12 @@ Welcome to Astral Lust's documentation!
    modding/cards
    modding/dreams
    modding/enemies
+   graphics/emotions.rst
    changelogs/modding
    changelogs/game
-   changeolgs/full
+   changelogs/full
    changelogs/debug
-   changeolgs/dreams
+   changelogs/dreams
 
 
 Indices and tables

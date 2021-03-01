@@ -110,20 +110,22 @@ Add enemy to generic combat
 
 You can add new enemies to the generic combat by adding your enemy object to the list. There are four lists for enemies:
 
-* enemies_normal
-* enemies_elite
-* enemies_boss
-* enemies_elite_boss
+* gen_enemies_normal
+* gen_enemies_elite
+* gen_enemies_boss
+* gen_enemies_elite_boss
 
 They differ by encounter chance. The stronger the player the closer the chances are to being equal.
 
-``enemies_normal.append(My_Enemy())``
+``gen_enemies_normal.append(My_Enemy())``
 
 Create/Change lootlist and droplist
 -----------------------------------
 
-Lootlist contains only <u>cards</u>.<br />
-Droplist contains only <u>items</u>.<br />
+Lootlist contains only cards
+
+Droplist contains only items
+
 To create your lootlist you need to add your ``lootlist: loot`` to the ``lootlist`` dictionary.
 
 .. code-block:: python
