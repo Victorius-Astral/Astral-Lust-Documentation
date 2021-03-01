@@ -10,6 +10,9 @@ Welcome to Astral Lust's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modding/cards
+   modding/dreams
+   modding/enemies
 
 
 Indices and tables
