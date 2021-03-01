@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Victorius">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Dreams - Astral Lust</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Dreams", url: "#_top", children: [
+              {title: "Add new dreams", url: "#add-new-dreams" },
+              {title: "Change dream chance", url: "#change-dream-chance" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+      <script src="../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cards/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cards/" class="btn btn-xs btn-link">
+        Cards
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href=".." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href=".." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="dreams">Dreams</h1>
+<h2 id="add-new-dreams">Add new dreams</h2>
+<p>Create new label consisting of three parts:</p>
+<ul>
+<li>prefix <code>d_</code> - That&rsquo;s required for dream to be recognize as a dream</li>
+<li>name <code>My_Dream_Name</code> - Name of your dream, replace spaces with <code>_</code></li>
+<li>suffix <code>_type</code> - Category of your dream:<ul>
+<li>0 - Normal / Positive - brings positive or no effect</li>
+<li>1 - Nightmare - brings negative effect</li>
+<li>2 - Wet - contains H scenes</li>
+<li>3 - Other - special or complex effects, can&rsquo;t be put in other category</li>
+</ul>
+</li>
+</ul>
+<p>Code should look like this:</p>
+<pre><code>label d_Light_0:
+    scene d 2 1 with fade
+    "You open your eyes only to see a light."
+    "The light illuminates the world."
+    "You float amidst the clouds and enjoy the light shining on you."
+    $player.corrupt(-3)
+    "You fell purified."
+    jump d_end
+</code></pre>
+<p>More label examples:</p>
+<pre><code>label d_First_Love_2:
+
+label d_Deal_with_the_Devil_3:
+
+label d_Reccuring_Nightmare_1:
+</code></pre>
+<p>Dreams should be ended with <code>jump d_end</code> - it&rsquo;s a generic dream ending it blackens the screen and executes sleep method, you can end the dream other way if you know what you are doing:</p>
+<pre><code>label d_end:
+    # Start to make the screen fade to darkness
+    show screen blacken(ilosc = "50") with dissolve
+    "You feel everything around fading away. You are awakening."
+    pause 0.25
+    show screen blacken(ilosc = "90") with dissolve
+    pause 0.25
+    show screen blacken(ilosc = "C0") with dissolve
+    pause 0.25
+    show screen blacken(ilosc = "FF") with dissolve
+    pause 0.25
+
+    # Restore player hp &amp; sanity
+    $player.sleep()
+
+    # Stop all music and sound from dream
+    stop music2 fadeout 1.0
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
+
+    # Play music depending on location
+    if "room_hotel" in player.location:
+        play music persistent.music_hotel fadein 1.0
+
+    # Return to the label    
+    return
+</code></pre>
+<h2 id="change-dream-chance">Change dream chance</h2>
+<p>To change the base dreams chance you need to change <code>dream_base_chance</code> variable, like this:</p>
+<pre><code>init 11 python:
+    # Float, 1.0 for 100% chance, 0.0 for 0% chance.
+    dream_base_chance = 0.4
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cards/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cards/" class="btn btn-xs btn-link">
+        Cards
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href=".." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href=".." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="">Windmill Dark</a> theme by Victorius (noraj).</p>
+</footer>
+
+</body>
+</html>
