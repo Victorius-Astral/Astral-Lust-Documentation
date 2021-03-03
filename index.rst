@@ -14,7 +14,7 @@ Welcome to Astral Lust's documentation!
    modding/cards
    modding/dreams
    modding/enemies
-   graphics/emotions.rst
+   graphics/emotions
    changelogs/modding
    changelogs/game
    changelogs/full

@@ -62,6 +62,9 @@ Fixed
 
 * die option no longer cause weird behaviour if you set your vitality above 333000
 
+|
+|
+
 0.1.0
 -----
 

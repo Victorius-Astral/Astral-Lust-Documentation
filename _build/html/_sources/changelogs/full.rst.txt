@@ -95,8 +95,11 @@ Mods - Added
 * support for adding/changing journal tips
 * support for displaying help screen with your text
 
+|
+|
+
 0.1.2d
------
+------
 
 Major
 ~~~~~
@@ -136,8 +139,11 @@ Fixed
 * getting kicked in the balls is no longer so painful that it raises an error
 * improved/fixed dozens of codex entries
 
+|
+|
+
 0.1.2c
------
+------
 
 Changed
 ~~~~~~~
@@ -152,8 +158,11 @@ Fixed
 * weird looking sequence in sleepover
 * dozens of spelling mistakes
 
+|
+|
+
 0.1.2b
------
+------
 
 Changed
 ~~~~~~~
@@ -171,9 +180,11 @@ Fixed
 * exploit at alice questions
 * omitted dialogue lines in alice 7th event
 
+|
+|
 
 0.1.2a
------
+------
 
 Major
 ~~~~~
@@ -187,6 +198,9 @@ Fixed
 * Hypnotise stunning player instead of enemy
 * reaching 100% corruption not causing game over
 * about page legal section
+
+|
+|
 
 0.1.2
 -----
@@ -282,6 +296,9 @@ Fixed
 * stun effect ticking down 2 stacks / turn
 * some spelling and grammar mistakes
 
+|
+|
+
 0.1.1
 -----
 
@@ -322,8 +339,11 @@ Changed
 Fixed
 ~~~~~
 
-*: hp bar shows full hp before taking damage / healing
-*: emoticons not disappearing after rollback
+* hp bar shows full hp before taking damage / healing
+* emoticons not disappearing after rollback
+
+|
+|
 
 0.1.0a
 ------
@@ -369,7 +389,6 @@ Added
 Changed
 ~~~~~~~
 
-
 * enemy battle animations are now slower
 * starting player max hp 100 -> 50
 * replay gallery now as pc app
@@ -403,7 +422,6 @@ Changed
 Fixed
 ~~~~~
 
-
 * card destroying in forge
 * re-rendered grace massage animation to delete artifacts
 * error on clicking cupboard in the f1(b) corridor
@@ -433,6 +451,9 @@ Fixed
 * Faceless Giant stealing boolean type effects as integers
 * cards 'redrawing' themselves after using a card to the left of them
 * a few other bugs
+
+|
+|
 
 0.1.0
 -----

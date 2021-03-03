@@ -15,7 +15,7 @@ Create new label consisting of three parts:
 
 Code should look like this:
 
-.. code-block:: python
+.. code-block::
     :linenos:
 
     label d_Light_0:
@@ -35,7 +35,7 @@ More label examples:
 
 Dreams should be ended with ``jump d_end`` - it's a generic dream ending it blackens the screen and executes sleep method, you can end the dream other way if you know what you are doing:
 
-.. code-block:: python
+.. code-block::
     :linenos:
 
     label d_end:
@@ -69,7 +69,7 @@ Change dream chance
 -------------------
 To change the base dreams chance you need to change ``dream_base_chance`` variable, like this:
 
-.. code-block::
+.. code-block:: python
 
     init 11 python:
         # Float, 1.0 for 100% chance, 0.0 for 0% chance.

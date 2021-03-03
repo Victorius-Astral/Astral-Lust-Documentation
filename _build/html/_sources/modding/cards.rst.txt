@@ -4,7 +4,7 @@ Cards
 Add new cards
 -------------
 
-To add new cards you need to create your cards as a class being a child of Card class. Action to be done on card use is to be contained in ``play()`` method.
+To add new cards you need to create your cards as a child of Card class. Action to be done on card use is to be contained in ``play()`` method.
 
 .. code-block:: python
     :linenos:

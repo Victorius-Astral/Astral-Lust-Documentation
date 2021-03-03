@@ -99,7 +99,7 @@ Mods - Added
 |
 
 0.1.2d
------
+------
 
 Major
 ~~~~~
@@ -143,7 +143,7 @@ Fixed
 |
 
 0.1.2c
------
+------
 
 Changed
 ~~~~~~~
@@ -162,7 +162,7 @@ Fixed
 |
 
 0.1.2b
------
+------
 
 Changed
 ~~~~~~~
@@ -184,7 +184,7 @@ Fixed
 |
 
 0.1.2a
------
+------
 
 Major
 ~~~~~
@@ -339,8 +339,8 @@ Changed
 Fixed
 ~~~~~
 
-*: hp bar shows full hp before taking damage / healing
-*: emoticons not disappearing after rollback
+* hp bar shows full hp before taking damage / healing
+* emoticons not disappearing after rollback
 
 |
 |

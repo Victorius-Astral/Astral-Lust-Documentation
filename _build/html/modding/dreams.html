@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
 
   
   
@@ -86,6 +87,7 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started - Astral Lust Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Dreams</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#add-new-dreams">Add new dreams</a></li>
@@ -93,6 +95,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="enemies.html">Enemies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/full.html">Changelog - Full</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/debug.html">Changelog - Debug Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/dreams.html">Changelog - Dreams Mode</a></li>
 </ul>
 
             
@@ -180,7 +188,7 @@
 </li>
 </ul>
 <p>Code should look like this:</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -204,7 +212,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">label</span> <span class="pre">d_Reccuring_Nightmare_1:</span></code></p></li>
 </ul>
 <p>Dreams should be ended with <code class="docutils literal notranslate"><span class="pre">jump</span> <span class="pre">d_end</span></code> - it’s a generic dream ending it blackens the screen and executes sleep method, you can end the dream other way if you know what you are doing:</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -261,7 +269,7 @@
 <div class="section" id="change-dream-chance">
 <h2>Change dream chance<a class="headerlink" href="#change-dream-chance" title="Permalink to this headline">¶</a></h2>
 <p>To change the base dreams chance you need to change <code class="docutils literal notranslate"><span class="pre">dream_base_chance</span></code> variable, like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
     <span class="c1"># Float, 1.0 for 100% chance, 0.0 for 0% chance.</span>
     <span class="n">dream_base_chance</span> <span class="o">=</span> <span class="mf">0.4</span>
 </pre></div>
