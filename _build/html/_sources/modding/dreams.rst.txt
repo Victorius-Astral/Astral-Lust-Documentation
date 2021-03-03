@@ -1,3 +1,5 @@
+.. _tab_dreams:
+
 Dreams
 ======
 

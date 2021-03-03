@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
   <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
 
   
@@ -33,6 +34,8 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/togglebutton.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -188,23 +191,232 @@
 <div class="section" id="step-2-creating-new-mod">
 <h2>Step 2. Creating new mod<a class="headerlink" href="#step-2-creating-new-mod" title="Permalink to this headline">¶</a></h2>
 <p>After you done all preparations, run RenPy. You’ll see something like this:</p>
-<img alt="modding\tutorial_1.webp" src="modding\tutorial_1.webp" />
+<img alt="../_images/tutorial_1.webp" src="../_images/tutorial_1.webp" />
 <p>Under <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">File</span></code> tab chose <code class="docutils literal notranslate"><span class="pre">script.rpy</span></code>, now you need to create your mod’s folder in <code class="docutils literal notranslate"><span class="pre">game/mods</span></code> folder, as shown below:</p>
-<img alt="modding\tutorial_2.webp" src="modding\tutorial_2.webp" />
+<img alt="../_images/tutorial_2.webp" src="../_images/tutorial_2.webp" />
 <p>Now using the same way we create a new file inside our folder, you can name it whatever you want, the important thing is to include <code class="docutils literal notranslate"><span class="pre">.rpy</span></code> extension at the end. I’ll name my file <code class="docutils literal notranslate"><span class="pre">sample_mod.rpy</span></code>. Now that you’ve your first file, open it by selecting it from file tree.</p>
-<img alt="modding\tutorial_3.webp" src="modding\tutorial_3.webp" />
+<img alt="../_images/tutorial_3.webp" src="../_images/tutorial_3.webp" />
 </div>
 <div class="section" id="step-3-adding-animated-dream">
 <h2>Step 3. Adding animated dream<a class="headerlink" href="#step-3-adding-animated-dream" title="Permalink to this headline">¶</a></h2>
 <p>What (arguably) is the most important thing in RenPy games? Events. So let’s make our own event, a dream to be exact.</p>
 <p>First we need to create a label, label is a point in a story to which you can jump later on. <code class="docutils literal notranslate"><span class="pre">label</span> <span class="pre">mylabelname:</span></code></p>
 <p>For compatibility purpose you should add your unique prefix to label names so that there are never two label with the same name (it’ll throw an error).</p>
-<p>Important thing to note is that dreams need special label name to autodetect (<code class="docutils literal notranslate"><span class="pre">d_mydream_0</span></code>, start with <code class="docutils literal notranslate"><span class="pre">d_</span></code>, then your own dream (with prefix) name, and at the end <a class="reference external" href="dreams.rst">dream type</a> <code class="docutils literal notranslate"><span class="pre">_0</span></code>, 0 stands for normal/positive dream).
+<p>Important thing to note is that dreams need special label name to autodetect (<code class="docutils literal notranslate"><span class="pre">d_mydream_0</span></code>, start with <code class="docutils literal notranslate"><span class="pre">d_</span></code>, then your own dream (with prefix) name, and at the end <a class="reference internal" href="dreams.html#tab-dreams"><span class="std std-ref">dream type</span></a>. <code class="docutils literal notranslate"><span class="pre">_0</span></code>, 0 stands for normal/positive dream).
 I’ll name my dream as <code class="docutils literal notranslate"><span class="pre">d_Sample_Dream_0</span></code>, when dream name is converted to text <code class="docutils literal notranslate"><span class="pre">_</span></code> is changed to empty space `` <a href="#id1"><span class="problematic" id="id2">``</span></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="n">d_Sample_Dream__0</span><span class="p">:</span>
 </pre></div>
 </div>
-<p>Now we want to add this animated background, so what we need is, well, a video. It can be .mp4 or .webm (<a class="reference external" href="https://www.renpy.org/doc/html/movie.html#movie">read more</a>). It needs to be put somewhere in <code class="docutils literal notranslate"><span class="pre">game\images\</span></code> folder. I would say, the best would be to create our own folder <code class="docutils literal notranslate"><span class="pre">game\images\Mods\Sample</span> <span class="pre">Mod</span></code></p>
+<p>Now we want to add this animated background, so what we need is, well, a video. It can be .mp4 or .webm (<a class="reference external" href="https://www.renpy.org/doc/html/movie.html#movie">read more</a>). We can put it into our mod folder.</p>
+<img alt="../_images/tutorial_4.webp" src="../_images/tutorial_4.webp" />
+<p>So we have our movie, let’s define it in the script, it needs to be defined outside of a label:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p</span>
+<span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># define new character with name Stickman and light blue colored name - Hex(#216ba2)</span>
+<span class="n">define</span> <span class="n">sample_stickman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s2">&quot;Stickman&quot;</span><span class="p">,</span> <span class="n">who_color</span> <span class="o">=</span> <span class="s2">&quot;#216ba2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="dropdown highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p</span>
+<span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
+
+<span class="c1"># define new character with name Stickman and light blue colored name - Hex(#216ba2)</span>
+<span class="n">define</span> <span class="n">sample_stickman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s2">&quot;Stickman&quot;</span><span class="p">,</span> <span class="n">who_color</span> <span class="o">=</span> <span class="s2">&quot;#216ba2&quot;</span><span class="p">)</span>
+
+<span class="c1"># label is a place in code, we can jump to</span>
+<span class="n">label</span> <span class="n">d_Sample_Dream_0</span><span class="p">:</span>
+
+    <span class="c1"># scene removes images/movies on screen and displays a new one</span>
+    <span class="n">scene</span> <span class="n">sample</span> <span class="n">movie</span>
+
+    <span class="c1"># dialogue without character speaking is narration (without any name)</span>
+    <span class="s2">&quot;Weird stickman dances before your eyes.&quot;</span>
+
+    <span class="c1"># me is the player, it&#39;ll display player&#39;s name as a speaker</span>
+    <span class="n">me</span> <span class="s2">&quot;What the hell?&quot;</span>
+
+    <span class="c1"># using this will display Srickman as the one talking</span>
+    <span class="n">sample_stickman</span> <span class="s2">&quot;Go on, dance with me!&quot;</span>
+
+    <span class="n">me</span> <span class="s2">&quot;...&quot;</span>
+    <span class="n">me</span> <span class="s2">&quot;What is wrong with me to have a dream like that?&quot;</span>
+
+    <span class="n">sample_stickman</span> <span class="s2">&quot;What are you waiting for?&quot;</span>
+
+    <span class="c1"># menu statement allows us to display choices menu</span>
+    <span class="n">menu</span><span class="p">:</span>
+        <span class="c1"># the first choice</span>
+        <span class="s2">&quot;Dance&quot;</span><span class="p">:</span>
+
+            <span class="c1"># code to execute on this choice (Dance)</span>
+            <span class="s2">&quot;You dance along with it.&quot;</span>
+            <span class="n">th</span> <span class="s2">&quot;What the hell I&#39;m doing?&quot;</span>
+
+            <span class="c1"># jump to a label d_Sample_Dream_0.part2</span>
+            <span class="c1"># .sublabel allows to define a few labels as a part of one label,</span>
+            <span class="c1"># this way you can make .part2 label for all events without worying about repeated names</span>
+            <span class="n">jump</span> <span class="o">.</span><span class="n">part2</span>
+
+        <span class="c1"># the second choice</span>
+        <span class="s2">&quot;Stay put&quot;</span><span class="p">:</span>
+            <span class="s2">&quot;You stay silent, not answering to any of it invites.&quot;</span>
+            <span class="n">jump</span> <span class="o">.</span><span class="n">part2</span>
+
+<span class="c1"># sublabel, you can jump to it by using it&#39;s name only inside label group, from other labels you need to use label.sublabel, eq. d_Sample_Dream_0.part2</span>
+<span class="n">label</span> <span class="o">.</span><span class="n">part2</span><span class="p">:</span>
+
+    <span class="c1"># dream_end label will end the dream and return you to the place you&#39;re sleeping in</span>
+    <span class="n">jump</span> <span class="n">dream_end</span>
+
+<span class="c1"># init means it loads on game launch, 11 is the load order, the higher the later it&#39;ll load, overwriting things if needed.</span>
+<span class="c1"># You shouldn&#39;t use init below 11, it is reserved for vanilla, it might cause incompatibility so unless you don&#39;t know what you&#39;re doing, don&#39;t do this.</span>
+<span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
+
+    <span class="c1"># Your class, you can create cards by calling class name, remember class name needs to be unique or game will throw an error on lauch. You can add your unique prefix to make it much less likely.</span>
+    <span class="c1"># My prefix is Sample_</span>
+    <span class="c1"># It&#39;s important for card&#39;s class to have | (Card): | at the end, it&#39;s needed as it gives the cards their functionality</span>
+    <span class="k">class</span> <span class="nc">Sample_Slice</span><span class="p">(</span><span class="n">Card</span><span class="p">):</span>
+
+        <span class="c1"># Init is a so called constructor, as the name suggests it&#39;s used to construct our card, so our card will be created with attributes given below.</span>
+        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+            <span class="c1"># card name / .webp image name. This image needs to be put (for now) in game/images/Cards/ folder.</span>
+            <span class="c1"># In the future I&#39;m going to add compatibility for adding custom paths.</span>
+            <span class="c1"># To make sure this card is compatible with other mods I&#39;ve added [[Sample] prefix to card name.</span>
+            <span class="c1"># Its image need to be | [[Sample] Slice.webp | RenPy sees double [[] as just [] in code, using [] in RenPy&#39;s string means you store a varaible there.</span>
+            <span class="c1"># We&#39;ll use double [[ to avoid possible issues.</span>
+            <span class="c1"># While [[Sample] will show when destroying card, I&#39;ll change it later, so it&#39;s not shown.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;[[Sample] Slice&quot;</span>
+
+            <span class="c1"># spirituality cost</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">3</span>
+
+            <span class="c1"># Card category -&gt; Offensive, Defensive, Ability, Power, Tarot</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Offensive&quot;</span> <span class="c1"># category</span>
+
+            <span class="c1"># Card rarity, from the lowest to the highest -&gt; Ordinary, Extraordinary, Mythical, Angelic, Divine</span>
+            <span class="c1"># Special rarities -&gt; Tarot, Unique (for advanced users)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Mythical&quot;</span>
+
+            <span class="c1"># Card tooltip, you can write what you want in tooltip or use |  self.tip = None  | if there is no tooltip for your card.</span>
+            <span class="c1"># General formula is &#39;&gt;   FirstBuff:\n&#39;+str(player.eff[&quot;FirstBuff&quot;][1]) + &#39;\n\n&gt;   SecondBuff:\n&#39;+str(player.eff[&quot;SecondBuff&quot;][1])</span>
+            <span class="c1"># You can add next buffs by adding to the end this code | + &#39;\n\n&gt;   NextBuff:\n&#39;+str(player.eff[&quot;NextBuff&quot;][1])</span>
+            <span class="c1"># Naturally you need to change FirstBuff, etc. to names of buffs, for all available buffs check documentation&#39;s Cards category</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">=</span> <span class="s1">&#39;&gt;   Strength:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Strength&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&gt;   Bleeding:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="c1"># It&#39;s a good practice to notify players the mod the card is from, that way if they encounter bugs they can notify you.</span>
+            <span class="c1"># self.tip += &#39;&#39; mean we want to add text to what is already in there.</span>
+            <span class="c1"># \n is a tag for a new line, so below text will add something like this:</span>
+
+            <span class="c1"># Bleeding:</span>
+            <span class="c1"># .... tip .....</span>
+            <span class="c1">#</span>
+            <span class="c1"># ________________</span>
+            <span class="c1"># From: Sample Mod</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">________________</span><span class="se">\n</span><span class="s1"> From: Sample Mod&#39;</span>
+
+        <span class="c1"># That&#39;s what happens on using a card. Card won&#39;t be used if you have Forbid debuff making you unable to play cards of this type, or in case your spirituality is insuficient</span>
+        <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="c1"># Gives player the effect effect - Strength, 2 Strength exactly. It raises damage dealt by x (x is 2 in this case), it falls by 1 every turn.</span>
+            <span class="n">player</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Strength&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+            <span class="c1"># Gives enemy the status effect Bleeding, 3 stacks. So as you see it&#39;s simple to add status effects to the enemies. For more complex effects check Card category (docs).</span>
+            <span class="n">enemy</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+            <span class="c1"># Attack the enemy with base 12 damage, to deal damage to player, simply change enemy to player</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">atk</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">enemy</span><span class="p">)</span>
+
+            <span class="c1"># Needed, it signals that it&#39;s the end of method (play method), it returns what we write after it, if you want your card to exhaust on use, do this -&gt; return &quot;exhaust&quot;</span>
+            <span class="k">return</span>
+
+    <span class="c1"># Now that our card is created we need to add it to a lootlist, so that it drops from the enemies. List of lootlists can be found in Enemies category (docs).</span>
+    <span class="c1"># So I want this card to be dropped by all melee only bandits, I need to add this card to their lootlists one by one:</span>
+    <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandits_melee&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
+
+    <span class="c1"># Take note that we add (append) cards by using our card class name followed by (). In this case it&#39;s SampleSlice()</span>
+    <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandit_melee&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
+    <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandit_melee_girl&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
+
+    <span class="c1"># Remember to create your card image!</span>
+    <span class="c1"># Check documentation&#39;s Cards to get card templates and how to use them</span>
+    <span class="c1"># Paint is enough to make a card, better programs (like free paint.net I&#39;m using) are welcome, though.</span>
+    <span class="c1"># The best for a job like this would probably be Corel or PhotoShop.</span>
+
+    <span class="c1"># Done!</span>
+    <span class="c1"># -----</span>
+    <span class="c1"># Our card and dream were succesfully created!</span>
+    <span class="c1"># Now what remains is to check them in-game.</span>
+    <span class="c1">#</span>
+    <span class="c1"># Load your save and open the console by pressing SHIFT + O</span>
+    <span class="c1">#</span>
+    <span class="c1"># To try our dream -&gt; jump d_Sample_Dream_0</span>
+    <span class="c1"># Change dream label to your label</span>
+    <span class="c1">#</span>
+    <span class="c1"># To add our card to hand -&gt; inventory.cards.append(Sample_Slice())</span>
+    <span class="c1"># Again, change Sample_Slice to your card&#39;s class name</span>
+    <span class="c1">#</span>
+    <span class="c1"># Congratulations!</span>
+    <span class="c1"># You&#39;ve officialy made your first mod for the Astral Lust!</span>
+    <span class="c1"># Even Grace is proud of you!</span>
+    <span class="c1">#</span>
+    <span class="c1"># Now that you know how, you can add more, check the documentation for info how to do that.</span>
+    <span class="c1"># Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)</span>
+    <span class="c1">#</span>
+    <span class="c1"># Don&#39;t hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.</span>
+</pre></div>
+</div>
+<div class="dropdown highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
+
+<span class="n">define</span> <span class="n">sample_stickman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s2">&quot;Stickman&quot;</span><span class="p">,</span> <span class="n">who_color</span> <span class="o">=</span> <span class="s2">&quot;#216ba2&quot;</span><span class="p">)</span>
+
+<span class="n">label</span> <span class="n">d_Sample_Dream_0</span><span class="p">:</span>
+    <span class="n">scene</span> <span class="n">sample</span> <span class="n">movie</span>
+
+    <span class="s2">&quot;Weird stickman dances before your eyes.&quot;</span>
+    <span class="n">me</span> <span class="s2">&quot;What the hell?&quot;</span>
+    <span class="n">sample_stickman</span> <span class="s2">&quot;Go on, dance with me!&quot;</span>
+    <span class="n">me</span> <span class="s2">&quot;...&quot;</span>
+    <span class="n">me</span> <span class="s2">&quot;What is wrong with me to have a dream like that?&quot;</span>
+    <span class="n">sample_stickman</span> <span class="s2">&quot;What are you waiting for?&quot;</span>
+
+    <span class="n">menu</span><span class="p">:</span>
+        <span class="s2">&quot;Dance&quot;</span><span class="p">:</span>
+            <span class="s2">&quot;You dance along with it.&quot;</span>
+            <span class="n">th</span> <span class="s2">&quot;What the hell I&#39;m doing?&quot;</span>
+
+            <span class="n">jump</span> <span class="o">.</span><span class="n">part2</span>
+
+        <span class="s2">&quot;Stay put&quot;</span><span class="p">:</span>
+            <span class="s2">&quot;You stay silent, not answering to any of it invites.&quot;</span>
+            <span class="n">jump</span> <span class="o">.</span><span class="n">part2</span>
+
+<span class="n">label</span> <span class="o">.</span><span class="n">part2</span><span class="p">:</span>
+
+    <span class="n">jump</span> <span class="n">dream_end</span>
+
+<span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
+  <span class="k">class</span> <span class="nc">Sample_Slice</span><span class="p">(</span><span class="n">Card</span><span class="p">):</span>
+        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;[[Sample] Slice&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">3</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Offensive&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Mythical&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">=</span> <span class="s1">&#39;&gt;   Strength:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Strength&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&gt;   Bleeding:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">________________</span><span class="se">\n</span><span class="s1"> From: Sample Mod&#39;</span>
+
+        <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="n">player</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Strength&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="n">enemy</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">atk</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">enemy</span><span class="p">)</span>
+
+            <span class="k">return</span>
+
+<span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandits_melee&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
+<span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandit_melee&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
+<span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandit_melee_girl&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
+</pre></div>
+</div>
 </div>
 </div>
 
