@@ -3,6 +3,9 @@
 Customize Astral Lust
 =====================
 
+Tweak variables
+---------------
+
 Here you'll find easy to tweak game variables, this way you'll make the game adhere to your preferences.
 To change the variables use:
 
@@ -11,8 +14,78 @@ To change the variables use:
   init 11 python:
     variable = value
 
-List of variables
------------------
+|
+|
+
+Change/add journal tip
+----------------------
+
+To change a tip we need to do this:
+
+``tips["story_name"][event_number] = "new_tip"``
+
+Story names are the same you see in the journal in-game. Remember to work on them in init time (inside ``init python:`` statement)
+
+.. code-block:: python
+  :linenos:
+
+  tips["Main Story"][1] = "Now first Main Story event will have this as a tip."
+
+|
+
+To add a new tip you can just ``pop()`` the last story tip, then ``append()`` to a story.
+First the new tip then the last tip.
+
+.. code-block:: python
+  :linenos:
+
+  tips["Lexi"].pop() # Remove last item
+  tips["Lexi"].append("New tip.") # Add new tip
+  tips["Lexi"].append("More coming soon.") # Add last tip, there needs to be one more tip than amount of events.
+
+|
+
+.. code-block:: python
+  :linenos:
+
+  tips = {
+    "Main Story": [ # Name of a story
+      "player.story", # [0], String, variable keeping story progress (which event you've completed)
+      # _("string") marks it as translatable in Ren'Py
+      _("I have a gut feeling that I would have a good dream."), # [1], Actual tips
+      _("Who knows what awaits me outside?"), # [2]
+      _("I need to take care of my mental health."), # [3]
+      _("Maybe someone can answer my questions out there."), # [4]
+      _("I wonder if I would turn insane if it spoke to me again.."), # [5]
+      _("Who knows what awaits me outside?"), # [6]
+      _("My dreams are becoming more disturbing as of late."), # [7]
+      _("More coming soon.") # [8], Last tip, you need one more tip than your events, if you want you can use "Completed" instead
+    ]
+  }
+
+|
+|
+
+Add story
+---------
+
+We can add new story with very simple method:
+
+.. code-block:: python
+  :linenos:
+
+  init 11 python:
+    tips.update({"My Story": [ # Name of a story
+      "my_story_progress_tracking_variable", # [0], String, variable keeping story progress (which event you've completed)
+      _("I have a gut feeling that I would have a good dream."), # [1], Actual tips, make as much as you need
+      _("More coming soon.") # Last tip, you need one more tip than your events, if you want you can use "Completed" instead
+    ]})
+
+|
+|
+
+List of safe to tweak variables
+-------------------------------
 
 * ``dream_base_chance = 0.2`` - Chance for a dream during sleep
 * Base chance for card of given rarity to drop, player luck is added to it:

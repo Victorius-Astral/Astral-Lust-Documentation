@@ -145,15 +145,15 @@ Now we need to only add our icon and screen to ``gui_menus``.
 
   init 11 python:
 
-    # First we add icon path
+    # First we add icon path, relative to game folder
     gui_menus.append("pathToIcon/icon ouricon.webp")
 
     # Then we add screen this icon launches
     gui_menus.append("our_screen")
 
-    # For example, we have screen rpg_sample_menu and icon in game/mods/Sample Mod, the icon is sample.webp
+    # For example, we have screen rpg_sample_menu and icon in mods/Sample Mod, the icon is sample.webp
     # We will execute this example like this:
-    gui_menus.append("game/mods/Sample Mod/icon sample.webp")
+    gui_menus.append("mods/Sample Mod/icon sample.webp")
     gui_menus.append("rpg_sample_menu")
 
 |
