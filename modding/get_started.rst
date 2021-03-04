@@ -319,54 +319,54 @@ The same code can be found in ``game/mods/Sample Mod/sample_mod.rpy``.
           # Init is a so called constructor, as the name suggests it's used to construct our card, so our card will be created with attributes given below.
           def __init__(self):
 
-              # card name / .webp image name. This image needs to be put (for now) in game/images/Cards/ folder.
-              # In the future I'm going to add compatibility for adding custom paths.
-              # To make sure this card is compatible with other mods I've added [[Sample] prefix to card name.
-              # Its image need to be | [[Sample] Slice.webp | RenPy sees double [[] as just [] in code, using [] in RenPy's string means you store a varaible there.
-              # We'll use double [[ to avoid possible issues.
-              # While [[Sample] will show when destroying card, I'll change it later, so it's not shown.
-              self.name = "[[Sample] Slice"
+            # card name / .webp image name. This image needs to be put (for now) in game/images/Cards/ folder.
+            # In the future I'm going to add compatibility for adding custom paths.
+            # To make sure this card is compatible with other mods I've added !Sample! prefix to card name.
+            # Its image need to be | !Sample! Slice.webp | You should add your prefix (nickname) using !Prefix! like me, I plan to add some functionality to this.
+            # While !Sample! will show when destroying card, I'll change it later, so it's not shown.
+            self.name = "!Sample! Slice"
 
-              # spirituality cost
-              self.sp = 3
+            # spirituality cost
+            self.sp = 3
 
-              # Card category -> Offensive, Defensive, Ability, Power, Tarot
-              self.ca = "Offensive" # category
+            # Card category -> Offensive, Defensive, Ability, Power, Tarot
+            self.ca = "Offensive" # category
 
-              # Card rarity, from the lowest to the highest -> Ordinary, Extraordinary, Mythical, Angelic, Divine
-              # Special rarities -> Tarot, Unique (for advanced users)
-              self.ra = "Mythical"
+            # Card rarity, from the lowest to the highest -> Ordinary, Extraordinary, Mythical, Angelic, Divine
+            # Special rarities -> Tarot, Unique (for advanced users)
+            self.ra = "Mythical"
 
-              # Card tooltip, you can write what you want in tooltip or use |  self.tip = None  | if there is no tooltip for your card.
-              # General formula is '>   FirstBuff:\n'+str(player.eff["FirstBuff"][1]) + '\n\n>   SecondBuff:\n'+str(player.eff["SecondBuff"][1])
-              # You can add next buffs by adding to the end this code | + '\n\n>   NextBuff:\n'+str(player.eff["NextBuff"][1])
-              # Naturally you need to change FirstBuff, etc. to names of buffs, for all available buffs check documentation's Cards category
-              self.tip = '>   Strength:\n'+str(player.eff["Strength"][1]) + '\n\n>   Bleeding:\n'+str(player.eff["Bleeding"][1])
+            # Card tooltip, you can write what you want in tooltip or use |  self.tip = None  | if there is no tooltip for your card.
+            # General formula is '>   FirstBuff:\n'+str(player.eff["FirstBuff"][1]) + '\n\n>   SecondBuff:\n'+str(player.eff["SecondBuff"][1])
+            # You can add next buffs by adding to the end this code | + '\n\n>   NextBuff:\n'+str(player.eff["NextBuff"][1])
+            # Naturally you need to change FirstBuff, etc. to names of buffs, for all available buffs check documentation's Cards category
+            self.tip = '>   Strength:\n'+str(player.eff["Strength"][1]) + '\n\n>   Bleeding:\n'+str(player.eff["Bleeding"][1])
 
-              # It's a good practice to notify players the mod the card is from, that way if they encounter bugs they can notify you.
-              # self.tip += '' mean we want to add text to what is already in there.
-              # \n is a tag for a new line, so below text will add something like this:
+            # It's a good practice to notify players the mod the card is from, that way if they encounter bugs they can notify you.
+            # self.tip += '' mean we want to add text to what is already in there.
+            # \n is a tag for a new line, so below text will add something like this:
 
-              # Bleeding:
-              # .... tip .....
-              #
-              # ________________
-              # From: Sample Mod
-              self.tip += '\n\n________________\n From: Sample Mod'
+            # Bleeding:
+            # .... tip .....
+            #
+            # ________________
+            # From: Sample Mod
+            self.tip += '\n\n________________\n From: Sample Mod'
 
           # That's what happens on using a card. Card won't be used if you have Forbid debuff making you unable to play cards of this type, or in case your spirituality is insuficient
           def play(self, **kwargs):
-              # Gives player the effect effect - Strength, 2 Strength exactly. It raises damage dealt by x (x is 2 in this case), it falls by 1 every turn.
-              player.buff("Strength", 2)
 
-              # Gives enemy the status effect Bleeding, 3 stacks. So as you see it's simple to add status effects to the enemies. For more complex effects check Card category (docs).
-              enemy.buff("Bleeding", 3)
+            # Gives player the effect effect - Strength, 2 Strength exactly. It raises damage dealt by x (x is 2 in this case), it falls by 1 every turn.
+            player.buff("Strength", 2)
 
-              # Attack the enemy with base 12 damage, to deal damage to player, simply change enemy to player
-              self.atk(12, enemy)
+            # Gives enemy the status effect Bleeding, 3 stacks. So as you see it's simple to add status effects to the enemies. For more complex effects check Card category (docs).
+            enemy.buff("Bleeding", 3)
 
-              # Needed, it signals that it's the end of method (play method), it returns what we write after it, if you want your card to exhaust on use, do this -> return "exhaust"
-              return
+            # Attack the enemy with base 12 damage, to deal damage to player, simply change enemy to player
+            self.atk(12, enemy)
+
+            # Needed, it signals that it's the end of method (play method), it returns what we write after it, if you want your card to exhaust on use, do this -> return "exhaust"
+            return
 
       # Now that our card is created we need to add it to a lootlist, so that it drops from the enemies. List of lootlists can be found in Enemies category (docs).
       # So I want this card to be dropped by all melee only bandits, I need to add this card to their lootlists one by one:
@@ -443,7 +443,7 @@ Final Script - Clean
   init 11 python:
     class Sample_Slice(Card):
           def __init__(self):
-              self.name = "[[Sample] Slice"
+              self.name = "!Sample! Slice"
               self.sp = 3
               self.ca = "Offensive"
               self.ra = "Mythical"
