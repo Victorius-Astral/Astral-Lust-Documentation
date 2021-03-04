@@ -38,7 +38,9 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Triggers" href="triggers.html" />
+    <link rel="prev" title="Enemies" href="enemies.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,11 +86,27 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customize Astral Lust</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/gui.html">GUI Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enemies.html">Enemies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lootlists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changing-adding-lootlists">Changing &amp; adding lootlists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cards-enemies">Cards - Enemies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cards-traders">Cards - Traders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materials-enemies">Materials - Enemies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materials-cheats">Materials - Cheats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#materials-exploration">Materials - Exploration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="triggers.html">Triggers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prisoners.html">Prisoners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traders.html">Traders &amp; Items</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
@@ -164,38 +182,250 @@
             
   <div class="section" id="lootlists">
 <span id="tab-lootlists"></span><h1>Lootlists<a class="headerlink" href="#lootlists" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="enemies">
-<h2>Enemies<a class="headerlink" href="#enemies" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>“werewolf”: [Lycantrophy(), Bite(), Empower(), Dodge(), Slash(), Healing(), Greater_Healing(), Regrow_Limbs()],</p></li>
-<li><p>“bandits_melee”: [Slash(), Retaliate(), Kick(), Blind(), Guard(), Headbutt(), Stab(), Flurry()],</p></li>
-<li><p>“bandits_guns”: [Bulletstorm(), Dodge(), Shot(), Kick(), Take_Cover(), Strike()],</p></li>
-<li><p>“bandits”: [Bulletstorm(), Dodge(), Shot(), Kick(), Take_Cover(), Strike(), Slash(), Retaliate(), Flurry(), Blind(), Guard(), Headbutt(), Stab()],</p></li>
-<li><p>“spider”: [Bite(), Spit_Poison(), Poisonous_Bite(), Hide_in_the_Shadows(), Lunge()],</p></li>
-<li><p>“scavengers”: [Slash(), Retaliate(), Blind(), Guard(), Headbutt(), Shot(), Take_Cover()],</p></li>
-<li><p>“bandit_melee”: [Slash(), Blind(), Retaliate(), Strike(), Defend(), Kick(), Guard(), Stab(), Headbutt()],</p></li>
-<li><p>“bandit_melee_girl”: [Slash(), Blind(), Retaliate(), Strike(), Defend(), Kick(), Guard(), Stab(), Headbutt(), Seduce(), Flirtatious_Look()],</p></li>
-<li><p>“orc”: [Fury(), Roar(), Flurry(), Slash(), Retaliate(), Kick(), Freedom_in_Death(), Empower(), Guard(), Headbutt(), Sharpening(), Horde_Weapons(), Strike(), Defend()],</p></li>
-<li><p>“manticore”: [Fury(), Roar(), Spit_Poison(), Poisonous_Bite(), Lunge(), Headbutt(), Dodge(), Healing(), Bite(), Retaliate(), Stab(), Antidote()],</p></li>
-<li><p>“flamingo”: [Mutate(), Bite(), Dodge(), Enfeeble(), Infection(), Despair()],</p></li>
-<li><p>“faceless_giant”: [Roar(), Fury(), Terror(), Despair(), Crush(), Sweep(), Giant(), Madness(), Insanity(), Faceless(), Veil_of_Shadows(), Kick(), Freedom_in_Death(), Guard(), Hide_in_the_Shadows()],</p></li>
-<li><p>“faceless”: [Fury(), Madness(), Insanity(), Faceless(), Veil_of_Shadows(), Freedom_in_Death(), Guard(), Hide_in_the_Shadows()],</p></li>
-<li><p>“devourer_giant”: [Roar(), Fury(), Terror(), Despair(), Crush(), Sweep(), Giant(), Madness(), Insanity(), Devour(), Insatiable_Hunger(), Kick(), Freedom_in_Death(), Bite(), Guard()],</p></li>
-<li><p>“devourer”: [Fury(), Madness(), Insanity(), Devour(), Insatiable_Hunger(), Freedom_in_Death(), Bite(), Guard()],</p></li>
-<li><p>“succubus”: [Seduce(), Flirtatious_Look(), Slash(), Insatiable_Lust(), Guard(), Freedom(), Flurry(), Enfeeble(), Hypnotise(), Cease_Fire_Treaty()],</p></li>
-<li><p>“cultist”: [Miracle(), Slash(), Kick(), Empower(), Hide_in_the_Shadows(), Freedom_in_Death(), Stab(), Hypnotise(), Outside(), Terror(), Despair(), Madness(), Insanity(), Veil_of_Shadows(), Ritual(), Aharon(), Sacrifice(), Dodge()],</p></li>
-<li><p>“crab”: [Stone_Skin(), Strike(), Defend(), Regrow_Limbs(), Roar(), Fury(), Mutate(), Terror(), Sweep(), Unshakable(), Retaliate(), Guard()],</p></li>
-<li><p>“dragon”: [Fireborn(), Fireball(), Dragon_Roar(), Fire_Breath(), Roar(), Terror(), Sweep(), Giant(), Bite(), Crush(), Guard(), Healing(), Retaliate()],</p></li>
-<li><p>“stickman”: [Terror(), Madness(), Kick(), Freedom_in_Death(), Mutate(), Guard(), Stab(), Lunge(), Headbutt()],</p></li>
-<li><p>“ghouls”: [Bite(), Poisonous_Bite(), Dodge(), Healing(), Lunge(), Antidote(), Slash(), Retaliate(), Devour()]</p></li>
-</ul>
+<div class="section" id="changing-adding-lootlists">
+<h2>Changing &amp; adding lootlists<a class="headerlink" href="#changing-adding-lootlists" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="traders.html#new-items"><span class="std std-ref">Create new items</span></a></p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
+
+  <span class="c1">###################</span>
+  <span class="c1"># Cards lootlists #</span>
+  <span class="c1">###################</span>
+
+  <span class="c1"># Replacing lootlist, this code changes werewolf lootlist, it now drops four cards: MyCard1, MyCard2, Lycanthropy, Insatiable Lust</span>
+  <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;werewolf&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">MyCard1</span><span class="p">(),</span> <span class="n">MyCard2</span><span class="p">(),</span> <span class="n">Lycantrophy</span><span class="p">(),</span> <span class="n">Insatiable_Lust</span><span class="p">()]</span>
+
+  <span class="c1"># Adding card to a lootlist, it adds card (with class name) MyCard, the rest of lootlist remains</span>
+  <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;werewolf&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">MyCard</span><span class="p">())</span>
+
+  <span class="c1"># Create new lootlist, it creates myLootlist with cards MyCard1 and MyCard2</span>
+  <span class="n">lootlist</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;myLootlist&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">MyCard1</span><span class="p">(),</span> <span class="n">MyCard2</span><span class="p">()]})</span>
+
+  <span class="c1">######################</span>
+  <span class="c1"># Material lootlists #</span>
+  <span class="c1">######################</span>
+
+  <span class="c1"># Replacing lootlist this replaces orc lootlist, it gives the lootlist:</span>
+  <span class="c1"># 65% for 1-3 Wood,</span>
+  <span class="c1"># 50% for 1-3 Stone,</span>
+  <span class="c1"># 50% for 1-3 Metal</span>
+  <span class="n">mat_lootlist</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;orc&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.65</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+  <span class="p">}})</span>
+
+  <span class="c1"># Adding material to lootlist / Changing materials amount &amp; drop chance</span>
+  <span class="c1"># This adds Cloth to orc lootlist with 5% chance for 2-4 Cloth.</span>
+  <span class="c1"># You can this same way overwrite other items with your own chances, amounts</span>
+  <span class="n">mat_lootlist</span><span class="p">[</span><span class="s2">&quot;orc&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
+
+  <span class="c1"># Create new lootlist, it creates myList with 100% chance for 4-5 Wood and 1% chance for 1 Mysterious Coin</span>
+  <span class="n">mat_lootlist</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;myList&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+  <span class="p">}})</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
 </div>
-<div class="section" id="traders">
-<h2>Traders<a class="headerlink" href="#traders" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>“devil_abi”: [Miracle(), Fireborn(), Lycantrophy(), Vampirism(), Freedom(), Freedom_in_Death(), Cease_Fire_Treaty(), Outside(), Terror(), Despair(), Crush(), Madness(), Insanity(), Insatiable_Lust(), Aharon(), Dragon_Roar()],</p></li>
-<li><p>“tarot”: [The_Fool(), The_Magican(), The_High_Priestess(), The_Empress(), The_Emperor(), The_Hierophant(), The_Lovers(), The_Chariot(), Justice(), The_Hermit(), Wheel_of_Fortune(), Strength(), The_Hanged_Man(), Death(), Temperance(), The_Devil(), The_Tower(), The_Star(), The_Moon(), The_Sun(), Judgement(), The_World()]</p></li>
-</ul>
+</div>
+<div class="section" id="cards-enemies">
+<h2>Cards - Enemies<a class="headerlink" href="#cards-enemies" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="s2">&quot;werewolf&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Lycantrophy</span><span class="p">(),</span> <span class="n">Bite</span><span class="p">(),</span> <span class="n">Empower</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">(),</span> <span class="n">Slash</span><span class="p">(),</span> <span class="n">Healing</span><span class="p">(),</span> <span class="n">Greater_Healing</span><span class="p">(),</span> <span class="n">Regrow_Limbs</span><span class="p">()],</span>
+<span class="s2">&quot;bandits_melee&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Slash</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Blind</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">(),</span> <span class="n">Flurry</span><span class="p">()],</span>
+<span class="s2">&quot;bandits_guns&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Bulletstorm</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">(),</span> <span class="n">Shot</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Take_Cover</span><span class="p">(),</span> <span class="n">Strike</span><span class="p">()],</span>
+<span class="s2">&quot;bandits&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Bulletstorm</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">(),</span> <span class="n">Shot</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Take_Cover</span><span class="p">(),</span> <span class="n">Strike</span><span class="p">(),</span> <span class="n">Slash</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Flurry</span><span class="p">(),</span> <span class="n">Blind</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">()],</span>
+<span class="s2">&quot;spider&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Bite</span><span class="p">(),</span> <span class="n">Spit_Poison</span><span class="p">(),</span> <span class="n">Poisonous_Bite</span><span class="p">(),</span> <span class="n">Hide_in_the_Shadows</span><span class="p">(),</span> <span class="n">Lunge</span><span class="p">()],</span>
+<span class="s2">&quot;scavengers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Slash</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Blind</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">(),</span> <span class="n">Shot</span><span class="p">(),</span> <span class="n">Take_Cover</span><span class="p">()],</span>
+<span class="s2">&quot;bandit_melee&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Slash</span><span class="p">(),</span> <span class="n">Blind</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Strike</span><span class="p">(),</span> <span class="n">Defend</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">()],</span>
+<span class="s2">&quot;bandit_melee_girl&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Slash</span><span class="p">(),</span> <span class="n">Blind</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Strike</span><span class="p">(),</span> <span class="n">Defend</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">(),</span> <span class="n">Seduce</span><span class="p">(),</span> <span class="n">Flirtatious_Look</span><span class="p">()],</span>
+<span class="s2">&quot;orc&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Fury</span><span class="p">(),</span> <span class="n">Roar</span><span class="p">(),</span> <span class="n">Flurry</span><span class="p">(),</span> <span class="n">Slash</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Empower</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">(),</span> <span class="n">Sharpening</span><span class="p">(),</span> <span class="n">Horde_Weapons</span><span class="p">(),</span> <span class="n">Strike</span><span class="p">(),</span> <span class="n">Defend</span><span class="p">()],</span>
+<span class="s2">&quot;manticore&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Fury</span><span class="p">(),</span> <span class="n">Roar</span><span class="p">(),</span> <span class="n">Spit_Poison</span><span class="p">(),</span> <span class="n">Poisonous_Bite</span><span class="p">(),</span> <span class="n">Lunge</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">(),</span> <span class="n">Healing</span><span class="p">(),</span> <span class="n">Bite</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">(),</span> <span class="n">Antidote</span><span class="p">()],</span>
+<span class="s2">&quot;flamingo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Mutate</span><span class="p">(),</span> <span class="n">Bite</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">(),</span> <span class="n">Enfeeble</span><span class="p">(),</span> <span class="n">Infection</span><span class="p">(),</span> <span class="n">Despair</span><span class="p">()],</span>
+<span class="s2">&quot;faceless_giant&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Roar</span><span class="p">(),</span> <span class="n">Fury</span><span class="p">(),</span> <span class="n">Terror</span><span class="p">(),</span> <span class="n">Despair</span><span class="p">(),</span> <span class="n">Crush</span><span class="p">(),</span> <span class="n">Sweep</span><span class="p">(),</span> <span class="n">Giant</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Insanity</span><span class="p">(),</span> <span class="n">Faceless</span><span class="p">(),</span> <span class="n">Veil_of_Shadows</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Hide_in_the_Shadows</span><span class="p">()],</span>
+<span class="s2">&quot;faceless&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Fury</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Insanity</span><span class="p">(),</span> <span class="n">Faceless</span><span class="p">(),</span> <span class="n">Veil_of_Shadows</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Hide_in_the_Shadows</span><span class="p">()],</span>
+<span class="s2">&quot;devourer_giant&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Roar</span><span class="p">(),</span> <span class="n">Fury</span><span class="p">(),</span> <span class="n">Terror</span><span class="p">(),</span> <span class="n">Despair</span><span class="p">(),</span> <span class="n">Crush</span><span class="p">(),</span> <span class="n">Sweep</span><span class="p">(),</span> <span class="n">Giant</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Insanity</span><span class="p">(),</span> <span class="n">Devour</span><span class="p">(),</span> <span class="n">Insatiable_Hunger</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Bite</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">()],</span>
+<span class="s2">&quot;devourer&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Fury</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Insanity</span><span class="p">(),</span> <span class="n">Devour</span><span class="p">(),</span> <span class="n">Insatiable_Hunger</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Bite</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">()],</span>
+<span class="s2">&quot;succubus&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Seduce</span><span class="p">(),</span> <span class="n">Flirtatious_Look</span><span class="p">(),</span> <span class="n">Slash</span><span class="p">(),</span> <span class="n">Insatiable_Lust</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Freedom</span><span class="p">(),</span> <span class="n">Flurry</span><span class="p">(),</span> <span class="n">Enfeeble</span><span class="p">(),</span> <span class="n">Hypnotise</span><span class="p">(),</span> <span class="n">Cease_Fire_Treaty</span><span class="p">()],</span>
+<span class="s2">&quot;cultist&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Miracle</span><span class="p">(),</span> <span class="n">Slash</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Empower</span><span class="p">(),</span> <span class="n">Hide_in_the_Shadows</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">(),</span> <span class="n">Hypnotise</span><span class="p">(),</span> <span class="n">Outside</span><span class="p">(),</span> <span class="n">Terror</span><span class="p">(),</span> <span class="n">Despair</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Insanity</span><span class="p">(),</span> <span class="n">Veil_of_Shadows</span><span class="p">(),</span> <span class="n">Ritual</span><span class="p">(),</span> <span class="n">Aharon</span><span class="p">(),</span> <span class="n">Sacrifice</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">()],</span>
+<span class="s2">&quot;crab&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Stone_Skin</span><span class="p">(),</span> <span class="n">Strike</span><span class="p">(),</span> <span class="n">Defend</span><span class="p">(),</span> <span class="n">Regrow_Limbs</span><span class="p">(),</span> <span class="n">Roar</span><span class="p">(),</span> <span class="n">Fury</span><span class="p">(),</span> <span class="n">Mutate</span><span class="p">(),</span> <span class="n">Terror</span><span class="p">(),</span> <span class="n">Sweep</span><span class="p">(),</span> <span class="n">Unshakable</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">()],</span>
+<span class="s2">&quot;dragon&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Fireborn</span><span class="p">(),</span> <span class="n">Fireball</span><span class="p">(),</span> <span class="n">Dragon_Roar</span><span class="p">(),</span> <span class="n">Fire_Breath</span><span class="p">(),</span> <span class="n">Roar</span><span class="p">(),</span> <span class="n">Terror</span><span class="p">(),</span> <span class="n">Sweep</span><span class="p">(),</span> <span class="n">Giant</span><span class="p">(),</span> <span class="n">Bite</span><span class="p">(),</span> <span class="n">Crush</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Healing</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">()],</span>
+<span class="s2">&quot;stickman&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Terror</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Kick</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Mutate</span><span class="p">(),</span> <span class="n">Guard</span><span class="p">(),</span> <span class="n">Stab</span><span class="p">(),</span> <span class="n">Lunge</span><span class="p">(),</span> <span class="n">Headbutt</span><span class="p">()],</span>
+<span class="s2">&quot;ghouls&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Bite</span><span class="p">(),</span> <span class="n">Poisonous_Bite</span><span class="p">(),</span> <span class="n">Dodge</span><span class="p">(),</span> <span class="n">Healing</span><span class="p">(),</span> <span class="n">Lunge</span><span class="p">(),</span> <span class="n">Antidote</span><span class="p">(),</span> <span class="n">Slash</span><span class="p">(),</span> <span class="n">Retaliate</span><span class="p">(),</span> <span class="n">Devour</span><span class="p">()]</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="cards-traders">
+<h2>Cards - Traders<a class="headerlink" href="#cards-traders" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="s2">&quot;devil_abi&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Miracle</span><span class="p">(),</span> <span class="n">Fireborn</span><span class="p">(),</span> <span class="n">Lycantrophy</span><span class="p">(),</span> <span class="n">Vampirism</span><span class="p">(),</span> <span class="n">Freedom</span><span class="p">(),</span> <span class="n">Freedom_in_Death</span><span class="p">(),</span> <span class="n">Cease_Fire_Treaty</span><span class="p">(),</span> <span class="n">Outside</span><span class="p">(),</span> <span class="n">Terror</span><span class="p">(),</span> <span class="n">Despair</span><span class="p">(),</span> <span class="n">Crush</span><span class="p">(),</span> <span class="n">Madness</span><span class="p">(),</span> <span class="n">Insanity</span><span class="p">(),</span> <span class="n">Insatiable_Lust</span><span class="p">(),</span> <span class="n">Aharon</span><span class="p">(),</span> <span class="n">Dragon_Roar</span><span class="p">()],</span>
+<span class="s2">&quot;tarot&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">The_Fool</span><span class="p">(),</span> <span class="n">The_Magican</span><span class="p">(),</span> <span class="n">The_High_Priestess</span><span class="p">(),</span> <span class="n">The_Empress</span><span class="p">(),</span> <span class="n">The_Emperor</span><span class="p">(),</span> <span class="n">The_Hierophant</span><span class="p">(),</span> <span class="n">The_Lovers</span><span class="p">(),</span> <span class="n">The_Chariot</span><span class="p">(),</span> <span class="n">Justice</span><span class="p">(),</span> <span class="n">The_Hermit</span><span class="p">(),</span> <span class="n">Wheel_of_Fortune</span><span class="p">(),</span> <span class="n">Strength</span><span class="p">(),</span> <span class="n">The_Hanged_Man</span><span class="p">(),</span> <span class="n">Death</span><span class="p">(),</span> <span class="n">Temperance</span><span class="p">(),</span> <span class="n">The_Devil</span><span class="p">(),</span> <span class="n">The_Tower</span><span class="p">(),</span> <span class="n">The_Star</span><span class="p">(),</span> <span class="n">The_Moon</span><span class="p">(),</span> <span class="n">The_Sun</span><span class="p">(),</span> <span class="n">Judgement</span><span class="p">(),</span> <span class="n">The_World</span><span class="p">()]</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">define</span> <span class="n">mat_lootlist</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;materials_basic&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="c1"># item: [chance, min, max]</span>
+  <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+  <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+  <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+  <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">}}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="materials-enemies">
+<h2>Materials - Enemies<a class="headerlink" href="#materials-enemies" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="s2">&quot;werewolf&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.65</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;bandits&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.65</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;bandit&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.65</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;spider&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.65</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;scavengers&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;orc&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.55</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;orc_group&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.55</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.15</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;manticore&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.03</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;flamingo&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;faceless_giant&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;devourer_giant&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;succubus&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.65</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;cultist&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.15</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;crab&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.03</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;ghouls&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;dragon&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;stickman&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;orc_group&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="materials-cheats">
+<h2>Materials - Cheats<a class="headerlink" href="#materials-cheats" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="s2">&quot;cheat_starter&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
+<span class="s2">&quot;cheat_builder&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]},</span>
+<span class="s2">&quot;cheat_mysteries&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;cheat_forge&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="materials-exploration">
+<h2>Materials - Exploration<a class="headerlink" href="#materials-exploration" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="s2">&quot;orc_camp&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;Mysterious Coin&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+<span class="s2">&quot;exp_house&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]},</span>
+<span class="s2">&quot;exp_b_rape&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;Stone&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Cloth&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]},</span>
+<span class="s2">&quot;exp_rose&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Rose&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Wood&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 
@@ -204,6 +434,10 @@
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="triggers.html" class="btn btn-neutral float-right" title="Triggers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="enemies.html" class="btn btn-neutral float-left" title="Enemies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

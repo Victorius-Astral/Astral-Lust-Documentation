@@ -29,6 +29,9 @@ To add new cards you need to create your cards as a child of Card class. Action 
             self.dodge(amt = 10, target = player)
             return
 
+|
+|
+
 Cards Images
 ------------
 
@@ -58,6 +61,9 @@ You can make cards in any image editor like paint, paint.net, gimp, photoshoot, 
 .. _WebP: https://mega.nz/file/oQdGgbaY#1uyIFXBjnBo12yXgEV7plqS3_B895ff-eVFgiJpq4WI
 .. _Bulk Images to WebP Converter : https://chrome.google.com/webstore/detail/bulk-images-to-webp-conve/alehapkmecbigebjbcicmbmjdaolcjhb
 
+|
+|
+
 Status Effects
 --------------
 
@@ -75,6 +81,9 @@ Status effects are granted using buff(), it takes three arguments:
             enemy.buff("Ressurect", 1)
             return
 
+|
+|
+
 Exhaust and Destroy
 -------------------
 
@@ -88,6 +97,9 @@ Cards can be destroyed with ``self.destroy()``. To exhaust a card you need to re
 
         self.destroy()
         return "exhaust"
+
+|
+|
 
 X card cost
 -----------
@@ -110,10 +122,16 @@ Set card cost to 0 and execute your action x times, at the end set ``player.spir
 
         return
 
+|
+|
+
 Complex Effects
 ---------------
 
 Returning "complex" with play() will skip using card cost and removing it from hand, it can be used with complex card effects that move/exhaust the card before return statement.
+
+|
+|
 
 Other Card class methods
 ------------------------
@@ -129,10 +147,13 @@ Other Card class methods
 
 .. _tab_cards_effects:
 
+|
+|
+
 List of all status effects
 --------------------------
 
-:ref:`Add our own status effects<tab_triggers_effects>`
+:ref:`Add our own status effects <tab_triggers_effects>`
 
 Integer:
 

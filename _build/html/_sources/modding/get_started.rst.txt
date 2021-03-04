@@ -87,6 +87,7 @@ Important thing to note is that dreams need special label name to autodetect (``
 I'll name my dream as ``d_Sample_Dream_0``, when dream name is converted to text ``_`` is changed to empty space.
 
 `Labels & Control Flow <https://www.renpy.org/doc/html/label.html?highlight=labels>`_
+
 `Defining Characters <https://www.renpy.org/doc/html/dialogue.html?highlight=character#defining-character-objects>`_
 
 After all we are all set up.
@@ -95,6 +96,7 @@ What's the difference? Scene removes previous images, it's good to use it if we 
 Our movie covers the whole screen and we don't want other images or movies on screen so let's use ``scene my_movie_name``. You can add transiton ``with fade`` or ``with dissolve``.
 
 `Show & Scene statements <https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement>`_
+
 `Transitions <https://www.renpy.org/doc/html/transitions.html>`_
 
 .. image:: tutorial_6.webp
@@ -197,6 +199,7 @@ You can use it like this ``return "exhaust"`` if you want to exhaust a card, oth
 Example below.
 
 :ref:`Cards<tab_cards>`
+
 :ref:`List of status effects<tab_cards_effects>`
 
 .. image:: tutorial_10.webp
@@ -251,6 +254,8 @@ Now that you know how, you can add more, check the documentation for info how to
 Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)
 
 Don't hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.
+
+:ref:`Easy to tweak variables<tab_customize>`
 
 |
 |

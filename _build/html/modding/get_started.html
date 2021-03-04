@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Cards" href="cards.html" />
+    <link rel="next" title="Customize Astral Lust" href="customize.html" />
     <link rel="prev" title="Welcome to Astral Lust’s documentation!" href="../index.html" /> 
 </head>
 
@@ -97,11 +97,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#final-script-clean">Final Script - Clean</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customize Astral Lust</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/gui.html">GUI Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enemies.html">Enemies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lootlists.html">Lootlists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="triggers.html">Triggers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prisoners.html">Prisoners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traders.html">Traders &amp; Items</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
@@ -237,14 +242,14 @@
 <p>For compatibility purpose you should add your unique prefix to label names so that there are never two label with the same name (it’ll throw an error).</p>
 <p>Important thing to note is that dreams need special label name to autodetect (<code class="docutils literal notranslate"><span class="pre">d_mydream_0</span></code>, starts with <code class="docutils literal notranslate"><span class="pre">d_</span></code>, then your own dream (with prefix) name, and at the end <a class="reference internal" href="dreams.html#tab-dreams"><span class="std std-ref">dream type</span></a>. <code class="docutils literal notranslate"><span class="pre">_0</span></code>, 0 stands for normal or positive dream).
 I’ll name my dream as <code class="docutils literal notranslate"><span class="pre">d_Sample_Dream_0</span></code>, when dream name is converted to text <code class="docutils literal notranslate"><span class="pre">_</span></code> is changed to empty space.</p>
-<p><a class="reference external" href="https://www.renpy.org/doc/html/label.html?highlight=labels">Labels &amp; Control Flow</a>
-<a class="reference external" href="https://www.renpy.org/doc/html/dialogue.html?highlight=character#defining-character-objects">Defining Characters</a></p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/label.html?highlight=labels">Labels &amp; Control Flow</a></p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/dialogue.html?highlight=character#defining-character-objects">Defining Characters</a></p>
 <p>After all we are all set up.
 Let’s finally use this movie, we can display it with <code class="docutils literal notranslate"><span class="pre">show</span></code> or <code class="docutils literal notranslate"><span class="pre">scene</span></code> statement.
 What’s the difference? Scene removes previous images, it’s good to use it if we have image covering whole screen and we don’t want anything else to display.
 Our movie covers the whole screen and we don’t want other images or movies on screen so let’s use <code class="docutils literal notranslate"><span class="pre">scene</span> <span class="pre">my_movie_name</span></code>. You can add transiton <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">fade</span></code> or <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">dissolve</span></code>.</p>
-<p><a class="reference external" href="https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement">Show &amp; Scene statements</a>
-<a class="reference external" href="https://www.renpy.org/doc/html/transitions.html">Transitions</a></p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement">Show &amp; Scene statements</a></p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/transitions.html">Transitions</a></p>
 <img alt="../_images/tutorial_6.webp" src="../_images/tutorial_6.webp" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -330,8 +335,8 @@ It works like that <code class="docutils literal notranslate"><span class="pre">
 It signals the program that it’s the end of method.
 You can use it like this <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">&quot;exhaust&quot;</span></code> if you want to exhaust a card, otherwise use just <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
 <p>Example below.</p>
-<p><a class="reference internal" href="cards.html#tab-cards"><span class="std std-ref">Cards</span></a>
-<a class="reference internal" href="cards.html#tab-cards-effects"><span class="std std-ref">List of status effects</span></a></p>
+<p><a class="reference internal" href="cards.html#tab-cards"><span class="std std-ref">Cards</span></a></p>
+<p><a class="reference internal" href="cards.html#tab-cards-effects"><span class="std std-ref">List of status effects</span></a></p>
 <img alt="../_images/tutorial_10.webp" src="../_images/tutorial_10.webp" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -373,6 +378,7 @@ Even Grace is proud of you!</p>
 <p>Now that you know how, you can add more, check the documentation for info how to do that.
 Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)</p>
 <p>Don’t hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.</p>
+<p><a class="reference internal" href="customize.html#tab-customize"><span class="std std-ref">Easy to tweak variables</span></a></p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -596,7 +602,7 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="cards.html" class="btn btn-neutral float-right" title="Cards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="customize.html" class="btn btn-neutral float-right" title="Customize Astral Lust" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Astral Lust’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

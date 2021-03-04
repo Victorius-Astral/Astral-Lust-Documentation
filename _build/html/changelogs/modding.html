@@ -88,14 +88,27 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../modding/get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/customize.html">Customize Astral Lust</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/dreams.html">Dreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/gui.html">GUI Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/enemies.html">Enemies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/lootlists.html">Lootlists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/triggers.html">Triggers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/prisoners.html">Prisoners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/traders.html">Traders &amp; Items</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog - Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a">0.1.3a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#id1">0.1.3</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#released">Released</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Added</a></li>
 </ul>
 </li>
 </ul>
@@ -173,6 +186,35 @@
             
   <div class="section" id="changelog-modding">
 <h1>Changelog - Modding<a class="headerlink" href="#changelog-modding" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a">
+<h2>0.1.3a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="added">
+<h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Sample Mod to mods/ folder, check it, it’s heavily commented to explain everything going on</p></li>
+<li><p>after_load _start &amp; _end triggers</p></li>
+<li><p>triggers during combat initialization</p></li>
+</ul>
+</div>
+<div class="section" id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>for triggers you can now either use a string or (much better for performance) use compiled (at init time) code object (check documentation’s trigger tab)</p></li>
+<li><p>now adding enemies to random combat encounter requires to add them as strings instead of objects</p></li>
+<li><p>now terror tooltip reflects changes to terror chance properly</p></li>
+</ul>
+</div>
+<div class="section" id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>spelling mistakes in a few image names, to make it easier for you to not use wrong name</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
 <div class="section" id="id1">
 <h2>0.1.3<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="released">
@@ -184,8 +226,8 @@
 <li><p>mod_toolkit script (for now it only enables dev tools &amp; console in AL)</p></li>
 </ul>
 </div>
-<div class="section" id="added">
-<h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>support for adding new status effects &amp; card mechanics, trigger system</p></li>
 <li><p>support for adding your own menus to expanded menu</p></li>

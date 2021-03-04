@@ -4,7 +4,7 @@ Triggers
 ========
 
 Using a trigger
---------
+---------------
 
 To add your own mechanics right into vanilla code without actually overwriting any files you need to use the trigger system I've invented for this purpose.
 It takes code as string or code compiled with ``compile("code", "triggers", "exec")``. You should compile your code at init time for increased performance.
