@@ -195,4 +195,5 @@ Boolean:
 * ``Poison Immunity`` - Immune to poison.
 * ``Bleeding Immunity`` - Immune to bleeding.
 * ``Stun Immunity`` - Can't be stunned.
+* ``Burning Immunity`` - Immune to burning.
 * ``Freedom`` - Free from corruption and madness.
