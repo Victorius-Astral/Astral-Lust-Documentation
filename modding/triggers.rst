@@ -86,9 +86,12 @@ Program our effect's mechanic
 Make an icon
 ~~~~~~~~~~~~
 
-I've made all my icons here: `Game-icons.net<https://game-icons.net/>`_
+I've made all my icons here: `Game-icons.net <https://game-icons.net/>`_
 
 It's a great site that allows you to download and customize over 4000 game icons.
+The perfect resolution would be 128x128 pixels.
+It's a good balance between quality and performance. 
+Game will resize the icon on its own depending on 4K or 1080p game version.
 
 For now your icon need to be put in ``game/images/Icons/``. I plan to add support for your own paths, in your mod's folder.
 
@@ -123,13 +126,13 @@ Combat
 
 End turn order:
 
-* ``"player turn damage
-* ``"enemy turn damage
-* ``"enemy turn1
-* ``"enemy action
-* ``"enemy turn2
-* ``"player turn2
-* ``"player turn1
+* player turn damage
+* enemy turn damage
+* enemy turn1
+* enemy action
+* enemy turn2
+* player turn2
+* player turn1
 
 |
 
