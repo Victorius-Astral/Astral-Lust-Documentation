@@ -13,7 +13,6 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
   <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
 
   
@@ -34,8 +33,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -94,11 +91,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#step-1-preparation-for-modding">Step 1. Preparation for modding</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-creating-new-mod">Step 2. Creating new mod</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-3-adding-animated-dream">Step 3. Adding animated dream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-adding-a-card">Step 4. Adding a card</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-5-test-with-console">Step 5. Test with console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#final-script-comments">Final Script - Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#final-script-clean">Final Script - Clean</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enemies.html">Enemies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lootlists.html">Lootlists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
@@ -175,6 +177,10 @@
   <div class="section" id="get-started-astral-lust-modding">
 <h1>Get Started - Astral Lust Modding<a class="headerlink" href="#get-started-astral-lust-modding" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to Astral Lust modding tutorial! In here I’ll explain how to create your own mod. I’ll show how to start, make your own card, character, and a simple animated dream.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 <div class="section" id="step-1-preparation-for-modding">
 <h2>Step 1. Preparation for modding<a class="headerlink" href="#step-1-preparation-for-modding" title="Permalink to this headline">¶</a></h2>
 <p>To get started with modding AL (Astral Lust) you don’t need programming knowledge, you don’t even need to know basics about <code class="docutils literal notranslate"><span class="pre">Ren'Py</span></code>.</p>
@@ -187,38 +193,188 @@
 <li><p>Mac: <code class="docutils literal notranslate"><span class="pre">AstralLust\Contents\Resources\autorun\</span></code></p></li>
 </ul>
 <p>Great, now that you have everything ready you can start to make your own mod! (You can rename AstralLust folder to whatever name you want, this name will be shown in projects)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="step-2-creating-new-mod">
 <h2>Step 2. Creating new mod<a class="headerlink" href="#step-2-creating-new-mod" title="Permalink to this headline">¶</a></h2>
 <p>After you done all preparations, run RenPy. You’ll see something like this:</p>
 <img alt="../_images/tutorial_1.webp" src="../_images/tutorial_1.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>Under <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">File</span></code> tab chose <code class="docutils literal notranslate"><span class="pre">script.rpy</span></code>, now you need to create your mod’s folder in <code class="docutils literal notranslate"><span class="pre">game/mods</span></code> folder, as shown below:</p>
 <img alt="../_images/tutorial_2.webp" src="../_images/tutorial_2.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>Now using the same way we create a new file inside our folder, you can name it whatever you want, the important thing is to include <code class="docutils literal notranslate"><span class="pre">.rpy</span></code> extension at the end. I’ll name my file <code class="docutils literal notranslate"><span class="pre">sample_mod.rpy</span></code>. Now that you’ve your first file, open it by selecting it from file tree.</p>
 <img alt="../_images/tutorial_3.webp" src="../_images/tutorial_3.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="step-3-adding-animated-dream">
 <h2>Step 3. Adding animated dream<a class="headerlink" href="#step-3-adding-animated-dream" title="Permalink to this headline">¶</a></h2>
 <p>What (arguably) is the most important thing in RenPy games? Events. So let’s make our own event, a dream to be exact.</p>
-<p>First we need to create a label, label is a point in a story to which you can jump later on. <code class="docutils literal notranslate"><span class="pre">label</span> <span class="pre">mylabelname:</span></code></p>
-<p>For compatibility purpose you should add your unique prefix to label names so that there are never two label with the same name (it’ll throw an error).</p>
-<p>Important thing to note is that dreams need special label name to autodetect (<code class="docutils literal notranslate"><span class="pre">d_mydream_0</span></code>, start with <code class="docutils literal notranslate"><span class="pre">d_</span></code>, then your own dream (with prefix) name, and at the end <a class="reference internal" href="dreams.html#tab-dreams"><span class="std std-ref">dream type</span></a>. <code class="docutils literal notranslate"><span class="pre">_0</span></code>, 0 stands for normal/positive dream).
-I’ll name my dream as <code class="docutils literal notranslate"><span class="pre">d_Sample_Dream_0</span></code>, when dream name is converted to text <code class="docutils literal notranslate"><span class="pre">_</span></code> is changed to empty space `` <a href="#id1"><span class="problematic" id="id2">``</span></a>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="n">d_Sample_Dream__0</span><span class="p">:</span>
-</pre></div>
-</div>
-<p>Now we want to add this animated background, so what we need is, well, a video. It can be .mp4 or .webm (<a class="reference external" href="https://www.renpy.org/doc/html/movie.html#movie">read more</a>). We can put it into our mod folder.</p>
+<p>We want to add animated background, so what we need is, well, a video. It can be .mp4 or .webm. We can put it into our mod folder.</p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/movie.html#movie">Movies</a></p>
 <img alt="../_images/tutorial_4.webp" src="../_images/tutorial_4.webp" />
-<p>So we have our movie, let’s define it in the script, it needs to be defined outside of a label:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>So we have our movie, let’s define it in the script, it needs to be defined outside of a label (you’ll understand later).</p>
+<p>It goes like this: <code class="docutils literal notranslate"><span class="pre">image</span> <span class="pre">my_movie_name</span> <span class="pre">=</span> <span class="pre">Movie(play=&quot;mods/My</span> <span class="pre">Mod</span> <span class="pre">Name/my_movie.webm&quot;,</span> <span class="pre">loop</span> <span class="pre">=</span> <span class="pre">True,</span> <span class="pre">size</span> <span class="pre">=</span> <span class="pre">{gui.game_width,</span> <span class="pre">gui.game_height})</span></code></p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/displaying_images.html?highlight=image#defining-images">Defining Images</a></p>
+<img alt="../_images/tutorial_5.webp" src="../_images/tutorial_5.webp" />
+<p>Now that we have our animation, let’s define a character that’ll speak in our label (also outside of a label). We can do this with
+<code class="docutils literal notranslate"><span class="pre">define</span> <span class="pre">our_character</span> <span class="pre">=</span> <span class="pre">Character(&quot;char_name&quot;)</span></code>. So I want my character to be a stickman. Don’t ask why, I just want.</p>
+<p>After we define our character, it’s time to finally create a label. What is it? Label is a point in a story to which you can jump later on. <code class="docutils literal notranslate"><span class="pre">label</span> <span class="pre">mylabelname:</span></code></p>
+<p>For compatibility purpose you should add your unique prefix to label names so that there are never two label with the same name (it’ll throw an error).</p>
+<p>Important thing to note is that dreams need special label name to autodetect (<code class="docutils literal notranslate"><span class="pre">d_mydream_0</span></code>, starts with <code class="docutils literal notranslate"><span class="pre">d_</span></code>, then your own dream (with prefix) name, and at the end <a class="reference internal" href="dreams.html#tab-dreams"><span class="std std-ref">dream type</span></a>. <code class="docutils literal notranslate"><span class="pre">_0</span></code>, 0 stands for normal or positive dream).
+I’ll name my dream as <code class="docutils literal notranslate"><span class="pre">d_Sample_Dream_0</span></code>, when dream name is converted to text <code class="docutils literal notranslate"><span class="pre">_</span></code> is changed to empty space.</p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/label.html?highlight=labels">Labels &amp; Control Flow</a>
+<a class="reference external" href="https://www.renpy.org/doc/html/dialogue.html?highlight=character#defining-character-objects">Defining Characters</a></p>
+<p>After all we are all set up.
+Let’s finally use this movie, we can display it with <code class="docutils literal notranslate"><span class="pre">show</span></code> or <code class="docutils literal notranslate"><span class="pre">scene</span></code> statement.
+What’s the difference? Scene removes previous images, it’s good to use it if we have image covering whole screen and we don’t want anything else to display.
+Our movie covers the whole screen and we don’t want other images or movies on screen so let’s use <code class="docutils literal notranslate"><span class="pre">scene</span> <span class="pre">my_movie_name</span></code>. You can add transiton `` with fade`` or `` with dissolve``.</p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement">Show &amp; Scene statements</a></p>
+<img alt="../_images/tutorial_6.webp" src="../_images/tutorial_6.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Alright, Now we need to write the scene, dialogue, choices, etc. This all is covered below.</p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/dialogue.html?highlight=dialogues">Dialogue and Narration</a></p>
+<img alt="../_images/tutorial_7.webp" src="../_images/tutorial_7.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Dream is ready!</p>
+<p><a class="reference internal" href="dreams.html#tab-dreams"><span class="std std-ref">Dreams</span></a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="step-4-adding-a-card">
+<h2>Step 4. Adding a card<a class="headerlink" href="#step-4-adding-a-card" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have a dream, it’s time to do something a little more complex. Let’s make a card.</p>
+<p>We need to initialize a card at init time so we start by adding (outside of label) <code class="docutils literal notranslate"><span class="pre">init</span> <span class="pre">11</span> <span class="pre">python:</span></code>.
+As you might have noticed, when we use <code class="docutils literal notranslate"><span class="pre">:</span></code> the lines below are indented.
+Basically speaking it means that below code belongs to the thing with <code class="docutils literal notranslate"><span class="pre">:</span></code>.
+Indentation shows the code this belonging.
+In python indentations are the key unlike in most other languages where they are just cosmetic.</p>
+<p>Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 &amp; 999, so you should use init 11 to init 998.
+The higher the init the later it loads (and overwrites previous changes if needed). Unless you know what you’re doing, don’t use reserved init numbers.</p>
+<p>Finally, after this sermon comes a time to create our card!
+We need to start by defining class like this <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">OurClassName(Card):</span></code> of course change OurClassName to your name.
+You can name it as <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">prefix_cardname(Card):</span></code>. More info on this in comments in example script down below.</p>
+<p>As you probably noticed (or not) class definition ends with <code class="docutils literal notranslate"><span class="pre">:</span></code>, so does it mean next line will be indented?
+Of course it’ll be indented, didn’t you read my sermon? If it’s not we will see an error when we try to launch our game.</p>
+<p>Now the indented code -&gt; <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">__init__(self):</span></code>. <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">methodName():</span></code> is defining a method or function.
+This is method commonly used in python as a constructor, it’ll assign attributes to our card.
+You probably took note of <code class="docutils literal notranslate"><span class="pre">:</span></code> at the end.
+Does it mean there will be second indentation? Yes! Great, right? Indentations look neat.</p>
+<img alt="../_images/tutorial_8.webp" src="../_images/tutorial_8.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>So in <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">__init__(self):</span></code> we need to assign attributes to our class, or as you prefer variables.
+When assigning and using these attributes within our class we need to type <code class="docutils literal notranslate"><span class="pre">self.</span></code> before them.
+Like this <code class="docutils literal notranslate"><span class="pre">self.name</span> <span class="pre">=</span> <span class="pre">&quot;MyCard&quot;</span></code>.</p>
+<p>Cards have those attributes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> - self explaining</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sp</span></code> - spirituality cost</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ca</span></code> - category:</p>
+<ul>
+<li><p>Offensive</p></li>
+<li><p>Defensive</p></li>
+<li><p>Ability</p></li>
+<li><p>Power</p></li>
+<li><p>Tarot</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ra</span></code> - rarity:</p>
+<ul>
+<li><p>Ordinary</p></li>
+<li><p>Extraordinary</p></li>
+<li><p>Mythical</p></li>
+<li><p>Angelic</p></li>
+<li><p>Divine</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tip</span></code> - card’s tooltip to display on hover (explained in example script)</p></li>
+</ul>
+<img alt="../_images/tutorial_9.webp" src="../_images/tutorial_9.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>So our card now can be created, but it still does nothing.
+Let’s change that.
+We need to create <code class="docutils literal notranslate"><span class="pre">play()</span></code> method.
+Like this <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">play(self,</span> <span class="pre">**kwargs):</span></code>.</p>
+<p>Remember to return to indentation depth of class! In other words <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">play</span></code> needs to be at the same indentation as <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">__init__</span></code>.</p>
+<p>Now you need to let your creativity take over. To attack use <code class="docutils literal notranslate"><span class="pre">self.atk(dmg,</span> <span class="pre">enemy)</span></code> change damage to number you want, like this <code class="docutils literal notranslate"><span class="pre">self.atk(5,</span> <span class="pre">enemy)</span></code>.</p>
+<p>To change status effects use <code class="docutils literal notranslate"><span class="pre">buff()</span></code> method. It works like this <code class="docutils literal notranslate"><span class="pre">player.buff(buff,</span> <span class="pre">amt,</span> <span class="pre">minus</span> <span class="pre">=</span> <span class="pre">True)</span></code>.
+By default status effect can be lowered below 0, to make it stop at 0 descrease effects with minus = False.
+Let’s say you want to decrease enemy’s Vulnerable effect by 5, but you don’t want it to be below 0.
+It works like that <code class="docutils literal notranslate"><span class="pre">enemy.buff(&quot;Vulnerable&quot;,</span> <span class="pre">-5,</span> <span class="pre">False)</span></code>.</p>
+<p>Important thing is you need to add <code class="docutils literal notranslate"><span class="pre">return</span></code> at the end of method.
+It signals the program that it’s the end of method.
+You can use it like this <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">&quot;exhaust&quot;</span></code> if you want to exhaust a card, otherwise use just <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
+<p>Example below.</p>
+<p><a class="reference internal" href="cards.html#tab-cards"><span class="std std-ref">Cards</span></a>
+<a class="reference internal" href="cards.html#tab-cards-effects"><span class="std std-ref">List of status effects</span></a></p>
+<img alt="../_images/tutorial_10.webp" src="../_images/tutorial_10.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>We have a working card. Nice! One thing.. how do you get it?? It’s not like a dream, which happens randomly.</p>
+<p>This is actually the easiest part of this tutorial. Just read the comments in the example below, nothing more is needed to be said.</p>
+<p><a class="reference internal" href="lootlists.html#tab-lootlists"><span class="std std-ref">Lootlists</span></a></p>
+<img alt="../_images/tutorial_11.webp" src="../_images/tutorial_11.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Remember to create your card image!
+Check documentation’s Cards to get card templates and how to use them.
+Paint is enough to make a card, better programs (like free paint.net I’m using) are welcome, though.
+The best for a job like this would probably be Corel or PhotoShop.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="step-5-test-with-console">
+<h2>Step 5. Test with console<a class="headerlink" href="#step-5-test-with-console" title="Permalink to this headline">¶</a></h2>
+<p>Done!</p>
+<p>Our card and dream were successfully created!
+Now what remains is to check them in-game.</p>
+<p>Load your save and open the console by pressing SHIFT + O</p>
+<p>To try our dream -&gt; jump d_Sample_Dream_0
+Change dream label to your label</p>
+<p>To add our card to hand -&gt; inventory.cards.append(Sample_Slice())
+Again, change Sample_Slice to your card’s class name</p>
+<p>Congratulations!
+You’ve officially made your first mod for the Astral Lust!
+Even Grace is proud of you!</p>
+<p>Now that you know how, you can add more, check the documentation for info how to do that.
+Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)</p>
+<p>Don’t hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="final-script-comments">
+<h2>Final Script - Comments<a class="headerlink" href="#final-script-comments" title="Permalink to this headline">¶</a></h2>
+<p>The same code can be found in <code class="docutils literal notranslate"><span class="pre">game/mods/Sample</span> <span class="pre">Mod/sample_mod.rpy</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p</span>
-<span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># define new character with name Stickman and light blue colored name - Hex(#216ba2)</span>
-<span class="n">define</span> <span class="n">sample_stickman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s2">&quot;Stickman&quot;</span><span class="p">,</span> <span class="n">who_color</span> <span class="o">=</span> <span class="s2">&quot;#216ba2&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="dropdown highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p</span>
 <span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
 
 <span class="c1"># define new character with name Stickman and light blue colored name - Hex(#216ba2)</span>
@@ -366,7 +522,14 @@ I’ll name my dream as <code class="docutils literal notranslate"><span class="
     <span class="c1"># Don&#39;t hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.</span>
 </pre></div>
 </div>
-<div class="dropdown highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="final-script-clean">
+<h2>Final Script - Clean<a class="headerlink" href="#final-script-clean" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
 
 <span class="n">define</span> <span class="n">sample_stickman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s2">&quot;Stickman&quot;</span><span class="p">,</span> <span class="n">who_color</span> <span class="o">=</span> <span class="s2">&quot;#216ba2&quot;</span><span class="p">)</span>
 

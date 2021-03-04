@@ -1,3 +1,5 @@
+.. _tab_cards:
+
 Cards
 =====
 
@@ -124,6 +126,8 @@ Other Card class methods
 * ``steal()`` - steal enemy status effects:
     * ``times`` - how many effects to steal, default ``1``
 * ``enemy_intention()`` - change enemy intention
+
+.. _tab_cards_effects:
 
 List of all status effects
 --------------------------

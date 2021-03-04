@@ -30,8 +30,7 @@ author = 'Victorius'
 import sphinx_rtd_theme
 
 extensions = [
-    "sphinx_rtd_theme",
-    "sphinx_togglebutton"
+    "sphinx_rtd_theme"
 ]
 
 pygments_style = 'sphinx'

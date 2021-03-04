@@ -1,3 +1,5 @@
+.. _tab_enemies:
+
 Enemies
 =======
 
@@ -7,39 +9,43 @@ Create new enemy
 .. code-block:: python
     :linenos:
 
-    class Werewolf(Enemy):
-        def __init__(self, name = "Werewolf", hp = 180, hp_max = 180, po = 1, race = "Beast", poU = 0, poL = 0, img = "WerewolfA", loot = "werewolf", faction = "None", act = 1, str = 0, agi = 0, vit = 0, inte = 0, cha = 0, wis = 0, drop = "werewolf"):
-            self.name = name
-            self.hp = hp
-            self.hp_max = hp_max
-            self.po = po # power
-            self.race = race
-            self.eff = copy.deepcopy(being.eff) # List of effect one can get in battle
-            self.poU = poU # upper value of power difference ( set both poU and poL to 0 to delete random effects values )
-            self.poL = poL # lower value of power difference
-            self.img = img # Name of enemy .webp inside Enemy folder
-            self.loot = loot # Lootlist
-            self.faction = faction # Enemy faction
-            self.act = act # Action enemy would do in next turn
-            self.drop = drop # your droplist
+  class Werewolf(Enemy):
+        def __init__(self, name = "Werewolf", hp = 180, hp_max = 180, po = 1, race = "Beast", poU = 0, poL = 0, img = "WerewolfA", loot = "werewolf", faction = "None", act = 1, str = 0, agi = 0, vit = 0, inte = 0, cha = 0, wis = 0, msize = "n", drop = "werewolf", flags = []):
+          self.name = name # enemy showed name
+                self.hp = hp # enemy health
+                self.hp_max = hp_max # enemy maximum health
+                self.po = po # enemy power
+                self.race = race # enemy race eq. human, monster
 
-            # Cooldown for actions
-            self.cd = {
-            1: 0,
-            2: 0,
-            3: 0,
-            4: 0
-            }
+                self.eff = copy.deepcopy(being.eff) # List of effect one can get in battle
+                self.poU = poU # upper value of power randomization ( set both poU and poL to 0 to delete random damage values )
+                self.poL = poL # lower value of power randomization
 
-            # These are added for compatibility, they do nothing for now
-            self.strength = str
-            self.agility = agi
-            self.vitality = vit
-            self.wisdom = wis
-            self.intellect = inte
-            self.charisma = cha
-            self.spirit_max = 0
+                self.img = img # Name of enemy .webp inside Enemy folder
+                self.loot = loot # card Lootlist
+                
+                self.faction = faction # Enemy faction
+                self.act = act # Action enemy would do in next turn
 
+                # Initial cooldowns, this dict length must match amount of actions enemy can do
+                self.cd = {
+                1: 0,
+                2: 0,
+                3: 0,
+                4: 0
+                }
+
+                self.strength = str # Not implemented, required for script to work
+                self.agility = agi # Not implemented, required for script to work
+                self.vitality = vit # Not implemented, required for script to work
+                self.wisdom = wis # Not implemented, required for script to work
+                self.intellect = inte # Not implemented, required for script to work
+                self.charisma = cha # Not implemented, required for script to work
+                self.spirit_max = 0 # Not implemented, required for script to work
+
+                self.drop = drop # item lootlist
+                self.msize = msize # arena's size (point of view): "n" - normal, "g" - giant, "t" - titan
+                self.flags = flags # Empty list, can be used to add add flags to enemies in combat
 
         def action(self, **kwargs):
             global enemy_state

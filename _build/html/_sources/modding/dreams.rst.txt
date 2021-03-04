@@ -27,7 +27,7 @@ Code should look like this:
         "You float amidst the clouds and enjoy the light shining on you."
         $player.corrupt(-3)
         "You fell purified."
-        jump d_end
+        jump dream_end
 
 More label examples:
 
@@ -35,7 +35,7 @@ More label examples:
 * ``label d_Deal_with_the_Devil_3:``
 * ``label d_Reccuring_Nightmare_1:``
 
-Dreams should be ended with ``jump d_end`` - it's a generic dream ending it blackens the screen and executes sleep method, you can end the dream other way if you know what you are doing:
+Dreams should be ended with ``jump dream_end`` - it's a generic dream ending it blackens the screen and executes sleep method, you can end the dream other way if you know what you are doing:
 
 .. code-block::
     :linenos:

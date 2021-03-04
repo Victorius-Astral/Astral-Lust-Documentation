@@ -3,6 +3,9 @@ Get Started - Astral Lust Modding
 
 Welcome to Astral Lust modding tutorial! In here I'll explain how to create your own mod. I'll show how to start, make your own card, character, and a simple animated dream.
 
+|
+|
+
 Step 1. Preparation for modding
 -------------------------------
 
@@ -27,6 +30,9 @@ Next thing to download is `AL Mod Toolkit`_, it enables console and developer to
 
 Great, now that you have everything ready you can start to make your own mod! (You can rename AstralLust folder to whatever name you want, this name will be shown in projects)
 
+|
+|
+
 Step 2. Creating new mod
 ------------------------
 
@@ -34,50 +40,221 @@ After you done all preparations, run RenPy. You'll see something like this:
 
 .. image:: tutorial_1.webp
 
+|
+
 Under ``Edit File`` tab chose ``script.rpy``, now you need to create your mod's folder in ``game/mods`` folder, as shown below:
 
 .. image:: tutorial_2.webp
 
+|
+
 Now using the same way we create a new file inside our folder, you can name it whatever you want, the important thing is to include ``.rpy`` extension at the end. I'll name my file ``sample_mod.rpy``. Now that you've your first file, open it by selecting it from file tree.
 
 .. image:: tutorial_3.webp
+
+|
+|
 
 Step 3. Adding animated dream
 -----------------------------
 
 What (arguably) is the most important thing in RenPy games? Events. So let's make our own event, a dream to be exact.
 
-First we need to create a label, label is a point in a story to which you can jump later on. ``label mylabelname:``
+We want to add animated background, so what we need is, well, a video. It can be .mp4 or .webm. We can put it into our mod folder.
 
-For compatibility purpose you should add your unique prefix to label names so that there are never two label with the same name (it'll throw an error).
-
-Important thing to note is that dreams need special label name to autodetect (``d_mydream_0``, start with ``d_``, then your own dream (with prefix) name, and at the end :ref:`dream type<tab_dreams>`. ``_0``, 0 stands for normal/positive dream).
-I'll name my dream as ``d_Sample_Dream_0``, when dream name is converted to text ``_`` is changed to empty space `` ``.
-
-.. code-block::
-
-  label d_Sample_Dream__0:
-
-Now we want to add this animated background, so what we need is, well, a video. It can be .mp4 or .webm (`read more`_). We can put it into our mod folder.
-
-.. _read more: https://www.renpy.org/doc/html/movie.html#movie
+`Movies <https://www.renpy.org/doc/html/movie.html#movie>`_
 
 .. image:: tutorial_4.webp
 
-So we have our movie, let's define it in the script, it needs to be defined outside of a label:
+|
+
+So we have our movie, let's define it in the script, it needs to be defined outside of a label (you'll understand later).
+
+It goes like this: ``image my_movie_name = Movie(play="mods/My Mod Name/my_movie.webm", loop = True, size = {gui.game_width, gui.game_height})``
+
+`Defining Images <https://www.renpy.org/doc/html/displaying_images.html?highlight=image#defining-images>`_
+
+.. image:: tutorial_5.webp
+
+Now that we have our animation, let's define a character that'll speak in our label (also outside of a label). We can do this with
+``define our_character = Character("char_name")``. So I want my character to be a stickman. Don't ask why, I just want.
+
+After we define our character, it's time to finally create a label. What is it? Label is a point in a story to which you can jump later on. ``label mylabelname:``
+
+For compatibility purpose you should add your unique prefix to label names so that there are never two label with the same name (it'll throw an error).
+
+Important thing to note is that dreams need special label name to autodetect (``d_mydream_0``, starts with ``d_``, then your own dream (with prefix) name, and at the end :ref:`dream type<tab_dreams>`. ``_0``, 0 stands for normal or positive dream).
+I'll name my dream as ``d_Sample_Dream_0``, when dream name is converted to text ``_`` is changed to empty space.
+
+`Labels & Control Flow <https://www.renpy.org/doc/html/label.html?highlight=labels>`_
+`Defining Characters <https://www.renpy.org/doc/html/dialogue.html?highlight=character#defining-character-objects>`_
+
+After all we are all set up.
+Let's finally use this movie, we can display it with ``show`` or ``scene`` statement.
+What's the difference? Scene removes previous images, it's good to use it if we have image covering whole screen and we don't want anything else to display.
+Our movie covers the whole screen and we don't want other images or movies on screen so let's use ``scene my_movie_name``. You can add transiton `` with fade`` or `` with dissolve``.
+
+`Show & Scene statements <https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement>`_
+
+.. image:: tutorial_6.webp
+
+|
+
+Alright, Now we need to write the scene, dialogue, choices, etc. This all is covered below.
+
+`Dialogue and Narration <https://www.renpy.org/doc/html/dialogue.html?highlight=dialogues>`_
+
+.. image:: tutorial_7.webp
+
+|
+
+Dream is ready!
+
+:ref:`Dreams<tab_dreams>`
+
+|
+|
+
+Step 4. Adding a card
+---------------------
+
+Now that we have a dream, it's time to do something a little more complex. Let's make a card.
+
+We need to initialize a card at init time so we start by adding (outside of label) ``init 11 python:``.
+As you might have noticed, when we use ``:`` the lines below are indented.
+Basically speaking it means that below code belongs to the thing with ``:``.
+Indentation shows the code this belonging.
+In python indentations are the key unlike in most other languages where they are just cosmetic.
+
+Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 & 999, so you should use init 11 to init 998.
+The higher the init the later it loads (and overwrites previous changes if needed). Unless you know what you're doing, don't use reserved init numbers.
+
+Finally, after this sermon comes a time to create our card!
+We need to start by defining class like this ``class OurClassName(Card):`` of course change OurClassName to your name.
+You can name it as ``class prefix_cardname(Card):``. More info on this in comments in example script down below.
+
+As you probably noticed (or not) class definition ends with ``:``, so does it mean next line will be indented?
+Of course it'll be indented, didn't you read my sermon? If it's not we will see an error when we try to launch our game.
+
+Now the indented code -> ``def __init__(self):``. ``def methodName():`` is defining a method or function.
+This is method commonly used in python as a constructor, it'll assign attributes to our card.
+You probably took note of ``:`` at the end.
+Does it mean there will be second indentation? Yes! Great, right? Indentations look neat.
+
+.. image:: tutorial_8.webp
+
+|
+
+So in ``def __init__(self):`` we need to assign attributes to our class, or as you prefer variables.
+When assigning and using these attributes within our class we need to type ``self.`` before them.
+Like this ``self.name = "MyCard"``.
+
+Cards have those attributes:
+
+* ``name`` - self explaining
+* ``sp`` - spirituality cost
+* ``ca`` - category:
+
+  * Offensive
+  * Defensive
+  * Ability
+  * Power
+  * Tarot
+
+* ``ra`` - rarity:
+
+  * Ordinary
+  * Extraordinary
+  * Mythical
+  * Angelic
+  * Divine
+
+* ``tip`` - card's tooltip to display on hover (explained in example script)
+
+.. image:: tutorial_9.webp
+
+|
+
+So our card now can be created, but it still does nothing.
+Let's change that.
+We need to create ``play()`` method.
+Like this ``def play(self, **kwargs):``.
+
+Remember to return to indentation depth of class! In other words ``def play`` needs to be at the same indentation as ``def __init__``.
+
+Now you need to let your creativity take over. To attack use ``self.atk(dmg, enemy)`` change damage to number you want, like this ``self.atk(5, enemy)``.
+
+To change status effects use ``buff()`` method. It works like this ``player.buff(buff, amt, minus = True)``.
+By default status effect can be lowered below 0, to make it stop at 0 descrease effects with minus = False.
+Let's say you want to decrease enemy's Vulnerable effect by 5, but you don't want it to be below 0.
+It works like that ``enemy.buff("Vulnerable", -5, False)``.
+
+Important thing is you need to add ``return`` at the end of method.
+It signals the program that it's the end of method.
+You can use it like this ``return "exhaust"`` if you want to exhaust a card, otherwise use just ``return``.
+
+Example below.
+
+:ref:`Cards<tab_cards>`
+:ref:`List of status effects<tab_cards_effects>`
+
+.. image:: tutorial_10.webp
+
+|
+
+We have a working card. Nice! One thing.. how do you get it?? It's not like a dream, which happens randomly.
+
+This is actually the easiest part of this tutorial. Just read the comments in the example below, nothing more is needed to be said.
+
+:ref:`Lootlists<tab_lootlists>`
+
+.. image:: tutorial_11.webp
+
+|
+
+
+Remember to create your card image!
+Check documentation's Cards to get card templates and how to use them.
+Paint is enough to make a card, better programs (like free paint.net I'm using) are welcome, though.
+The best for a job like this would probably be Corel or PhotoShop.
+
+|
+|
+
+Step 5. Test with console
+-------------------------
+
+Done!
+
+Our card and dream were successfully created!
+Now what remains is to check them in-game.
+
+Load your save and open the console by pressing SHIFT + O
+
+To try our dream -> jump d_Sample_Dream_0
+Change dream label to your label
+
+To add our card to hand -> inventory.cards.append(Sample_Slice())
+Again, change Sample_Slice to your card's class name
+
+Congratulations!
+You've officially made your first mod for the Astral Lust!
+Even Grace is proud of you!
+
+Now that you know how, you can add more, check the documentation for info how to do that.
+Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)
+
+Don't hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.
+
+|
+|
+
+Final Script - Comments
+-----------------------
+
+The same code can be found in ``game/mods/Sample Mod/sample_mod.rpy``.
 
 .. code-block::
-
-  # define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p
-  image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
-
-.. code-block::
-
-  # define new character with name Stickman and light blue colored name - Hex(#216ba2)
-  define sample_stickman = Character("Stickman", who_color = "#216ba2")
-
-.. code-block:: python
-  :class: dropdown
 
   # define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p
   image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
@@ -226,8 +403,13 @@ So we have our movie, let's define it in the script, it needs to be defined outs
       #
       # Don't hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.
 
-.. code-block:: python
-  :class: dropdown
+|
+|
+
+Final Script - Clean
+--------------------
+
+.. code-block::
 
   image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
 

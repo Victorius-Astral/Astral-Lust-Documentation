@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Enemies &mdash; Astral Lust  documentation</title>
+  <title>Lootlists &mdash; Astral Lust  documentation</title>
   
 
   
@@ -38,9 +38,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Characters Emotions" href="../graphics/emotions.html" />
-    <link rel="prev" title="Dreams" href="dreams.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,16 +84,11 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started - Astral Lust Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Enemies</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#create-new-enemy">Create new enemy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#add-enemy-to-generic-combat">Add enemy to generic combat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-change-lootlist-and-droplist">Create/Change lootlist and droplist</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="enemies.html">Enemies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
@@ -150,13 +143,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Enemies</li>
+      <li>Lootlists</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/modding/enemies.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/modding/lootlists.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -169,52 +162,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="enemies">
-<span id="tab-enemies"></span><h1>Enemies<a class="headerlink" href="#enemies" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="create-new-enemy">
-<h2>Create new enemy<a class="headerlink" href="#create-new-enemy" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="add-enemy-to-generic-combat">
-<h2>Add enemy to generic combat<a class="headerlink" href="#add-enemy-to-generic-combat" title="Permalink to this headline">¶</a></h2>
-<p>You can add new enemies to the generic combat by adding your enemy object to the list. There are four lists for enemies:</p>
+  <div class="section" id="lootlists">
+<span id="tab-lootlists"></span><h1>Lootlists<a class="headerlink" href="#lootlists" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="enemies">
+<h2>Enemies<a class="headerlink" href="#enemies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>gen_enemies_normal</p></li>
-<li><p>gen_enemies_elite</p></li>
-<li><p>gen_enemies_boss</p></li>
-<li><p>gen_enemies_elite_boss</p></li>
+<li><p>“werewolf”: [Lycantrophy(), Bite(), Empower(), Dodge(), Slash(), Healing(), Greater_Healing(), Regrow_Limbs()],</p></li>
+<li><p>“bandits_melee”: [Slash(), Retaliate(), Kick(), Blind(), Guard(), Headbutt(), Stab(), Flurry()],</p></li>
+<li><p>“bandits_guns”: [Bulletstorm(), Dodge(), Shot(), Kick(), Take_Cover(), Strike()],</p></li>
+<li><p>“bandits”: [Bulletstorm(), Dodge(), Shot(), Kick(), Take_Cover(), Strike(), Slash(), Retaliate(), Flurry(), Blind(), Guard(), Headbutt(), Stab()],</p></li>
+<li><p>“spider”: [Bite(), Spit_Poison(), Poisonous_Bite(), Hide_in_the_Shadows(), Lunge()],</p></li>
+<li><p>“scavengers”: [Slash(), Retaliate(), Blind(), Guard(), Headbutt(), Shot(), Take_Cover()],</p></li>
+<li><p>“bandit_melee”: [Slash(), Blind(), Retaliate(), Strike(), Defend(), Kick(), Guard(), Stab(), Headbutt()],</p></li>
+<li><p>“bandit_melee_girl”: [Slash(), Blind(), Retaliate(), Strike(), Defend(), Kick(), Guard(), Stab(), Headbutt(), Seduce(), Flirtatious_Look()],</p></li>
+<li><p>“orc”: [Fury(), Roar(), Flurry(), Slash(), Retaliate(), Kick(), Freedom_in_Death(), Empower(), Guard(), Headbutt(), Sharpening(), Horde_Weapons(), Strike(), Defend()],</p></li>
+<li><p>“manticore”: [Fury(), Roar(), Spit_Poison(), Poisonous_Bite(), Lunge(), Headbutt(), Dodge(), Healing(), Bite(), Retaliate(), Stab(), Antidote()],</p></li>
+<li><p>“flamingo”: [Mutate(), Bite(), Dodge(), Enfeeble(), Infection(), Despair()],</p></li>
+<li><p>“faceless_giant”: [Roar(), Fury(), Terror(), Despair(), Crush(), Sweep(), Giant(), Madness(), Insanity(), Faceless(), Veil_of_Shadows(), Kick(), Freedom_in_Death(), Guard(), Hide_in_the_Shadows()],</p></li>
+<li><p>“faceless”: [Fury(), Madness(), Insanity(), Faceless(), Veil_of_Shadows(), Freedom_in_Death(), Guard(), Hide_in_the_Shadows()],</p></li>
+<li><p>“devourer_giant”: [Roar(), Fury(), Terror(), Despair(), Crush(), Sweep(), Giant(), Madness(), Insanity(), Devour(), Insatiable_Hunger(), Kick(), Freedom_in_Death(), Bite(), Guard()],</p></li>
+<li><p>“devourer”: [Fury(), Madness(), Insanity(), Devour(), Insatiable_Hunger(), Freedom_in_Death(), Bite(), Guard()],</p></li>
+<li><p>“succubus”: [Seduce(), Flirtatious_Look(), Slash(), Insatiable_Lust(), Guard(), Freedom(), Flurry(), Enfeeble(), Hypnotise(), Cease_Fire_Treaty()],</p></li>
+<li><p>“cultist”: [Miracle(), Slash(), Kick(), Empower(), Hide_in_the_Shadows(), Freedom_in_Death(), Stab(), Hypnotise(), Outside(), Terror(), Despair(), Madness(), Insanity(), Veil_of_Shadows(), Ritual(), Aharon(), Sacrifice(), Dodge()],</p></li>
+<li><p>“crab”: [Stone_Skin(), Strike(), Defend(), Regrow_Limbs(), Roar(), Fury(), Mutate(), Terror(), Sweep(), Unshakable(), Retaliate(), Guard()],</p></li>
+<li><p>“dragon”: [Fireborn(), Fireball(), Dragon_Roar(), Fire_Breath(), Roar(), Terror(), Sweep(), Giant(), Bite(), Crush(), Guard(), Healing(), Retaliate()],</p></li>
+<li><p>“stickman”: [Terror(), Madness(), Kick(), Freedom_in_Death(), Mutate(), Guard(), Stab(), Lunge(), Headbutt()],</p></li>
+<li><p>“ghouls”: [Bite(), Poisonous_Bite(), Dodge(), Healing(), Lunge(), Antidote(), Slash(), Retaliate(), Devour()]</p></li>
 </ul>
-<p>They differ by encounter chance. The stronger the player the closer the chances are to being equal.</p>
-<p><code class="docutils literal notranslate"><span class="pre">gen_enemies_normal.append(My_Enemy())</span></code></p>
 </div>
-<div class="section" id="create-change-lootlist-and-droplist">
-<h2>Create/Change lootlist and droplist<a class="headerlink" href="#create-change-lootlist-and-droplist" title="Permalink to this headline">¶</a></h2>
-<p>Lootlist contains only cards</p>
-<p>Droplist contains only items</p>
-<p>To create your lootlist you need to add your <code class="docutils literal notranslate"><span class="pre">lootlist:</span> <span class="pre">loot</span></code> to the <code class="docutils literal notranslate"><span class="pre">lootlist</span></code> dictionary.</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_lootlist</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="c1"># Replace existing lootlist</span>
-    <span class="s2">&quot;werewolf&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">My_Card</span><span class="p">(),</span> <span class="o">...</span><span class="p">],</span>
-
-    <span class="c1"># New lootlist</span>
-    <span class="s2">&quot;my_loot&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">Aharon</span><span class="p">(),</span> <span class="n">My_Card2</span><span class="p">(),</span> <span class="o">...</span><span class="p">]</span>
-    <span class="p">}</span>
-
-<span class="c1"># Add &amp; replace lootlist found in my_lootlist</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">my_lootlist</span><span class="p">:</span>
-    <span class="n">lootlist</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">x</span><span class="p">:</span> <span class="n">my_lootlist</span><span class="p">[</span><span class="n">x</span><span class="p">]})</span>
-</pre></div>
-</td></tr></table></div>
-<p>Above code adds your lootlist to the game and replaces the ones in game with your replacements</p>
+<div class="section" id="traders">
+<h2>Traders<a class="headerlink" href="#traders" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>“devil_abi”: [Miracle(), Fireborn(), Lycantrophy(), Vampirism(), Freedom(), Freedom_in_Death(), Cease_Fire_Treaty(), Outside(), Terror(), Despair(), Crush(), Madness(), Insanity(), Insatiable_Lust(), Aharon(), Dragon_Roar()],</p></li>
+<li><p>“tarot”: [The_Fool(), The_Magican(), The_High_Priestess(), The_Empress(), The_Emperor(), The_Hierophant(), The_Lovers(), The_Chariot(), Justice(), The_Hermit(), Wheel_of_Fortune(), Strength(), The_Hanged_Man(), Death(), Temperance(), The_Devil(), The_Tower(), The_Star(), The_Moon(), The_Sun(), Judgement(), The_World()]</p></li>
+</ul>
 </div>
 </div>
 
@@ -223,10 +204,6 @@
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../graphics/emotions.html" class="btn btn-neutral float-right" title="Characters Emotions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="dreams.html" class="btn btn-neutral float-left" title="Dreams" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 
