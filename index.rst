@@ -14,17 +14,19 @@ Welcome to Astral Lust's documentation!
    modding/customize
    modding/cards
    modding/dreams
+   graphics/images
    graphics/gui
    modding/enemies
    modding/lootlists
    modding/triggers
+   modding/prisoners
+   modding/traders
    graphics/emotions
    changelogs/modding
    changelogs/game
    changelogs/full
    changelogs/debug
    changelogs/dreams
-
 
 Indices and tables
 ==================

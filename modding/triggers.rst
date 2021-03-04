@@ -90,7 +90,7 @@ I've made all my icons here: `Game-icons.net <https://game-icons.net/>`_
 
 It's a great site that allows you to download and customize over 4000 game icons.
 The perfect resolution would be 128x128 pixels.
-It's a good balance between quality and performance. 
+It's a good balance between quality and performance.
 Game will resize the icon on its own depending on 4K or 1080p game version.
 
 For now your icon need to be put in ``game/images/Icons/``. I plan to add support for your own paths, in your mod's folder.
@@ -104,8 +104,8 @@ List of triggers
 Update
 ~~~~~~
 
-* ``"after_load_start"`` - First thing on loading saved
-* ``"after_load_end"`` - The end of save loading
+* ``"after_load_start"`` - First thing on loading saved, inside python block
+* ``"after_load_end"`` - The end of save loading, outside of python block
 
 |
 

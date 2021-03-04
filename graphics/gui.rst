@@ -3,7 +3,17 @@ GUI Configuration
 
 As you know, there are two official versions of the Astral Lust: 4K and 1080p.
 
-While there is a lot of
+You can change gui sizes using below code:
+
+.. code-block:: python
+  :linenos:
+
+  init 11 python:
+
+    # Change 10 to amount of pixels you want,
+    # choose the size that would be in 4K version (even if you do it for 1080p version),
+    # game will automatically resize it according to game version.
+    gui.variable = int(math.ceil(10 / gui.game_mode))
 
 |
 |
@@ -20,7 +30,7 @@ To add new menu to extended menu (top right corner) we need to do the following 
 * Create menu's screen
 * Add our icon and screen to ``gui_menus`` as a pair
 
-You can get your icon from `Game-icons.net<https://game-icons.net/>`_ or `Iconpacks.net <https://www.iconpacks.net/>`_.
+You can get your icon from `Game-icons.net <https://game-icons.net/>`_ or `Iconpacks.net <https://www.iconpacks.net/>`_.
 Of course if you feel creative feel free to make your icon, yourself.
 Icons should always have 128x128 resolution, to be clear enough, game will rescale it on its own according to 4K or 1080p game version.
 
@@ -29,7 +39,7 @@ You can put them wherever you want. I would recommend your own mod's folder.
 Now that the icon is waiting, ready to be displayed, we need to create our in-game screen.
 Check documentation below to learn how to make screens. You can always only modify my example, but it's good to be creative.
 
-`Screens and Screen Language<https://www.renpy.org/doc/html/screens.html?highlight=screens#screens-and-screen-language>`_
+`Screens and Screen Language <https://www.renpy.org/doc/html/screens.html?highlight=screens#screens-and-screen-language>`_
 
 .. code-block:: python
   :linenos:
@@ -68,7 +78,7 @@ Check documentation below to learn how to make screens. You can always only modi
 
 |
 
-* `Screens and Screen Language<https://www.renpy.org/doc/html/screens.html?highlight=screens#screens-and-screen-language>`_
+* `Screens and Screen Language <https://www.renpy.org/doc/html/screens.html?highlight=screens#screens-and-screen-language>`_
 * `Screens and Python <https://www.renpy.org/doc/html/screen_python.html?highlight=screen#screens-and-python>`_
 * `Style Properties <https://www.renpy.org/doc/html/style_properties.html#style-properties>`_
 * `Displayables <https://www.renpy.org/doc/html/displayables.html#displayables>`_
@@ -129,14 +139,57 @@ Check documentation below to learn how to make screens. You can always only modi
             # Otherwise show rpg_journal screen
             use rpg_journal
 
+Now we need to only add our icon and screen to ``gui_menus``.
+
+.. code-block:: python
+
+  init 11 python:
+
+    # First we add icon path
+    gui_menus.append("pathToIcon/icon ouricon.webp")
+
+    # Then we add screen this icon launches
+    gui_menus.append("our_screen")
+
+    # For example, we have screen rpg_sample_menu and icon in game/mods/Sample Mod, the icon is sample.webp
+    # We will execute this example like this:
+    gui_menus.append("game/mods/Sample Mod/icon sample.webp")
+    gui_menus.append("rpg_sample_menu")
+
 |
 |
 
-Configure AL GUI
-----------------
+Change menu icons
+~~~~~~~~~~~~~~~~~
+
+To change existing menu icons you need to change it's entry in ``gui_menus``.
+
+.. code-block:: python
+  :linenos:
+
+  # This is the list of vanilla icons
+  define gui_menus = [ # Menus to appear on extended menu, | icon_path, screen to show on click
+    # First line is [0], [1]. Next line is [2], [3], etc.
+    "Icons/icon backpack.webp", "rpg_menu_backpack",
+    "Icons/icon character.webp", "rpg_menu_character",
+    "Icons/icon cards.webp", "show_deck",
+    "Icons/icon characteristics.webp", "rpg_menu_characteristics",
+    "Icons/icon quests.webp", "rpg_menu_quests",
+    "Icons/icon girls.webp", "rpg_menu_girls"
+  ]
+
+  # Change it like this
+  init 11 python:
+
+    # Icon, you need to refer to index number, it starts with [0], then it increases by one after every | , |.
+    gui_menus[0] = "newiconspath/icon"
+
+    # Screen to show on click
+    gui_menus[1] = "my_new_screen"
 
 |
 |
+
 List of all GUI variables
 -------------------------
 
@@ -204,38 +257,38 @@ Collectibles
   ## Collectibles
   ## Example: : [int(math.ceil( / gui.game_mode)), int(math.ceil( / gui.game_mode))],
   define gui.col = {  # col nr: [xpos, ypos]
-      # player
-      0: [int(math.ceil(260 / gui.game_mode)), int(math.ceil(693 / gui.game_mode))],
-      1: [int(math.ceil(1747 / gui.game_mode)), int(math.ceil(310 / gui.game_mode))],
-      2: [int(math.ceil(3046 / gui.game_mode)), int(math.ceil(2123 / gui.game_mode))],
-      # lexi
-      3: [int(math.ceil(114 / gui.game_mode)), int(math.ceil(1138 / gui.game_mode))],
-      4: [int(math.ceil(1876 / gui.game_mode)), int(math.ceil(642 / gui.game_mode))],
-      5: [int(math.ceil(3600 / gui.game_mode)), int(math.ceil(1939 / gui.game_mode))],
-      # f1 (a & b)
-      6: [int(math.ceil(1277 / gui.game_mode)), int(math.ceil(958 / gui.game_mode))],
-      7: [int(math.ceil(1900 / gui.game_mode)), int(math.ceil(739 / gui.game_mode))],
-      8: [int(math.ceil(1341 / gui.game_mode)), int(math.ceil(608 / gui.game_mode))],
-      # grace
-      9: [int(math.ceil(2445 / gui.game_mode)), int(math.ceil(500 / gui.game_mode))],
-      10: [0, int(math.ceil(155 / gui.game_mode))],
-      11: [int(math.ceil(441 / gui.game_mode)), int(math.ceil(1476 / gui.game_mode))],
-      # alice
-      12: [int(math.ceil(3676 / gui.game_mode)), int(math.ceil(1146 / gui.game_mode))],
-      13: [int(math.ceil(1363 / gui.game_mode)), int(math.ceil(109 / gui.game_mode))],
-      14: [int(math.ceil(1755 / gui.game_mode)), int(math.ceil(2037 / gui.game_mode))],
-      # lobby
-      15: [int(math.ceil(3570 / gui.game_mode)), int(math.ceil(620 / gui.game_mode))],
-      16: [int(math.ceil(710 / gui.game_mode)), int(math.ceil(555 / gui.game_mode))],
-      17: [int(math.ceil(1752 / gui.game_mode)), int(math.ceil(236 / gui.game_mode))],
-      # library
-      18: [int(math.ceil(100 / gui.game_mode)), int(math.ceil(2066 / gui.game_mode))],
-      19: [int(math.ceil(3672 / gui.game_mode)), int(math.ceil(1086 / gui.game_mode))],
-      20: [int(math.ceil(3429 / gui.game_mode)), int(math.ceil(1144 / gui.game_mode))],
-      21: [int(math.ceil(1022 / gui.game_mode)), int(math.ceil(881 / gui.game_mode))],
-      22: [int(math.ceil(1668 / gui.game_mode)), int(math.ceil(411 / gui.game_mode))],
-      23: [int(math.ceil(2196 / gui.game_mode)), int(math.ceil(665 / gui.game_mode))],
-      24: [int(math.ceil(2411 / gui.game_mode)), int(math.ceil(647 / gui.game_mode))]
+    # player
+    0: [int(math.ceil(260 / gui.game_mode)), int(math.ceil(693 / gui.game_mode))],
+    1: [int(math.ceil(1747 / gui.game_mode)), int(math.ceil(310 / gui.game_mode))],
+    2: [int(math.ceil(3046 / gui.game_mode)), int(math.ceil(2123 / gui.game_mode))],
+    # lexi
+    3: [int(math.ceil(114 / gui.game_mode)), int(math.ceil(1138 / gui.game_mode))],
+    4: [int(math.ceil(1876 / gui.game_mode)), int(math.ceil(642 / gui.game_mode))],
+    5: [int(math.ceil(3600 / gui.game_mode)), int(math.ceil(1939 / gui.game_mode))],
+    # f1 (a & b)
+    6: [int(math.ceil(1277 / gui.game_mode)), int(math.ceil(958 / gui.game_mode))],
+    7: [int(math.ceil(1900 / gui.game_mode)), int(math.ceil(739 / gui.game_mode))],
+    8: [int(math.ceil(1341 / gui.game_mode)), int(math.ceil(608 / gui.game_mode))],
+    # grace
+    9: [int(math.ceil(2445 / gui.game_mode)), int(math.ceil(500 / gui.game_mode))],
+    10: [0, int(math.ceil(155 / gui.game_mode))],
+    11: [int(math.ceil(441 / gui.game_mode)), int(math.ceil(1476 / gui.game_mode))],
+    # alice
+    12: [int(math.ceil(3676 / gui.game_mode)), int(math.ceil(1146 / gui.game_mode))],
+    13: [int(math.ceil(1363 / gui.game_mode)), int(math.ceil(109 / gui.game_mode))],
+    14: [int(math.ceil(1755 / gui.game_mode)), int(math.ceil(2037 / gui.game_mode))],
+    # lobby
+    15: [int(math.ceil(3570 / gui.game_mode)), int(math.ceil(620 / gui.game_mode))],
+    16: [int(math.ceil(710 / gui.game_mode)), int(math.ceil(555 / gui.game_mode))],
+    17: [int(math.ceil(1752 / gui.game_mode)), int(math.ceil(236 / gui.game_mode))],
+    # library
+    18: [int(math.ceil(100 / gui.game_mode)), int(math.ceil(2066 / gui.game_mode))],
+    19: [int(math.ceil(3672 / gui.game_mode)), int(math.ceil(1086 / gui.game_mode))],
+    20: [int(math.ceil(3429 / gui.game_mode)), int(math.ceil(1144 / gui.game_mode))],
+    21: [int(math.ceil(1022 / gui.game_mode)), int(math.ceil(881 / gui.game_mode))],
+    22: [int(math.ceil(1668 / gui.game_mode)), int(math.ceil(411 / gui.game_mode))],
+    23: [int(math.ceil(2196 / gui.game_mode)), int(math.ceil(665 / gui.game_mode))],
+    24: [int(math.ceil(2411 / gui.game_mode)), int(math.ceil(647 / gui.game_mode))]
   }
 
 |
