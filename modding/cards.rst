@@ -67,7 +67,7 @@ You can make cards in any image editor like paint, paint.net, gimp, photoshoot, 
 Status Effects
 --------------
 
-Status effects are granted using buff(), it takes three arguments:
+Status effects are granted using ``buff()``, it takes three arguments:
 
 * ``buff`` - required, name of status effect - string,
 * ``amt`` - required, status effect will be changed by this amount - depends on buff, either integer or boolean,
@@ -80,6 +80,8 @@ Status effects are granted using buff(), it takes three arguments:
             player.buff("Fire Immunity", True)
             enemy.buff("Ressurect", 1)
             return
+
+:ref:`Make new status effect <tab_triggers_effects>`
 
 |
 |
