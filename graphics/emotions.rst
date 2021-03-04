@@ -1,5 +1,5 @@
-Characters Emotions
-===================
+Character Emotions
+==================
 
 Emotions are images with alpha channel, they are used when speaking with girls in rooms, etc. You can use them with ``show``.
 
