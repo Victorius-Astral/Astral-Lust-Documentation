@@ -28,6 +28,7 @@ Useful Links
 
    modding/get_started
    modding/customize
+   console/basics
    modding/cards
    modding/dreams
    graphics/images

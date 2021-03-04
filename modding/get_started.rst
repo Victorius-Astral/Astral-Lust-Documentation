@@ -6,6 +6,8 @@ Welcome to Astral Lust modding tutorial! In here I'll explain how to create your
 |
 |
 
+.. _tab_tutorial:
+
 Step 1. Preparation for modding
 -------------------------------
 

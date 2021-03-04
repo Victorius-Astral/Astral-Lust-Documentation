@@ -54,6 +54,8 @@ Changing & adding lootlists
 |
 |
 
+`Create new cards <tab_cards>`_
+
 Cards - Enemies
 ---------------
 
