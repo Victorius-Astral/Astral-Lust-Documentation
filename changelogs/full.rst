@@ -1,6 +1,74 @@
 Changelog - Full
 ================
 
+0.1.3a
+------
+
+Added
+~~~~~
+
+* around 20 images
+* You can check drawers in player's room now
+* alice's shelf
+* now you can read the document on Lexi's desk
+* burning immunity status effect
+* Sample Mod, it adds one weird dream and a nice card to drop from melee bandits
+* transitions to praying and mirror
+
+Changed
+~~~~~~~
+
+* noon -> afternoon
+* succubus threesome talk renders
+* one grace's tip to make it more clear on time
+* you can shot at the sky with Shot card now
+* buffed dragon, added ultimate moves
+* terror now has 50% chance to trigger
+* improved animation of some scenes
+
+Fixed
+~~~~~
+
+* over a hundred spelling mistakes or improved the dialogue's flow, thanks to Strectmar's initial screening
+* error on trying to save the woman
+* possible error when fighting ghouls
+* error on generic combat after loading old save
+* error on Mina noticing us
+* enemies life not being reset in random combat encounter
+* stomping sound continuing after choosing to hide in encounter with chimera
+* dream end dialogue triggering twice
+* possible bug causing dialogue window do disappear only after combat has started
+* terror chance of losing a turn in tooltip
+* error when fighting dragon
+* mysterious trader corruption decrease needed 2 coins
+* spelling mistake in one of Alice's question
+* Alice's is no longer so nice to give you a foot job before answering her questions
+* dragon card check
+* mina's repeatable boob job
+* now you can't change girl's petname at 24 trust
+
+Mods - Added
+~~~~~~~~~~~~
+
+* Sample Mod to mods/ folder, check it, it's heavily commented to explain everything going on
+* after_load _start & _end triggers
+* triggers during combat initialization
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* for triggers you can now either use a string or (much better for performance) use compiled (at init time) code object (check documentation's trigger tab)
+* now adding enemies to random combat encounter requires to add them as strings instead of objects
+* now terror tooltip reflects changes to terror chance properly
+
+Mods - Fixed
+~~~~~~~~~~~~
+
+* spelling mistakes in a few image names, to make it easier for you to not use wrong name
+
+|
+|
+
 0.1.3
 -----
 
@@ -458,4 +526,4 @@ Fixed
 0.1.0
 -----
 
-initial release
+Initial Release

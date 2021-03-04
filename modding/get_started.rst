@@ -92,9 +92,10 @@ I'll name my dream as ``d_Sample_Dream_0``, when dream name is converted to text
 After all we are all set up.
 Let's finally use this movie, we can display it with ``show`` or ``scene`` statement.
 What's the difference? Scene removes previous images, it's good to use it if we have image covering whole screen and we don't want anything else to display.
-Our movie covers the whole screen and we don't want other images or movies on screen so let's use ``scene my_movie_name``. You can add transiton `` with fade`` or `` with dissolve``.
+Our movie covers the whole screen and we don't want other images or movies on screen so let's use ``scene my_movie_name``. You can add transiton ``with fade`` or ``with dissolve``.
 
 `Show & Scene statements <https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement>`_
+`Transitions <https://www.renpy.org/doc/html/transitions.html>`_
 
 .. image:: tutorial_6.webp
 
@@ -237,6 +238,11 @@ Change dream label to your label
 To add our card to hand -> inventory.cards.append(Sample_Slice())
 Again, change Sample_Slice to your card's class name
 
+`Developer Tools <https://www.renpy.org/doc/html/developer_tools.html?highlight=console#developer-tools>`_
+
+|
+|
+
 Congratulations!
 You've officially made your first mod for the Astral Lust!
 Even Grace is proud of you!
@@ -245,6 +251,8 @@ Now that you know how, you can add more, check the documentation for info how to
 Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)
 
 Don't hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.
+
+:ref:`Easy to tweak variables<tab_customize>`
 
 |
 |

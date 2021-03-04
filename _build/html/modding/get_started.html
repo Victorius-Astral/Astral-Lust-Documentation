@@ -101,6 +101,7 @@
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enemies.html">Enemies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lootlists.html">Lootlists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="triggers.html">Triggers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
@@ -241,8 +242,9 @@ I’ll name my dream as <code class="docutils literal notranslate"><span class="
 <p>After all we are all set up.
 Let’s finally use this movie, we can display it with <code class="docutils literal notranslate"><span class="pre">show</span></code> or <code class="docutils literal notranslate"><span class="pre">scene</span></code> statement.
 What’s the difference? Scene removes previous images, it’s good to use it if we have image covering whole screen and we don’t want anything else to display.
-Our movie covers the whole screen and we don’t want other images or movies on screen so let’s use <code class="docutils literal notranslate"><span class="pre">scene</span> <span class="pre">my_movie_name</span></code>. You can add transiton `` with fade`` or `` with dissolve``.</p>
-<p><a class="reference external" href="https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement">Show &amp; Scene statements</a></p>
+Our movie covers the whole screen and we don’t want other images or movies on screen so let’s use <code class="docutils literal notranslate"><span class="pre">scene</span> <span class="pre">my_movie_name</span></code>. You can add transiton <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">fade</span></code> or <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">dissolve</span></code>.</p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/displaying_images.html?highlight=image#show-statement">Show &amp; Scene statements</a>
+<a class="reference external" href="https://www.renpy.org/doc/html/transitions.html">Transitions</a></p>
 <img alt="../_images/tutorial_6.webp" src="../_images/tutorial_6.webp" />
 <div class="line-block">
 <div class="line"><br /></div>
@@ -360,6 +362,11 @@ Now what remains is to check them in-game.</p>
 Change dream label to your label</p>
 <p>To add our card to hand -&gt; inventory.cards.append(Sample_Slice())
 Again, change Sample_Slice to your card’s class name</p>
+<p><a class="reference external" href="https://www.renpy.org/doc/html/developer_tools.html?highlight=console#developer-tools">Developer Tools</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 <p>Congratulations!
 You’ve officially made your first mod for the Astral Lust!
 Even Grace is proud of you!</p>
@@ -437,54 +444,54 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
         <span class="c1"># Init is a so called constructor, as the name suggests it&#39;s used to construct our card, so our card will be created with attributes given below.</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-            <span class="c1"># card name / .webp image name. This image needs to be put (for now) in game/images/Cards/ folder.</span>
-            <span class="c1"># In the future I&#39;m going to add compatibility for adding custom paths.</span>
-            <span class="c1"># To make sure this card is compatible with other mods I&#39;ve added [[Sample] prefix to card name.</span>
-            <span class="c1"># Its image need to be | [[Sample] Slice.webp | RenPy sees double [[] as just [] in code, using [] in RenPy&#39;s string means you store a varaible there.</span>
-            <span class="c1"># We&#39;ll use double [[ to avoid possible issues.</span>
-            <span class="c1"># While [[Sample] will show when destroying card, I&#39;ll change it later, so it&#39;s not shown.</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;[[Sample] Slice&quot;</span>
+          <span class="c1"># card name / .webp image name. This image needs to be put (for now) in game/images/Cards/ folder.</span>
+          <span class="c1"># In the future I&#39;m going to add compatibility for adding custom paths.</span>
+          <span class="c1"># To make sure this card is compatible with other mods I&#39;ve added !Sample! prefix to card name.</span>
+          <span class="c1"># Its image need to be | !Sample! Slice.webp | You should add your prefix (nickname) using !Prefix! like me, I plan to add some functionality to this.</span>
+          <span class="c1"># While !Sample! will show when destroying card, I&#39;ll change it later, so it&#39;s not shown.</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;!Sample! Slice&quot;</span>
 
-            <span class="c1"># spirituality cost</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">3</span>
+          <span class="c1"># spirituality cost</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">3</span>
 
-            <span class="c1"># Card category -&gt; Offensive, Defensive, Ability, Power, Tarot</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Offensive&quot;</span> <span class="c1"># category</span>
+          <span class="c1"># Card category -&gt; Offensive, Defensive, Ability, Power, Tarot</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Offensive&quot;</span> <span class="c1"># category</span>
 
-            <span class="c1"># Card rarity, from the lowest to the highest -&gt; Ordinary, Extraordinary, Mythical, Angelic, Divine</span>
-            <span class="c1"># Special rarities -&gt; Tarot, Unique (for advanced users)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Mythical&quot;</span>
+          <span class="c1"># Card rarity, from the lowest to the highest -&gt; Ordinary, Extraordinary, Mythical, Angelic, Divine</span>
+          <span class="c1"># Special rarities -&gt; Tarot, Unique (for advanced users)</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Mythical&quot;</span>
 
-            <span class="c1"># Card tooltip, you can write what you want in tooltip or use |  self.tip = None  | if there is no tooltip for your card.</span>
-            <span class="c1"># General formula is &#39;&gt;   FirstBuff:\n&#39;+str(player.eff[&quot;FirstBuff&quot;][1]) + &#39;\n\n&gt;   SecondBuff:\n&#39;+str(player.eff[&quot;SecondBuff&quot;][1])</span>
-            <span class="c1"># You can add next buffs by adding to the end this code | + &#39;\n\n&gt;   NextBuff:\n&#39;+str(player.eff[&quot;NextBuff&quot;][1])</span>
-            <span class="c1"># Naturally you need to change FirstBuff, etc. to names of buffs, for all available buffs check documentation&#39;s Cards category</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">=</span> <span class="s1">&#39;&gt;   Strength:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Strength&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&gt;   Bleeding:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+          <span class="c1"># Card tooltip, you can write what you want in tooltip or use |  self.tip = None  | if there is no tooltip for your card.</span>
+          <span class="c1"># General formula is &#39;&gt;   FirstBuff:\n&#39;+str(player.eff[&quot;FirstBuff&quot;][1]) + &#39;\n\n&gt;   SecondBuff:\n&#39;+str(player.eff[&quot;SecondBuff&quot;][1])</span>
+          <span class="c1"># You can add next buffs by adding to the end this code | + &#39;\n\n&gt;   NextBuff:\n&#39;+str(player.eff[&quot;NextBuff&quot;][1])</span>
+          <span class="c1"># Naturally you need to change FirstBuff, etc. to names of buffs, for all available buffs check documentation&#39;s Cards category</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">=</span> <span class="s1">&#39;&gt;   Strength:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Strength&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&gt;   Bleeding:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
 
-            <span class="c1"># It&#39;s a good practice to notify players the mod the card is from, that way if they encounter bugs they can notify you.</span>
-            <span class="c1"># self.tip += &#39;&#39; mean we want to add text to what is already in there.</span>
-            <span class="c1"># \n is a tag for a new line, so below text will add something like this:</span>
+          <span class="c1"># It&#39;s a good practice to notify players the mod the card is from, that way if they encounter bugs they can notify you.</span>
+          <span class="c1"># self.tip += &#39;&#39; mean we want to add text to what is already in there.</span>
+          <span class="c1"># \n is a tag for a new line, so below text will add something like this:</span>
 
-            <span class="c1"># Bleeding:</span>
-            <span class="c1"># .... tip .....</span>
-            <span class="c1">#</span>
-            <span class="c1"># ________________</span>
-            <span class="c1"># From: Sample Mod</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">________________</span><span class="se">\n</span><span class="s1"> From: Sample Mod&#39;</span>
+          <span class="c1"># Bleeding:</span>
+          <span class="c1"># .... tip .....</span>
+          <span class="c1">#</span>
+          <span class="c1"># ________________</span>
+          <span class="c1"># From: Sample Mod</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">________________</span><span class="se">\n</span><span class="s1"> From: Sample Mod&#39;</span>
 
         <span class="c1"># That&#39;s what happens on using a card. Card won&#39;t be used if you have Forbid debuff making you unable to play cards of this type, or in case your spirituality is insuficient</span>
         <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-            <span class="c1"># Gives player the effect effect - Strength, 2 Strength exactly. It raises damage dealt by x (x is 2 in this case), it falls by 1 every turn.</span>
-            <span class="n">player</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Strength&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
-            <span class="c1"># Gives enemy the status effect Bleeding, 3 stacks. So as you see it&#39;s simple to add status effects to the enemies. For more complex effects check Card category (docs).</span>
-            <span class="n">enemy</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+          <span class="c1"># Gives player the effect effect - Strength, 2 Strength exactly. It raises damage dealt by x (x is 2 in this case), it falls by 1 every turn.</span>
+          <span class="n">player</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Strength&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
-            <span class="c1"># Attack the enemy with base 12 damage, to deal damage to player, simply change enemy to player</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">atk</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">enemy</span><span class="p">)</span>
+          <span class="c1"># Gives enemy the status effect Bleeding, 3 stacks. So as you see it&#39;s simple to add status effects to the enemies. For more complex effects check Card category (docs).</span>
+          <span class="n">enemy</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Bleeding&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
-            <span class="c1"># Needed, it signals that it&#39;s the end of method (play method), it returns what we write after it, if you want your card to exhaust on use, do this -&gt; return &quot;exhaust&quot;</span>
-            <span class="k">return</span>
+          <span class="c1"># Attack the enemy with base 12 damage, to deal damage to player, simply change enemy to player</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">atk</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">enemy</span><span class="p">)</span>
+
+          <span class="c1"># Needed, it signals that it&#39;s the end of method (play method), it returns what we write after it, if you want your card to exhaust on use, do this -&gt; return &quot;exhaust&quot;</span>
+          <span class="k">return</span>
 
     <span class="c1"># Now that our card is created we need to add it to a lootlist, so that it drops from the enemies. List of lootlists can be found in Enemies category (docs).</span>
     <span class="c1"># So I want this card to be dropped by all melee only bandits, I need to add this card to their lootlists one by one:</span>
@@ -561,7 +568,7 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
 <span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
   <span class="k">class</span> <span class="nc">Sample_Slice</span><span class="p">(</span><span class="n">Card</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;[[Sample] Slice&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;!Sample! Slice&quot;</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">3</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Offensive&quot;</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Mythical&quot;</span>

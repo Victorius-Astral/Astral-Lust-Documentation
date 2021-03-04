@@ -15,6 +15,7 @@ Welcome to Astral Lust's documentation!
    modding/dreams
    modding/enemies
    modding/lootlists
+   modding/triggers
    graphics/emotions
    changelogs/modding
    changelogs/game

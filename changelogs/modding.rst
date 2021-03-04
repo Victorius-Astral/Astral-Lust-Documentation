@@ -1,6 +1,31 @@
 Changelog - Modding
 ===================
 
+0.1.3a
+------
+
+Added
+~~~~~
+
+* Sample Mod to mods/ folder, check it, it's heavily commented to explain everything going on
+* after_load _start & _end triggers
+* triggers during combat initialization
+
+Changed
+~~~~~~~
+
+* for triggers you can now either use a string or (much better for performance) use compiled (at init time) code object (check documentation's trigger tab)
+* now adding enemies to random combat encounter requires to add them as strings instead of objects
+* now terror tooltip reflects changes to terror chance properly
+
+Fixed
+~~~~~
+
+* spelling mistakes in a few image names, to make it easier for you to not use wrong name
+
+|
+|
+
 0.1.3
 -----
 

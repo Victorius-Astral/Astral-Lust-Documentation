@@ -132,6 +132,8 @@ Other Card class methods
 List of all status effects
 --------------------------
 
+:ref:`Add our own status effects<tab_triggers_effects>`
+
 Integer:
 
 * ``Armor`` -Each turn increase block by x.

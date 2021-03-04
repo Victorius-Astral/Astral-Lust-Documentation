@@ -11,10 +11,12 @@ Welcome to Astral Lust's documentation!
    :caption: Contents:
 
    modding/get_started
+   modding/customize
    modding/cards
    modding/dreams
    modding/enemies
    modding/lootlists
+   modding/triggers
    graphics/emotions
    changelogs/modding
    changelogs/game
