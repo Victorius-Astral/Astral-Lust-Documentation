@@ -40,7 +40,8 @@ It should end with return, you can also jump somewhere if you know what you're d
 If you jump remember to make sure player ends in a freeroam mode, also remember to change the music.
 You need to add prisoner to the ``prisoners`` dictionary as ``{"MyPrisoner": NPC_Object}``.
 
-You don't need this label if you don't want your prisoner to be caught after winning a fight.
+You don't need this label if you don't want your prisoner to be caught after winning a fight,
+still if it's an enemy you should make this label even if it only returns.
 
 `Dialogue and Narration <https://www.renpy.org/doc/html/dialogue.html?highlight=dialogues#dialogue-and-narration>`_
 
