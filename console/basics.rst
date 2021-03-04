@@ -24,10 +24,11 @@ I don't mean error in the console after writing a wrong code, error you get outs
 
 Don't save the game!
 You should immediately load save file before this error, if in this save your changes are also present, then you need to undo them.
-If you don't know how, then use older save. None of them is clean? Well, you'll need to start from the beginning.
+If you can't undo them, then use older save. None of them is clean?
+Sadly, you'll need to start the game from the beginning.
 
 You can always ignore the problem, but it'll probably lead to corruption of save, or persistent data.
-If persistent data gets corrupted you won't be able to launch your game.
+If persistent data gets corrupted you won't be able to launch your game without deleting it.
 
 Sometimes the error might straight throw you to the desktop, and launching game again don't work.
 Don't panic, it happens probably because of developer mode turned on, it tries to immediately start where it crashed, making it crash again.
@@ -35,7 +36,7 @@ Don't panic, it happens probably because of developer mode turned on, it tries t
 Simply move ``zzz_mod_toolkit.rpyc`` and ``zzz_mod_toolkit.rpy`` outside of Astral Lust folder and launch the game.
 After it launches properly, exit the game normally. You should be able to enter the game again.
 
-If that didn't help, that means your persistent was corrupted. The only thing to do now is to delete ```persistent`` in:
+If that didn't help, that means your persistent was corrupted. The only thing to do now is to delete ``persistent`` in:
 
 * Windows - ``C:\Users\UserName\AppData\Roaming\RenPy\AstralLust``
 * Macintosh - ``$HOME/Library/RenPy/AstralLust``
@@ -49,7 +50,7 @@ Save the game before playing with console!
 Jump to a label
 ---------------
 
-To jump to a label we simply need to use ``jump label_name``.
+To jump to a label we simply need to use ``jump label_name``. We can get a list of all labels with * `renpy.get_all_labels() <https://www.renpy.org/doc/html/label.html#renpy.get_all_labels>`_
 
 .. image:: console_1.webp
 
@@ -68,11 +69,13 @@ That's simple -> ``variable = new_value``
 
 .. image:: console_4.webp
 
-Why I changed Lexi's name to Arnold? I don't know either. Some more examples:
+Why I've changed Lexi's name to Arnold? I don't know either. Some more examples:
 
 .. image:: console_5.webp
 
 Some variables changed this way might reset after exiting the game (like chances), do a mod for the changes to be permanent.
+
+Check :ref:`Customize <tab_customize>` and :ref:`GUI <tab_gui>` for variables.
 
 |
 |
@@ -80,7 +83,8 @@ Some variables changed this way might reset after exiting the game (like chances
 Add items to the inventory
 --------------------------
 
-``inventory.materials`` will show you all items you have, with their amount
-``inventory.materials.update({"item": amount})`` will make us posses ``amount`` of said ``item``.
+``inventory.materials`` will show you all items you have, with their amount.
+
+``inventory.materials.update({"item": amount})`` will make your inventory contain ``amount`` of ``"item"``.
 
 .. image:: console_3.webp

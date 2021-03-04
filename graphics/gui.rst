@@ -1,3 +1,5 @@
+.. _tab_gui:
+
 GUI Configuration
 =================
 
