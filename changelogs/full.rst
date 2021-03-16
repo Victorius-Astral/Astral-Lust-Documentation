@@ -1,6 +1,69 @@
 Changelog - Full
 ================
 
+0.1.3b
+------
+
+Added
+~~~~~
+
+* quick rest/sleep button
+* option to change max memory size, increase performance by using more memory
+* option to use only RAM as image cache if you don't have enough Graphical Memory
+* more transitions to Alice's shower scene
+* new images in selecting prisoner choice menu
+* one audio to the dream
+* 3 events to the gallery
+
+Changed
+~~~~~~~
+
+* now you have much higher chance to find rose when you need it
+* succubus help
+* made Recurring Nightmare's text no longer being too long in some lines
+
+Fixed
+~~~~~
+
+* many typos, improved flow, thanks to Strectmar
+* random combat encounter taking two time periods
+* some cards' effects not working with immunities
+* Fireborn card causing error
+* now you can't enter playroom before building it
+* now you won't need to rollback after trying to talk to the prisoners when having no prisoners
+* dragon not using ultimate abilities (not that someone actually get so far with it)
+* bug with AL keymap help
+* sleep with dream advancing time by two days
+* About menu, now Ren'Py updates won't be able to mess it up
+
+Mods - Major
+~~~~~~~~~~~~
+
+* reworked triggers, now they can actually use global/local variables, as they are in fact executed in code now, not in the trigger object. You don't need to compile triggers anymore, I got you covered, it'll be compiled automatically at game startup.
+
+Mods - Removed
+~~~~~~~~~~~~~~
+
+* old card methods granting effect, only buff() method should be used to increase or decrease status effects
+
+Mods - Added
+~~~~~~~~~~~~
+
+* 5 looting triggers and 3 new ones to combat
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* now cards are reset with load using reset() method (you need to initialize your variables here). __init__() by default calls this method.
+
+Mods - Fixed
+~~~~~~~~~~~~
+
+* trigger after_load_start triggering instead of after_load_end
+
+|
+|
+
 0.1.3a
 ------
 

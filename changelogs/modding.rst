@@ -1,6 +1,36 @@
 Changelog - Modding
 ===================
 
+0.1.3b
+------
+
+Major
+~~~~~
+
+* reworked triggers, now they can actually use global/local variables, as they are in fact executed in code now, not in the trigger object. You don't need to compile triggers anymore, I got you covered, it'll be compiled automatically at game startup.
+
+Removed
+~~~~~~~
+
+* old card methods granting effect, only buff() method should be used to increase or decrease status effects
+
+Added
+~~~~~
+
+* 5 looting triggers and 3 new ones to combat
+
+Changed
+~~~~~~~
+
+* now cards are reset with load using reset() method (you need to initialize your variables here). __init__() by default calls this method.
+
+Fixed
+~~~~~
+
+* trigger after_load_start triggering instead of after_load_end
+
+|
+|
 0.1.3a
 ------
 

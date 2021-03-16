@@ -131,7 +131,7 @@ Basically speaking it means that below code belongs to the thing with ``:``.
 Indentation shows the code this belonging.
 In python indentations are the key unlike in most other languages where they are just cosmetic.
 
-Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 & 999, so you should use init 11 to init 998.
+Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 & 995-999, so you should use init 11 to init 994.
 The higher the init the later it loads (and overwrites previous changes if needed). Unless you know what you're doing, don't use reserved init numbers.
 
 Finally, after this sermon comes a time to create our card!

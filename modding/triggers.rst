@@ -7,7 +7,9 @@ Using a trigger
 ---------------
 
 To add your own mechanics right into vanilla code without actually overwriting any files you need to use the trigger system I've invented for this purpose.
-It takes code as string or code compiled with ``compile("code", "triggers", "exec")``. You should compile your code at init time for increased performance.
+It takes code as string or code compiled with ``compile("code", "triggers", "exec")``.
+You don't need to compile code yourself.
+I got you covered, it is compiled automatically at the game startup, on init 995.
 
 Trigger system acts as a code injector, we tell it what to inject by appending our code to triggers. The code works like if it was always there, in other word you can use ``self.`` or local variables. Remember that using global variable inside of function/method requires to define it in function/method with ``global myVar``.
 
@@ -77,7 +79,6 @@ Program our effect's mechanic
     being.eff.update({"SuperPower", "Triples the damage dealt! Every attack uses 1 stack."})
 
     command = "if self.eff['SuperPower'][0] > 0: \n dmg = dmg * 3 \n self.eff['SuperPower'][0] -= 1"
-    com_command = compile(command, "triggers", "exec")
 
     trigger.add("take_dmg_before_attack", com_command)
 
@@ -141,9 +142,12 @@ End turn order:
 * ``"after_turn_damage"`` - After calculating damage from effects
 * ``"before_enemy_action"`` - Before enemy makes an action
 * ``"after_enemy_action"`` - After enemy makes an action
-* ``"after_decrease_effects"`` - After turn2() (effects decrease)
+* ``"after_decrease_effects"`` - After ``turn2()`` (effects decrease)
 * ``"before_new_turn"`` - Right before new turn
 * ``"before_new_turn_alt"`` - Right before new turn, screen isn't blocked
+* ``"combat_before_return"`` - After choosing a card, before returning from combat
+* ``"before_loot_cards"`` - Before loot_cards is called
+* ``"before_on_death"`` - Right before calling ``enemy.on_death()``
 
 |
 
@@ -185,28 +189,44 @@ turn2()
 turn_dmg()
 ~~~~~~~~~~
 
-* ``"turn_dmg_start"`` - Beginning of turn_dmg
-* ``"turn_dmg_end"`` - End of turn_dmg
+* ``"turn_dmg_start"`` - Beginning of ``turn_dmg``.
+* ``"turn_dmg_end"`` - End of ``turn_dmg``.
 
 |
 
 take_dmg()
 ~~~~~~~~~~
 
-* ``"take_dmg_start"`` - Beginning of take_dmg, after is_player is defined, it can be used to check if executed by player or enemy
-* ``"take_dmg_before_attack"`` - Right before damage is dealt
-* ``"take_dmg_after_attack"`` - Right after damage is dealt
-* ``"take_dmg_end"`` - End of take_dmg
+* ``"take_dmg_start"`` - Beginning of ``take_dmg``, after ``is_player`` is defined, it can be used to check if executed by player or enemy.
+* ``"take_dmg_before_attack"`` - Right before damage is dealt.
+* ``"take_dmg_after_attack"`` - Right after damage is dealt.
+* ``"take_dmg_end"`` - End of ``take_dmg``.
 
 |
 
 Enemy
 ~~~~~
 
-* ``"enemy_atk_start"`` - Beginning of atk method
-* ``"enemy_before_attack"`` - Right before damage is dealt (before player.take_dmg(dmg) is called)
-* ``"enemy_after_attack"`` - Right before damage is dealt (before player.take_dmg(dmg) is called)
-* ``"enemy_atk_end"`` - End of atk method
+* ``"enemy_atk_start"`` - Beginning of atk method.
+* ``"enemy_before_attack"`` - Right before damage is dealt (before ``player.take_dmg(dmg)`` is called).
+* ``"enemy_after_attack"`` - Right before damage is dealt (before ``player.take_dmg(dmg)`` is called).
+* ``"enemy_atk_end"`` - End of atk method.
+
+|
+
+Looting
+~~~~~~~
+
+* ``"choose_card"`` - On selecting a card to loot. Before other things, end with return to use instead of default ``inventory.cards.append()``, card variable is available (it contains card object).
+* ``"start_looting"`` - At the very beginning of card loot function.
+* ``"loot_screen"`` - Right before looting screen appears.
+
+|
+
+Below triggers are inside python statement:
+
+* ``"selecting_loot"`` - Before cards are selected.
+* ``"generate_lootlist"`` - Before loot chances are generated.
 
 |
 
