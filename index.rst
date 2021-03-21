@@ -39,6 +39,11 @@ Useful Links
    modding/prisoners
    modding/traders
    graphics/emotions
+   graphics/notifications
+   developer/codex
+   developer/settings
+   developer/init_map
+   changelogs/incoming
    changelogs/modding
    changelogs/game
    changelogs/full

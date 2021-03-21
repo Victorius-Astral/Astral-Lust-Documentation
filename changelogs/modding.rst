@@ -1,6 +1,19 @@
 Changelog - Modding
 ===================
 
+0.1.4
+-----
+
+Added
+~~~~~
+
+* a few new pages to the documentation, changed or expanded a few other
+* support for tweaking characters states (what they do, where they are)
+* a few Alice's emotions, one Lexi's emotion
+
+|
+|
+
 0.1.3b
 ------
 
@@ -31,6 +44,7 @@ Fixed
 
 |
 |
+
 0.1.3a
 ------
 

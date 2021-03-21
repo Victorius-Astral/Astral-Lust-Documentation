@@ -1,6 +1,44 @@
 Changelog - Game
 ================
 
+0.1.4
+-----
+
+Major
+~~~~~
+
+* added over 350 images
+* added over 30 animations
+* added new Patron's cheat codes
+* added 17 events
+
+Added
+~~~~~
+
+* 2 Lexi events
+* 2 Alice events
+* 2 Mina events
+* all main girls' toilet events
+* Grace's change event
+* all main girls' sleep events
+* 2 sleepover events
+* 8 Alice's repeatable H scenes, 3 unique + 5 variants
+* Book of Secrets book
+* Introduction to Vampires book
+* Kain's Diary book
+* Astral Etiquette book
+* 4 main story events
+* 10 cheat codes
+
+Changed
+~~~~~~~
+
+* now if you use antibiotics you need to wait a few days for Alice to get better
+* Lexi's and wc renders redone
+
+|
+|
+
 0.1.3b
 ------
 

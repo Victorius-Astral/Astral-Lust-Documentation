@@ -48,6 +48,9 @@ It is followed by these attributes:
 * surprised
 * sick
 * apologetic
+* applaud
+* wonder
+* happy blush
 
 |
 |
@@ -134,6 +137,7 @@ It is followed by these attributes:
 * blush
 * blush breasts cum
 * naughty breasts cum
+* chuckle
 
 |
 |
