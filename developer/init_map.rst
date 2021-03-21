@@ -1,6 +1,8 @@
 Init Map
 ========
 
+Will be fully implemented around 0.1.4a.
+
 This is a map of all game's inits.
 
 |

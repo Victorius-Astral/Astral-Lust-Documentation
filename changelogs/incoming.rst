@@ -36,7 +36,10 @@ So the speed of their implementation depends on my speed of making planned conte
 
 |
 
-Planned features (feel free to implement these stuff in your mods, who knows when these will be in the game):
+Planned features
+~~~~~~~~~~~~~~~~
+
+Feel free to implement these stuff in your mods, who knows when these will be in the game:
 
 * artifacts
 * characteristics (abilities and traits, something like a class)
@@ -66,7 +69,10 @@ Planned features (feel free to implement these stuff in your mods, who knows whe
 
 |
 
-Suggestions (I don't know if they ever make it to the game, these are some of the better suggestions, fell free to implement them in your mod):
+Suggestions
+~~~~~~~~~~~
+
+I don't know if they ever make it to the game, these are some of the better suggestions, fell free to implement them in your mod:
 
 * upgrade playroom into a harem, so that succubi are not kept in the cold, dark dungeon
 * card fusion - Where you can fuse say five of the same type(attack, power etc.) and rarity of card and receive a random card from the next level of rarity of the same type. Either in forge or new Alchemy room.
@@ -81,7 +87,6 @@ These things can be already done without altering vanilla game files and hurting
 The thing is these things aren't described in the documentation yet.
 
 * Adding your own collectibles
-* Adding your own wallpapers
 * Displaying help screen with your own custom messages
 * Adding your own cheat codes
 * Adding and tweaking character states

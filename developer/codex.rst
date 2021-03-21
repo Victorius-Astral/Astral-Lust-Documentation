@@ -1,6 +1,8 @@
 Codex
 =====
 
+Will be fully implemented around 0.1.4a.
+
 List of entries
 ---------------
 
@@ -21,7 +23,7 @@ Alice
 * She's officially my girl now.
 
 Higher Beings
-=============
+~~~~~~~~~~~~~
 
 * Higher Beings should be refered to with respect, They should be described as He/She/It, using he/she/it is considered lack of respect and thus dangerous.
 
