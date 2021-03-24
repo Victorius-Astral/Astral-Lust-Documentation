@@ -3,6 +3,8 @@
 Triggers
 ========
 
+Triggers are added by demand! Additional modding support can also be added by demand, ask me on the Discord.
+
 Using a trigger
 ---------------
 

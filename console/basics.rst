@@ -50,7 +50,7 @@ Save the game before playing with console!
 Jump to a label
 ---------------
 
-To jump to a label we simply need to use ``jump label_name``. We can get a list of all labels with * `renpy.get_all_labels() <https://www.renpy.org/doc/html/label.html#renpy.get_all_labels>`_
+To jump to a label we simply need to use ``jump label_name``. We can get a list of all labels with `renpy.get_all_labels() <https://www.renpy.org/doc/html/label.html#renpy.get_all_labels>`_
 
 .. image:: console_1.webp
 

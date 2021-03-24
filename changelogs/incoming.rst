@@ -39,7 +39,7 @@ So the speed of their implementation depends on my speed of making planned conte
 Planned features
 ~~~~~~~~~~~~~~~~
 
-Feel free to implement these stuff in your mods, who knows when these will be in the game:
+Feel free to implement these stuff in your mods, who knows when these will be in the game, or if they ever be:
 
 * artifacts
 * characteristics (abilities and traits, something like a class)
@@ -66,6 +66,11 @@ Feel free to implement these stuff in your mods, who knows when these will be in
 * SFW mode
 * translations
 * android version
+* rework ironman mode, one save, autosaves, no loading, save on exit
+* mod manager
+* automatic updates
+* AL website, optional integration with Patreon, server working with updates and mod manager
+* rework of codex, so it's faster, supports showing how many entries you don't have, etc.
 
 |
 
@@ -77,6 +82,8 @@ I don't know if they ever make it to the game, these are some of the better sugg
 * upgrade playroom into a harem, so that succubi are not kept in the cold, dark dungeon
 * card fusion - Where you can fuse say five of the same type(attack, power etc.) and rarity of card and receive a random card from the next level of rarity of the same type. Either in forge or new Alchemy room.
 
+* hypnotize the girls into a trance and having sex with them, or coming across female rouges and after beating them hypnotizing them to be placed into the dungeon all kind of stuff.
+* it would be nice to be able to buy the trader's daughter and take her to the hotel.
 |
 |
 
