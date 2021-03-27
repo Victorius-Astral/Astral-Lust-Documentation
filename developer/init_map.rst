@@ -27,6 +27,16 @@ init -10
 --------
 
 * trigger class and object
+* assigning ``game_mode`` - selecting game scale
+
+|
+|
+
+init -9
+-------
+
+* gui.rpy
+* gui init
 
 |
 |
@@ -34,8 +44,8 @@ init -10
 init -4
 -------
 
-* assigning ``gui_mode``
 * ``terror_chance``
+* some gui variables
 
 |
 |
@@ -45,6 +55,7 @@ init -3
 
 * ``Being`` class
 * gui elements' attributes
+* most gui variables
 
 |
 |
@@ -88,7 +99,7 @@ init 0
 * screen ``rpg_codex``
 * rooms' screens
 * transitions
-*
+* ``get_label()``
 
 |
 |
