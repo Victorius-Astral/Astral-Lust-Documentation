@@ -1,6 +1,23 @@
 Changelog - Modding
 ===================
 
+0.1.4a
+------
+
+Major
+~~~~~
+
+* reworked the whole file structure, severely increasing overwriting vanilla files compatibility with future versions
+
+Added
+~~~~~
+
+* track of current label, it's in the _label variable
+* customizable text tags, check text_tags.rpy in functions/qol
+
+|
+|
+
 0.1.4
 -----
 

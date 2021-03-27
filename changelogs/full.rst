@@ -1,6 +1,54 @@
 Changelog - Full
 ================
 
+0.1.4a
+------
+
+Added
+~~~~~
+
+* Succubus hunt option to the entrance doors
+* option to look for enemies to entrance door
+
+Changed
+~~~~~~~
+
+* Cease Fire Treaty card - removed destroy and thorns, added exhaust, cost 1 -> 2
+* decreased chance for random combat encounter during exploration 45% -> 15%
+* increased items received from helping Kiara and Lexi 1-2 -> 2-4
+* some transitions in lexi's 8th event
+
+Fixed
+~~~~~
+
+* cards spelling mistakes
+* pink succubus not requiring the white one for the threesome scene
+* wrong name when asking for threesome with white succubus
+* error when trying to trade stats without having that much
+* some weird bug one player had, freeze on Alice's question, according to the game all questions were answered, which shouldn't be possible, still it will progress if that happens to someone
+* Lexi's laptop mask being off
+* Grace's 7th event not unlocking in the replay gallery
+* using Freedom card causing error
+* animations not ending in many repeatable H scenes
+* lexi not covered in cum after hj
+* grace maid fingering showing images in incorrect order
+* toggling animated scenes mid scene making one animation to run for the whole scene
+* alice footjob in gym outfit showing animations in casual outfit instead
+
+Mods - Major
+~~~~~~~~~~~~
+
+* reworked the whole file structure, severely increasing overwriting vanilla files compatibility with future versions
+
+Mods - Added
+~~~~~~~~~~~~
+
+* track of current label, it's in the _label variable
+* customizable text tags, check text_tags.rpy in functions/qol
+
+|
+|
+
 0.1.4
 -----
 
