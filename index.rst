@@ -27,6 +27,7 @@ Useful Links
    :caption: Contents:
 
    modding/get_started
+   modding/creation_guide
    modding/customize
    console/basics
    modding/cards

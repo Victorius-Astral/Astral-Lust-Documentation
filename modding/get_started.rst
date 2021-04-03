@@ -262,12 +262,21 @@ Don't hesitate to ask me questions on official Astral Lust Discord server. You c
 |
 |
 
+Next Step
+---------
+
+While where you should go from now on depends on what you want to make, I would recommend :ref:`Creation Guide<create_guide>` to learn many basic things about Renpy's working.
+
+|
+|
+
 Final Script - Comments
 -----------------------
 
 The same code can be found in ``game/mods/Sample Mod/sample_mod.rpy``.
 
-.. code-block::
+.. code-block:: python
+  :linenos:
 
   # define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p
   image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
@@ -422,7 +431,8 @@ The same code can be found in ``game/mods/Sample Mod/sample_mod.rpy``.
 Final Script - Clean
 --------------------
 
-.. code-block::
+.. code-block:: python
+  :linenos:
 
   image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
 
