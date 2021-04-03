@@ -1,7 +1,7 @@
 Settings
 ========
 
-Will be fully implemented around 0.1.4a.
+Will be fully implemented after 0.1.5 release.
 
 Graphics
 --------
