@@ -119,6 +119,7 @@ fight()
 
 * ``"start_of_fight"`` - The start of fight() function
 * ``"middle_of_fight"`` - Middle of fight() function, before defining piles
+* ``"before_shuffle"`` - Before shuffling deck
 * ``"before_combat_screen"`` - Before combat screens are initialized
 * ``"before_combat"`` - Right before actual combat starts
 

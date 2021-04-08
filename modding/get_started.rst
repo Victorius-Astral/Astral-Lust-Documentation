@@ -238,14 +238,13 @@ Now what remains is to check them in-game.
 Load your save and open the console by pressing SHIFT + O
 
 To try our dream -> jump d_Sample_Dream_0
-Change dream label to your label
+Change dream label to your label.
 
 To add our card to hand -> inventory.cards.append(Sample_Slice())
 Again, change Sample_Slice to your card's class name
 
 `Developer Tools <https://www.renpy.org/doc/html/developer_tools.html?highlight=console#developer-tools>`_
 
-|
 |
 
 Congratulations!

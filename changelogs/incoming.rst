@@ -84,6 +84,7 @@ I don't know if they ever make it to the game, these are some of the better sugg
 * A thief girl you random encounter that steals one of your cards. If you have enough agility ~5-7 you can catch her and get a lil bj scene. If you cant catch here the card ist lost
 * hypnotize the girls into a trance and having sex with them, or coming across female rouges and after beating them hypnotizing them to be placed into the dungeon all kind of stuff.
 * it would be nice to be able to buy the trader's daughter and take her to the hotel.
+* once an achievements system is in place, make it so the back of the cards is customizable. As in, you can unlock what to see instead of just the current default (the one with the kabbalah tree of life)
 
 |
 |
@@ -100,3 +101,4 @@ The thing is these things aren't described in the documentation yet.
 * Adding and tweaking character states
 * Adding your own outfits to the girls and the wardrobe
 * Adding enemy flags, using alternative action methods, using ultimate abilities after reaching some hp (see dragon)
+* Adding your scenes to replay gallery 

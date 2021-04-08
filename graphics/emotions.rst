@@ -271,6 +271,8 @@ It is followed by these attributes (first emotion is from Succubus A (white skin
 
 * calm calm
 * pout smile
+* sad sad
+* happy happy
 
 |
 |
