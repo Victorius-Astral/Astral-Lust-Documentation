@@ -101,4 +101,5 @@ The thing is these things aren't described in the documentation yet.
 * Adding and tweaking character states
 * Adding your own outfits to the girls and the wardrobe
 * Adding enemy flags, using alternative action methods, using ultimate abilities after reaching some hp (see dragon)
-* Adding your scenes to replay gallery 
+* Adding your scenes to replay gallery
+* Adding new prostitutes to the wanderers' hideout brothel

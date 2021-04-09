@@ -252,7 +252,7 @@ You've officially made your first mod for the Astral Lust!
 Even Grace is proud of you!
 
 Now that you know how, you can add more, check the documentation for info how to do that.
-Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)
+Remember - have fun! ~~Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)~~ It was made already by Chuck.
 
 Don't hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.
 
