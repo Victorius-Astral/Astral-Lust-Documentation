@@ -1,6 +1,30 @@
 Changelog - Modding
 ===================
 
+0.1.4b
+------
+
+Added
+~~~~~
+
+* new button displayable ``button_label``, can be used with background attribute
+* you can now add your own scenes/categories to replay gallery
+* now you can change vault's space per level
+* ``before_shuffle`` trigger
+* option to add code to trigger directly, through appending function like this ``trigger.before_combat_screen.append(myFunction)``
+* ``dream_end`` label now ends replay automatically
+* ``death2`` label now ends replay automatically
+* ``explore_return`` label now ends replay automatically
+* now ``fight()`` skips combat automatically if in replay, can be disabled by setting ``replay_mode = False`` when calling ``fight()``
+
+Fixed
+~~~~~
+
+* error/bug when using console (in freeroam) to jump to a label that ends with return (on this event's end)
+
+|
+|
+
 0.1.4a
 ------
 

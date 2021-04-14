@@ -1,6 +1,63 @@
 Changelog - Full
 ================
 
+0.1.4b
+------
+
+Major
+~~~~~
+
+* reworked replay gallery, now it shows preview images, added dozens of scenes and a few new categories
+* added 92 images
+
+Added
+~~~~~
+
+* background to replays that contains 'talks'
+* turn to Mina option when peeking at sleeping Lexi
+* monthly (5) wallpapers, which are preview for 0.1.5
+
+Changed
+~~~~~~~
+
+* now if you peek at girls under shower for too long, time will advance
+
+Fixed
+~~~~~
+
+* Alice's toilet H menu not triggering
+* error after sleepover at Alice's bed
+* many spelling mistakes
+* continuity error in mina's 4th event
+* no image bug when trying to see Alice's Training event replay before building a gym in a new game
+* can look for enemy and do a succubus hunt at night
+
+Removed
+~~~~~~~
+
+* friendly reminder when using console/developer mode, it was annoying
+
+Mods - Added
+~~~~~~~~~~~~
+
+* new button displayable ``button_label``, can be used with background attribute
+* you can now add your own scenes/categories to replay gallery
+* now you can change vault's space per level
+* ``before_shuffle`` trigger
+* option to add code to trigger directly, through appending function like this ``trigger.before_combat_screen.append(myFunction)``
+* ``dream_end`` label now ends replay automatically
+* ``death2`` label now ends replay automatically
+* ``explore_return`` label now ends replay automatically
+* now ``fight()`` skips combat automatically if in replay, can be disabled by setting ``replay_mode = False`` when calling ``fight()``
+
+Mods - Fixed
+~~~~~~~~~~~~
+
+* error/bug when using console (in freeroam) to jump to a label that ends with return (on this event's end)
+
+|
+|
+
 0.1.4a
 ------
 

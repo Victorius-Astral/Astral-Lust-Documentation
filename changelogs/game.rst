@@ -1,6 +1,45 @@
 Changelog - Game
 ================
 
+0.1.4b
+------
+
+Major
+~~~~~
+
+* reworked replay gallery, now it shows preview images, added dozens of scenes and a few new categories
+* added 92 images
+
+Added
+~~~~~
+
+* background to replays that contains 'talks'
+* turn to Mina option when peeking at sleeping Lexi
+* monthly (5) wallpapers, which are preview for 0.1.5
+
+Changed
+~~~~~~~
+
+* now if you peek at girls under shower for too long, time will advance
+
+Fixed
+~~~~~
+
+* Alice's toilet H menu not triggering
+* error after sleepover at Alice's bed
+* many spelling mistakes
+* continuity error in mina's 4th event
+* no image bug when trying to see Alice's Training event replay before building a gym in a new game
+* can look for enemy and do a succubus hunt at night
+
+Removed
+~~~~~~~
+
+* friendly reminder when using console/developer mode, it was annoying
+
+|
+|
+
 0.1.4a
 ------
 
