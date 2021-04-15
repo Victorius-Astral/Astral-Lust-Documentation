@@ -201,6 +201,7 @@ It is followed by these attributes:
 * tired
 * surprise
 * smirk
+* sigh
 
 |
 |
