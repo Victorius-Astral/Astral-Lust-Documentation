@@ -1,6 +1,23 @@
 Changelog - Modding
 ===================
 
+0.1.5
+-----
+
+Added
+~~~~~
+
+* 2 buttons - button_craft_stone & button_craft_steel
+* 5 succab emotions
+* 1 kiara emotion - sigh
+* can add tabs to the vault
+* can add recipes to the forge and the gunsmith
+* can make new crafting tables using vanilla screen
+* chinatown2 arena
+
+|
+|
+
 0.1.4b
 ------
 

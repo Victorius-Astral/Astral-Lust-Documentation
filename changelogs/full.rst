@@ -1,6 +1,66 @@
 Changelog - Full
 ================
 
+0.1.5
+-----
+
+Major
+~~~~~
+
+* first wakeup scenes, tell your girls to fuck your brains out before getting up!
+* now you can store cards in the vault! Also you can upgrade it further with two new expansions!
+* card crafting was implemented with two crafting tables, and 6 new cards. 20 recipes await.
+* 25 new items to loot from enemies will be used to craft cards. Generally this should reduce grind a lot.
+* reworked vault screen, now you can change its tabs, to card storage, crafting stations.
+* added over 500 images
+* added 97 animations
+
+Added
+~~~~~
+
+* 6 cards, can be obtained only through crafting
+* 25 new items
+* 20 crafting recipes
+* 8 new events to the gallery, one new category
+* 2 Alice's wakeup scenes
+* Alice story event
+* 2 vault expansions
+* 3 Mina's story events
+* 2 new together H for succubi
+* wanderer hideout, and brothel with four prostitutes (make pedestrians)
+* storing cards in vault
+* crafting cards
+* one render and dialogue line to the 10th main story event
+* Kiara's story event
+* Kiara's threesome repeatable H
+
+Changed
+~~~~~~~
+
+* most lootlists
+* replay gallery labels, added padding
+* first help screen text a little
+
+Fixed
+~~~~~
+
+* not likely, yet possible error when saving in trade/vault
+* Mysterious Trader never appearing if you were unlucky (or started new game)
+
+Mods - Added
+~~~~~~~~~~~~
+
+* 2 buttons - button_craft_stone & button_craft_steel
+* 5 succab emotions
+* 1 kiara emotion - sigh
+* can add tabs to the vault
+* can add recipes to the forge and the gunsmith
+* can make new crafting tables using vanilla screen
+* chinatown2 arena
+
+|
+|
+
 0.1.4b
 ------
 
