@@ -1,6 +1,15 @@
 Changelog - Game
 ================
 
+0.1.5a
+------
+
+Fixed
+~~~~~
+
+* forge description still saying crafting is work-in-progress
+* (all fixes from 0.1.4c)
+
 0.1.5
 -----
 

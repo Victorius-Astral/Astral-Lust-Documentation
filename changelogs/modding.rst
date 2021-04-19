@@ -1,6 +1,17 @@
 Changelog - Modding
 ===================
 
+0.1.5a
+------
+
+Added
+~~~~~
+
+* 2 new text tag ``{trust}`` & ``{bad}``
+
+|
+|
+
 0.1.5
 -----
 

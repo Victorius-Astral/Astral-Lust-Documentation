@@ -1,6 +1,30 @@
 Changelog - Debug Mode
 ======================
 
+0.1.5
+-----
+
+Added
+~~~~~
+
+* option - fight Dragon
+* option - fight Stickman
+* option - fight Ghouls
+* option - fight Succubus B
+* option - catch Succubus A
+* option - catch Succubus B
+* option - build Vault 4th tier
+* option - build Playroom
+* option - trade with Debug Trader v2 - has every item for free
+
+Changed
+~~~~~~~
+
+* option - fight Succubus to Succubus A
+
+|
+|
+
 0.1.2
 -----
 

@@ -1,6 +1,23 @@
 Changelog - Full
 ================
 
+0.1.5a
+------
+
+Fixed
+~~~~~
+
+* forge description still saying crafting is work-in-progress
+* (all fixes from 0.1.4c)
+
+Mods - Added
+~~~~~~~~~~~~
+
+* 2 new text tag ``{trust}`` & ``{bad}``
+
+|
+|
+
 0.1.5
 -----
 
@@ -57,6 +74,27 @@ Mods - Added
 * can add recipes to the forge and the gunsmith
 * can make new crafting tables using vanilla screen
 * chinatown2 arena
+
+|
+|
+
+0.1.4c
+------
+
+Changed
+~~~~~~~
+
+* first help screen text a little
+
+Fixed
+~~~~~
+
+* error on sleepover with Mina
+* Mysterious Trader never appearing if you were unlucky (or started new game)
+* Lexi not being topless, she has nice tits, let them out!
+* null chance of Grace being at the wc, now it's ~16% every morning
+* spelling mistake in Regrow Limbs card
+* not being able to fuck in warehouse replay scene
 
 |
 |
