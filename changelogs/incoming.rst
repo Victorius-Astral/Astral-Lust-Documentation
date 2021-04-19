@@ -85,7 +85,7 @@ I don't know if they ever make it to the game, these are some of the better sugg
 * hypnotize the girls into a trance and having sex with them, or coming across female rouges and after beating them hypnotizing them to be placed into the dungeon all kind of stuff.
 * it would be nice to be able to buy the trader's daughter and take her to the hotel.
 * once an achievements system is in place, make it so the back of the cards is customizable. As in, you can unlock what to see instead of just the current default (the one with the kabbalah tree of life)
-
+* Basically, whenever we destroy a card, there is a chance of some material dropping, essentially making them the middleman to transform coal into something else. Said chances will increase depending on the tier of the cards, with the gray ones being the most unlikely to leave anything behind.
 |
 |
 
