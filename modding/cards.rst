@@ -191,7 +191,6 @@ Integer:
 
 Boolean:
 
-* ``Fire Immunity`` - Immune to burning.
 * ``Poison Immunity`` - Immune to poison.
 * ``Bleeding Immunity`` - Immune to bleeding.
 * ``Stun Immunity`` - Can't be stunned.
