@@ -1,6 +1,19 @@
 Changelog - Modding
 ===================
 
+0.1.5b
+------
+
+Added
+~~~~~
+
+* player ``skills`` dict to Player class
+* Massage skill
+* ``improve_skill(sk, amt = 1)`` method to Player class, it improves or adds a skill to the player, can be used to decrease skill
+
+|
+|
+
 0.1.5a
 ------
 

@@ -1,6 +1,55 @@
 Changelog - Game
 ================
 
+0.1.5b
+------
+
+Major
+~~~~~
+
+* added 88 images
+* added 19 animations
+* The first side activity for Mina! Improve you massage skill, and get a treat ;)
+
+
+Added
+~~~~~
+
+* dream - Dekesha by Darrdorack (check)
+* vault can now be scrolled or dragged to move
+* Mina's side quest - feet massage (test)
+* 7 images to Mina's 5th event, and different enemies
+* (Coming soon) to the notification about reaching stat cap
+* a few tips to Alice's question game, now it's stated clearly that you don't need to answer all questions to win, only three of eight
+* button to fix gallery to the pc
+
+Changed
+~~~~~~~
+
+* now there is no infinite combat loop at mina's 5th event, there are 4 waves.
+* Act of Creation card, now it produces random materials, it has a chance to drop most new items.
+
+Fixed
+~~~~~
+
+* vault items getting off window
+* trader menu items getting off window
+* gunsmith station mask being off placed
+* Mina & Lexi using pc being off placed
+* collectible image having hard time closing sometimes
+* when trying to close collectible image, opening another image
+* sound not stopping when facing Chimera during exploration
+* chimera steps being too rushed
+* cat "Found" replay not ending properly
+* not getting a kiss in Mina's "Concerned Friend" replay, also you can give her ice cream now
+* exploit allowing to get many Shot cards from Alice's shelf, even though you've had Shot card already
+* in replay Alice's Q&A having no items to pay
+* some weird sounding lines
+* some spelling mistakes
+
+|
+|
+
 0.1.5a
 ------
 
