@@ -17,6 +17,7 @@ init -100
 ---------
 
 * modes_fix (``pat_dreams`` & ``pat_debug = False``)
+* file lists creation
 
 |
 |
