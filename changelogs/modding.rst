@@ -1,6 +1,24 @@
 Changelog - Modding
 ===================
 
+0.1.5c
+------
+
+Major
+~~~~~
+
+* now your pathways can also be relative to mods folder (``myMod/1.png`` instead of ``mods/myMod/1.png``)
+
+Added
+~~~~~
+
+* support for up to 20 dialogue options being displayed at once (previously 9)
+* option to add your own characters to the character menu
+* 6 new text tags - love, lust, quiet, small, big, loud
+
+|
+|
+
 0.1.5b
 ------
 

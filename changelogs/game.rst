@@ -1,6 +1,71 @@
 Changelog - Game
 ================
 
+0.1.5c
+------
+
+Major
+~~~~~
+
+* added tutorial menu, and a few tutorials (default key: Q)
+* reworked character, and choice menus
+* can add your own custom music to the game! Check settings for instruction.
+* can make music playlists in the settings!
+* added 40 images
+* added 5 animations
+
+Added
+~~~~~
+
+* intro
+* starting image
+* game icon reimplemented
+* logo to the main menu
+* new cheat codes for all tiers
+* a few tutorials
+* tutorial menu, to the quick menu (default key: Q) (test)
+* Grace now also takes bath, additional H (decided by poll)
+* show/reset tutorials options to the settings
+* tutorials to the quick menu
+* options to toggle sound notifications
+* custom menus to the characters
+* Succubi to the character menu
+* statistics to the character menu
+* improved error recovery, might help if you've corrupted your game playing with console
+* 1 replay
+* a few transitions
+
+Changed
+~~~~~~~
+
+* Preferences renamed to Settings
+* choice menu, now it looks better
+* characters menu
+* replay of Grace's shower now allows to choose her attitude
+* increased prices of girls at the hideout
+* balanced loot a little
+
+Fixed
+~~~~~
+
+* Grace standing breasts massage missing image
+* statistics not increasing in Kiara scenes
+* statistics not increasing in Mina cunnilingus scene
+* not advancing time in Grace's shower scene
+* blocked Kiara's 2nd event in some cases
+* giving Grace rose, without having any
+* a lot of grammar and spelling errors (thanks to Strectmar)
+* rare error on game load
+* misplaced masks in the vault
+
+Removed
+~~~~~~~
+
+* help icon from the pc
+
+|
+|
+
 0.1.5b
 ------
 
