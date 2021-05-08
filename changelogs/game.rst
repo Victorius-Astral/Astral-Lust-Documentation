@@ -1,6 +1,37 @@
 Changelog - Game
 ================
 
+0.1.6
+-----
+
+Major
+~~~~~
+
+* added new goth side character Lola, she lives in the wanderer's hideout (by Osamabeenfappin)
+* added 171 images
+* added 16 animations
+
+Adding
+~~~~~~
+
+* Meeting Lola (by Osamabeenfappin)
+* pyjamas party event with Mina, Grace, and Alice (by DarrDorack)
+* dream - Millionaire
+* new H to Mina's massage
+* 3 replays
+* 2 replay categories
+* Lola to characters menu
+* monthly (5) wallpapers
+
+Fixed
+~~~~~
+
+* whispers not disappearing sometimes
+* dream, Dekesha not having replay image
+
+|
+|
+
 0.1.5c
 ------
 
