@@ -1,6 +1,26 @@
 Changelog - Debug Mode
 ======================
 
+0.1.6
+-----
+
+Added
+~~~~~
+
+* option - Recover all mental stats
+* option - Add Pyjamas Party bribes
+* option - Add Gold Bar
+* option - Unlock all collectibles
+
+Fixed
+~~~~~
+
+* when opening trade menu, debug options were still in the background
+
+
+|
+|
+
 0.1.5
 -----
 
