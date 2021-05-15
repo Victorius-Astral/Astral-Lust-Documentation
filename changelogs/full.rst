@@ -11,8 +11,8 @@ Major
 * added 171 images
 * added 16 animations
 
-Adding
-~~~~~~
+Added
+~~~~~
 
 * Meeting Lola (by Osamabeenfappin)
 * pyjamas party event with Mina, Grace, and Alice (by DarrDorack)
