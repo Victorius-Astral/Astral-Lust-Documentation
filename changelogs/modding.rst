@@ -1,6 +1,31 @@
 Changelog - Modding
 ===================
 
+0.1.6a
+------
+
+Major
+~~~~~
+
+* reworked traders implementation, now changes are made automatically to them, use define
+
+Added
+~~~~~
+
+* sacrifice option to enemy atk method, deafult False
+* unlocked boolean, needed when adding to replays_list, decided if name is seen from the start
+* four trigger to death
+* being heal method now returns amount healed
+* can make heal method do notification, make_message = True
+
+Changed
+~~~~~~~
+
+* how arena animation is determined, now all renpy images work
+
+|
+|
+
 0.1.5c
 ------
 

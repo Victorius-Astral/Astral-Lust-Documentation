@@ -1,6 +1,112 @@
 Changelog - Full
 ================
 
+0.1.6a
+------
+
+Major
+~~~~~
+
+* added 48 images
+* added 17 animations
+
+Added
+~~~~~
+
+* a new line to Combat tutorial
+* new items to the traders
+* Quick Save/ Quick Load keybindings, F5 to save, F9 to load
+* percentage of unlocked events to the gallery
+* card destroying to the storage/crafting menus
+* new item, Coal, it's used to destroy cards
+* coal to sentient enemies lootlists
+* new hidden deal to the devil, to resist hidden corruption
+* 263 flags to game files
+* Alice's tv
+* 2 discord codes, for people with 10th level there
+* secret scene
+* 2 secret wallpapers
+* Lola to journal
+* Lola event (by Osamabeenfappin)
+* Lola repeatable H
+* tutorial to character menu
+* 2 replays, Secret category
+* Lexi's laptop
+* now you can eat bananas :)
+* f1 cupboard
+
+Changed
+~~~~~~~
+
+* lowered requirements for helping Mina with Alice
+* 'Q' now also closes new tutorials
+* one wallpaper code
+* increased chance to drop wallpaper after win (2.5% -> 10.0%)
+* now training after maxing stats doesn't advance time
+* reworked card destroying menu
+* various menus will now close when you click outside them
+* when you find cat, the time advances now
+* improved some exploration loot
+* cards are now destroyed with coal
+* how much corruption you get during some scenes
+* now whispers stop during H outside
+* optimized replay gallery loading time
+* now some replays categories will have name before completing any events
+* removed most story events from replay dreams/exploration categories
+* moved some replay categories
+* journal tips are now sorted
+
+Fixed
+~~~~~
+
+* whispers not stopping in wanderer's hideout discover event
+* foxy camera control reversed
+* sukki having one animation in lifting H repeated
+* Stranded outfit needing 5 Cloth instead of 4
+* perspective resetting on moving items during trade, and in vault
+* getting 0 amount of items
+* grace sometimes disappearing from the hotel
+* restore my clarity devil option, working like remove corruption
+* error on game over from hidden corruption
+* exploit with life steal and sacrificing hp
+* notifications in third main event, now all are displayed
+* getting over max in luck throw for hiding from chimera
+* Grace losing trust instead of Mina in "spin the bottle" game
+* Alice gym outfit footjob using default outfit
+* 12th Alice event not regaining hp/sanity
+* Alice's bored expression, being not sharp
+* some notifications being too quick to see
+* error on being mean to Mina
+* teleport after first Lola event
+* replay gallery being over toolbar
+* few pyjamas party renders clipping
+* leaving Lola room leading to hideout square
+* possible errors during loading ("KeyError: u'movie_Obj/PC/a'")
+* now you can't use Lexi laptop if girls are using it
+* many spelling/grammar mistakes
+
+Mods - Major
+~~~~~~~~~~~~
+
+* reworked traders implementation, now changes are made automatically to them, use define
+
+Mods - Added
+~~~~~~~~~~~~
+
+* sacrifice option to enemy atk method, deafult False
+* unlocked boolean, needed when adding to replays_list, decided if name is seen from the start
+* four trigger to death
+* being heal method now returns amount healed
+* can make heal method do notification, make_message = True
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* how arena animation is determined, now all renpy images work
+
+|
+|
+
 0.1.6
 -----
 
