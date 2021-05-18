@@ -1,6 +1,29 @@
 Changelog - Full
 ================
 
+0.1.6b
+------
+
+Changed
+~~~~~~~
+
+* how unique story events are triggered, now it's much more open
+
+Fixed
+~~~~~
+
+* missing words when watching series
+* fire breath exhausting
+* exploit at Lola's pilediver scene
+* using destroying through forge results in a bugged screen
+* weird things happening after pyjamas party event
+* Alice clothes changing sometimes in her 10th and 11th events
+* not full notification in 5th main story event
+* some spelling mistakes
+
+|
+|
+
 0.1.6a
 ------
 
