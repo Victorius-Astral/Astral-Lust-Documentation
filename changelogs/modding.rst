@@ -1,6 +1,52 @@
 Changelog - Modding
 ===================
 
+0.1.7
+------
+
+Added
+~~~~~
+
+* optional days attribute to NPC.check() method
+* calc_gui(pixels) - quick way to calculate pixels to your game format
+* scope variable to replays
+* 7 mina emotions - ouch, shocked, eyeroll, apologetic, sigh, exasperated, smile cum
+* 2 alice emotions - pout, closed
+
+Changed
+~~~~~~~
+
+* gui mode is now defined at -999 init
+
+|
+|
+
+0.1.6c
+------
+
+Added
+~~~~~
+
+* characters, and ignored attributes to set_states()
+* stat_sleep to NPCs
+* add_submission() to NPC class
+* stat_bdsm to NPC class
+* optional set attribute to advance_time()
+* emoticon sm/sp screens
+
+Changed
+~~~~~~~
+
+* how wallpaper system works, now not all wallpapers are lootable from combat
+
+Fixed
+~~~~~
+
+* unable to save after using some triggers
+
+|
+|
+
 0.1.6a
 ------
 

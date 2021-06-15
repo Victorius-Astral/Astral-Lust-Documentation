@@ -1,6 +1,118 @@
 Changelog - Game
 ================
 
+0.1.7
+------
+
+Major
+~~~~~
+
+* added 650 images
+* added 80 animations
+* added 35 events & scenes + 14 additional variants
+* added Savenia Dorack, new main girl (biker girl)
+* added SFW mode, you can stream AL now! Check settings.
+
+Added
+~~~~~
+
+* SFW mode
+* Lexi 10th event
+* Lexi 11th event
+* expanded Lexi shower scene
+* H scene to Lexi shower
+* sex, thighjob counter to Lexi
+* Main 12th event
+* Alice 13th event
+* Alice 14th event
+* can sleep with Alice in player bed (5 variants)
+* we can now find Alice sleeping in our bed
+* 4 scenes with Alice in our bed (8 variants)
+* repeatable BDSM H for Alice (7 variants)
+* submission, sleep sex, bdsm, massage counter to Alice
+* you can build next hotel floor now
+* Savenia 1st event
+* Savenia 2nd event
+* Savenia to girl stats
+* Savenia to the journal
+* Grace 10th event
+* Grace repeatable H
+* boobjob, outside counter to Grace
+* Mina 16th event
+* Mina's route to her stats
+* treasure hunt event (1 medium event, 8 mini events)
+* expanded warehouse scene
+* Little Fox to girl stats
+* Little Fox to journal
+* suicide
+* bad ending - corruption
+* bad ending - sanity
+* bad ending - "His" influence
+* new enemy
+* new arena
+* new music
+* wallpaper
+* one replay category
+* 14 replays
+* message when clicking locked collectible
+
+Changed
+~~~~~~~
+
+* now if you leave when Lexi is taking a shower, she would finish it, and do something else
+* characteristics note
+* orc group loot
+* tips now shown name only after completing first event
+* default hotel music
+* improved fade_slow transition
+
+Fixed
+~~~~~
+
+* recurring nightmare not showing prior image in replay/dreams mode
+
+|
+|
+
+0.1.6c
+------
+
+Added
+~~~~~
+
+* support for animated scenes option to explore/return scenes
+* time flowing in secret scene
+* bdsm, denial counter to succubi
+* wooden horse now adds to bdsm counter
+* reminder to mina's 15th event
+* 1 audio file
+* 2 emoticons
+
+Changed
+~~~~~~~
+
+* bandits with guns now deal a little more damage
+* increased hovered card size in the vault
+* now not all wallpapers are lootable (eq. secret wallpapers)
+* balanced wallpaper drop chance
+
+Fixed
+~~~~~
+
+* trader discount not saving
+* trader items reset after game exit
+* player massage skills not saving
+* bandits dealing negative amount of damage if weakened
+* block increasing from enemy attacks
+* respectful referral not triggering
+* fireball exhausting
+* dragon starting combat with ultimate ability
+* possibly weird looking buttons
+* spelling mistakes
+
+|
+|
+
 0.1.6b
 ------
 
