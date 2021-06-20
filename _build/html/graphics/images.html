@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
 
   
   
@@ -88,7 +90,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../modding/get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/creation_guide.html">Creation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/dreams.html">Dreams</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Images and wallpapers</a><ul>
@@ -102,7 +106,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../modding/triggers.html">Triggers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/prisoners.html">Prisoners</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/traders.html">Traders &amp; Items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/full.html">Changelog - Full</a></li>
@@ -181,8 +190,11 @@
 <h2>Replace game images<a class="headerlink" href="#replace-game-images" title="Permalink to this headline">¶</a></h2>
 <p>To replace game image check .rpy files or use developer tools to find what name the image has,
 now we only need to use <code class="docutils literal notranslate"><span class="pre">image</span> <span class="pre">name</span> <span class="pre">=</span> <span class="pre">&quot;path/image&quot;</span></code> statements. As name we use the image’s you want to change name.
-You should change it using code instead of just replacing images because after removing your mod the game will be vanilla again.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change player&#39;s room day image</span>
+You should change it using code instead of just replacing images because after removing your mod the game will be vanilla again.
+To change defined images (like animations) <code class="docutils literal notranslate"><span class="pre">init</span> <span class="pre">offset</span> <span class="pre">=</span> <span class="pre">1</span></code> is required.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="n">offset</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Change player&#39;s room day image</span>
 <span class="n">image</span> <span class="n">bg</span> <span class="n">hotel</span> <span class="n">player</span> <span class="o">=</span> <span class="s2">&quot;mods/MyMod/new hotel image.webp&quot;</span>
 </pre></div>
 </div>

@@ -1,5 +1,5 @@
-Characters Emotions
-===================
+Character Emotions
+==================
 
 Emotions are images with alpha channel, they are used when speaking with girls in rooms, etc. You can use them with ``show``.
 
@@ -48,6 +48,9 @@ It is followed by these attributes:
 * surprised
 * sick
 * apologetic
+* applaud
+* wonder
+* happy blush
 
 |
 |
@@ -134,6 +137,7 @@ It is followed by these attributes:
 * blush
 * blush breasts cum
 * naughty breasts cum
+* chuckle
 
 |
 |
@@ -197,6 +201,7 @@ It is followed by these attributes:
 * tired
 * surprise
 * smirk
+* sigh
 
 |
 |
@@ -267,6 +272,11 @@ It is followed by these attributes (first emotion is from Succubus A (white skin
 
 * calm calm
 * pout smile
+* sad sad
+* happy happy
+* happy sad
+* sad happy
+* angry happy
 
 |
 |

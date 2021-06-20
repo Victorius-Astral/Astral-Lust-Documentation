@@ -7,8 +7,11 @@ Replace game images
 To replace game image check .rpy files or use developer tools to find what name the image has,
 now we only need to use ``image name = "path/image"`` statements. As name we use the image's you want to change name.
 You should change it using code instead of just replacing images because after removing your mod the game will be vanilla again.
+To change defined images (like animations) ``init offset = 1`` is required.
 
 .. code-block:: python
+
+  init offset = 1
 
   # Change player's room day image
   image bg hotel player = "mods/MyMod/new hotel image.webp"

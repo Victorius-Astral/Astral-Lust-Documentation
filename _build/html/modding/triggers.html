@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
 
   
   
@@ -88,7 +90,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creation_guide.html">Creation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
@@ -114,6 +118,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#turn-dmg">turn_dmg()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#take-dmg">take_dmg()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#enemy">Enemy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#looting">Looting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#special">Special</a></li>
 </ul>
 </li>
@@ -121,7 +126,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="prisoners.html">Prisoners</a></li>
 <li class="toctree-l1"><a class="reference internal" href="traders.html">Traders &amp; Items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/full.html">Changelog - Full</a></li>
@@ -196,10 +206,13 @@
             
   <div class="section" id="triggers">
 <span id="tab-triggers"></span><h1>Triggers<a class="headerlink" href="#triggers" title="Permalink to this headline">¶</a></h1>
+<p>Triggers are added by demand! Additional modding support can also be added by demand, ask me on the Discord.</p>
 <div class="section" id="using-a-trigger">
 <h2>Using a trigger<a class="headerlink" href="#using-a-trigger" title="Permalink to this headline">¶</a></h2>
 <p>To add your own mechanics right into vanilla code without actually overwriting any files you need to use the trigger system I’ve invented for this purpose.
-It takes code as string or code compiled with <code class="docutils literal notranslate"><span class="pre">compile(&quot;code&quot;,</span> <span class="pre">&quot;triggers&quot;,</span> <span class="pre">&quot;exec&quot;)</span></code>. You should compile your code at init time for increased performance.</p>
+It takes code as string or code compiled with <code class="docutils literal notranslate"><span class="pre">compile(&quot;code&quot;,</span> <span class="pre">&quot;triggers&quot;,</span> <span class="pre">&quot;exec&quot;)</span></code>.
+You don’t need to compile code yourself.
+I got you covered, it is compiled automatically at the game startup, on init 995.</p>
 <p>Trigger system acts as a code injector, we tell it what to inject by appending our code to triggers. The code works like if it was always there, in other word you can use <code class="docutils literal notranslate"><span class="pre">self.</span></code> or local variables. Remember that using global variable inside of function/method requires to define it in function/method with <code class="docutils literal notranslate"><span class="pre">global</span> <span class="pre">myVar</span></code>.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -270,13 +283,11 @@ So remember to save outside of combat.</p>
 4
 5
 6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">init</span> <span class="mi">11</span> <span class="n">python</span><span class="p">:</span>
   <span class="c1"># being.eff.update({&quot;Effect Name&quot;, &quot;Tooltip&quot;})</span>
   <span class="n">being</span><span class="o">.</span><span class="n">eff</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;SuperPower&quot;</span><span class="p">,</span> <span class="s2">&quot;Triples the damage dealt! Every attack uses 1 stack.&quot;</span><span class="p">})</span>
 
   <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;if self.eff[&#39;SuperPower&#39;][0] &gt; 0: </span><span class="se">\n</span><span class="s2"> dmg = dmg * 3 </span><span class="se">\n</span><span class="s2"> self.eff[&#39;SuperPower&#39;][0] -= 1&quot;</span>
-  <span class="n">com_command</span> <span class="o">=</span> <span class="nb">compile</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="s2">&quot;triggers&quot;</span><span class="p">,</span> <span class="s2">&quot;exec&quot;</span><span class="p">)</span>
 
   <span class="n">trigger</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;take_dmg_before_attack&quot;</span><span class="p">,</span> <span class="n">com_command</span><span class="p">)</span>
 </pre></div>
@@ -317,6 +328,7 @@ Game will resize the icon on its own depending on 4K or 1080p game version.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;start_of_fight&quot;</span></code> - The start of fight() function</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;middle_of_fight&quot;</span></code> - Middle of fight() function, before defining piles</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_shuffle&quot;</span></code> - Before shuffling deck</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_combat_screen&quot;</span></code> - Before combat screens are initialized</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_combat&quot;</span></code> - Right before actual combat starts</p></li>
 </ul>
@@ -345,9 +357,12 @@ Game will resize the icon on its own depending on 4K or 1080p game version.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;after_turn_damage&quot;</span></code> - After calculating damage from effects</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_enemy_action&quot;</span></code> - Before enemy makes an action</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;after_enemy_action&quot;</span></code> - After enemy makes an action</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;after_decrease_effects&quot;</span></code> - After turn2() (effects decrease)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;after_decrease_effects&quot;</span></code> - After <code class="docutils literal notranslate"><span class="pre">turn2()</span></code> (effects decrease)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_new_turn&quot;</span></code> - Right before new turn</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_new_turn_alt&quot;</span></code> - Right before new turn, screen isn’t blocked</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;combat_before_return&quot;</span></code> - After choosing a card, before returning from combat</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_loot_cards&quot;</span></code> - Before loot_cards is called</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;before_on_death&quot;</span></code> - Right before calling <code class="docutils literal notranslate"><span class="pre">enemy.on_death()</span></code></p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -399,8 +414,8 @@ Game will resize the icon on its own depending on 4K or 1080p game version.</p>
 <div class="section" id="turn-dmg">
 <h3>turn_dmg()<a class="headerlink" href="#turn-dmg" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;turn_dmg_start&quot;</span></code> - Beginning of turn_dmg</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;turn_dmg_end&quot;</span></code> - End of turn_dmg</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;turn_dmg_start&quot;</span></code> - Beginning of <code class="docutils literal notranslate"><span class="pre">turn_dmg</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;turn_dmg_end&quot;</span></code> - End of <code class="docutils literal notranslate"><span class="pre">turn_dmg</span></code>.</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -409,10 +424,10 @@ Game will resize the icon on its own depending on 4K or 1080p game version.</p>
 <div class="section" id="take-dmg">
 <h3>take_dmg()<a class="headerlink" href="#take-dmg" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_start&quot;</span></code> - Beginning of take_dmg, after is_player is defined, it can be used to check if executed by player or enemy</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_before_attack&quot;</span></code> - Right before damage is dealt</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_after_attack&quot;</span></code> - Right after damage is dealt</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_end&quot;</span></code> - End of take_dmg</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_start&quot;</span></code> - Beginning of <code class="docutils literal notranslate"><span class="pre">take_dmg</span></code>, after <code class="docutils literal notranslate"><span class="pre">is_player</span></code> is defined, it can be used to check if executed by player or enemy.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_before_attack&quot;</span></code> - Right before damage is dealt.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_after_attack&quot;</span></code> - Right after damage is dealt.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;take_dmg_end&quot;</span></code> - End of <code class="docutils literal notranslate"><span class="pre">take_dmg</span></code>.</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -421,10 +436,29 @@ Game will resize the icon on its own depending on 4K or 1080p game version.</p>
 <div class="section" id="enemy">
 <h3>Enemy<a class="headerlink" href="#enemy" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_atk_start&quot;</span></code> - Beginning of atk method</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_before_attack&quot;</span></code> - Right before damage is dealt (before player.take_dmg(dmg) is called)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_after_attack&quot;</span></code> - Right before damage is dealt (before player.take_dmg(dmg) is called)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_atk_end&quot;</span></code> - End of atk method</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_atk_start&quot;</span></code> - Beginning of atk method.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_before_attack&quot;</span></code> - Right before damage is dealt (before <code class="docutils literal notranslate"><span class="pre">player.take_dmg(dmg)</span></code> is called).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_after_attack&quot;</span></code> - Right before damage is dealt (before <code class="docutils literal notranslate"><span class="pre">player.take_dmg(dmg)</span></code> is called).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;enemy_atk_end&quot;</span></code> - End of atk method.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="looting">
+<h3>Looting<a class="headerlink" href="#looting" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;choose_card&quot;</span></code> - On selecting a card to loot. Before other things, end with return to use instead of default <code class="docutils literal notranslate"><span class="pre">inventory.cards.append()</span></code>, card variable is available (it contains card object).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;start_looting&quot;</span></code> - At the very beginning of card loot function.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;loot_screen&quot;</span></code> - Right before looting screen appears.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Below triggers are inside python statement:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;selecting_loot&quot;</span></code> - Before cards are selected.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;generate_lootlist&quot;</span></code> - Before loot chances are generated.</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>

@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>In-game Console &mdash; Astral Lust  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cards" href="../modding/cards.html" />
+    <link rel="prev" title="Customize Astral Lust" href="../modding/customize.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Astral Lust
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../modding/get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/creation_guide.html">Creation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">In-game Console</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#help-i-ve-fucked-up-my-game">Help! I’ve fucked up my game!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jump-to-a-label">Jump to a label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-a-variable">Change a variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-items-to-the-inventory">Add items to the inventory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/cards.html">Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/dreams.html">Dreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/gui.html">GUI Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/enemies.html">Enemies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/lootlists.html">Lootlists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/triggers.html">Triggers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/prisoners.html">Prisoners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/traders.html">Traders &amp; Items</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/full.html">Changelog - Full</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/debug.html">Changelog - Debug Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/dreams.html">Changelog - Dreams Mode</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astral Lust</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>In-game Console</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/console/basics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="in-game-console">
+<h1>In-game Console<a class="headerlink" href="#in-game-console" title="Permalink to this headline">¶</a></h1>
+<p>When you do a mod, or simply want to cheat, you need to use in-game console,
+you can do almost everything with it, as it’s in fact a python console.</p>
+<p>What you want to do the most is to change variables or jump to labels, here’s how to do that.</p>
+<p>Console can be opened with <code class="docutils literal notranslate"><span class="pre">SHIFT</span> <span class="pre">+</span> <span class="pre">O</span></code>.
+To open the console you need <a class="reference external" href="https://mega.nz/file/9IdixbpQ#8-UTQxscq22lC27GqayTaQMYIqYL2EKDSy4czEYvvPo">AL Mod Toolkit</a>.
+You don’t know how to install it? Check <a class="reference internal" href="../modding/get_started.html#tab-tutorial"><span class="std std-ref">Get Started</span></a>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.renpy.org/doc/html/developer_tools.html#developer-tools">Developer Tools</a></p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/python/python_variables.asp">Python</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="help-i-ve-fucked-up-my-game">
+<h2>Help! I’ve fucked up my game!<a class="headerlink" href="#help-i-ve-fucked-up-my-game" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you can do something that throws an error.
+I don’t mean error in the console after writing a wrong code, error you get outside of a console as a result of your code.</p>
+<p>Don’t save the game!
+You should immediately load save file before this error, if in this save your changes are also present, then you need to undo them.
+If you can’t undo them, then use older save. None of them is clean?
+Sadly, you’ll need to start the game from the beginning.</p>
+<p>You can always ignore the problem, but it’ll probably lead to corruption of save, or persistent data.
+If persistent data gets corrupted you won’t be able to launch your game without deleting it.</p>
+<p>Sometimes the error might straight throw you to the desktop, and launching game again don’t work.
+Don’t panic, it happens probably because of developer mode turned on, it tries to immediately start where it crashed, making it crash again.</p>
+<p>Simply move <code class="docutils literal notranslate"><span class="pre">zzz_mod_toolkit.rpyc</span></code> and <code class="docutils literal notranslate"><span class="pre">zzz_mod_toolkit.rpy</span></code> outside of Astral Lust folder and launch the game.
+After it launches properly, exit the game normally. You should be able to enter the game again.</p>
+<p>If that didn’t help, that means your persistent was corrupted. The only thing to do now is to delete <code class="docutils literal notranslate"><span class="pre">persistent</span></code> in:</p>
+<ul class="simple">
+<li><p>Windows - <code class="docutils literal notranslate"><span class="pre">C:\Users\UserName\AppData\Roaming\RenPy\AstralLust</span></code></p></li>
+<li><p>Macintosh - <code class="docutils literal notranslate"><span class="pre">$HOME/Library/RenPy/AstralLust</span></code></p></li>
+<li><p>Linux - <code class="docutils literal notranslate"><span class="pre">$HOME/.renpy/AstralLust</span></code></p></li>
+</ul>
+<p>Save the game before playing with console!</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="jump-to-a-label">
+<h2>Jump to a label<a class="headerlink" href="#jump-to-a-label" title="Permalink to this headline">¶</a></h2>
+<p>To jump to a label we simply need to use <code class="docutils literal notranslate"><span class="pre">jump</span> <span class="pre">label_name</span></code>. We can get a list of all labels with <a class="reference external" href="https://www.renpy.org/doc/html/label.html#renpy.get_all_labels">renpy.get_all_labels()</a></p>
+<img alt="../_images/console_1.webp" src="../_images/console_1.webp" />
+<p>We can alternatively use call, jump might sometimes lead to weird outcome if label you jumped to ends with return.
+Call ensures that’s not the case.</p>
+<img alt="../_images/console_2.webp" src="../_images/console_2.webp" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-a-variable">
+<h2>Change a variable<a class="headerlink" href="#change-a-variable" title="Permalink to this headline">¶</a></h2>
+<p>That’s simple -&gt; <code class="docutils literal notranslate"><span class="pre">variable</span> <span class="pre">=</span> <span class="pre">new_value</span></code></p>
+<img alt="../_images/console_4.webp" src="../_images/console_4.webp" />
+<p>Why I’ve changed Lexi’s name to Arnold? I don’t know either. Some more examples:</p>
+<img alt="../_images/console_5.webp" src="../_images/console_5.webp" />
+<p>Some variables changed this way might reset after exiting the game (like chances), do a mod for the changes to be permanent.</p>
+<p>Check <a class="reference internal" href="../modding/customize.html#tab-customize"><span class="std std-ref">Customize</span></a> and <a class="reference internal" href="../graphics/gui.html#tab-gui"><span class="std std-ref">GUI</span></a> for variables.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="add-items-to-the-inventory">
+<h2>Add items to the inventory<a class="headerlink" href="#add-items-to-the-inventory" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">inventory.materials</span></code> will show you all items you have, with their amount.</p>
+<p><code class="docutils literal notranslate"><span class="pre">inventory.materials.update({&quot;item&quot;:</span> <span class="pre">amount})</span></code> will make your inventory contain <code class="docutils literal notranslate"><span class="pre">amount</span></code> of <code class="docutils literal notranslate"><span class="pre">&quot;item&quot;</span></code>.</p>
+<img alt="../_images/console_3.webp" src="../_images/console_3.webp" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../modding/cards.html" class="btn btn-neutral float-right" title="Cards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../modding/customize.html" class="btn btn-neutral float-left" title="Customize Astral Lust" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Victorius.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

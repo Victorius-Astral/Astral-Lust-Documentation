@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
 
   
   
@@ -40,7 +42,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Changelog - Game" href="game.html" />
-    <link rel="prev" title="Characters Emotions" href="../graphics/emotions.html" /> 
+    <link rel="prev" title="Incoming Changes and Features, Players’ Suggestions for Mod Features" href="incoming.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,7 +90,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../modding/get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/creation_guide.html">Creation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
@@ -98,17 +102,78 @@
 <li class="toctree-l1"><a class="reference internal" href="../modding/triggers.html">Triggers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/prisoners.html">Prisoners</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/traders.html">Traders &amp; Items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog - Modding</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#a">0.1.3a</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.1.7</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#c">0.1.6c</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.1.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a">0.1.6a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#major">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.1.5c</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#b">0.1.5b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">0.1.5a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">0.1.5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">0.1.4b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">0.1.4a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">0.1.4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">0.1.3b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removed">Removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">0.1.3a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id31">0.1.3</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#released">Released</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32">Added</a></li>
 </ul>
 </li>
 </ul>
@@ -186,26 +251,275 @@
             
   <div class="section" id="changelog-modding">
 <h1>Changelog - Modding<a class="headerlink" href="#changelog-modding" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="a">
-<h2>0.1.3a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>0.1.7<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="added">
 <h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>optional days attribute to NPC.check() method</p></li>
+<li><p>calc_gui(pixels) - quick way to calculate pixels to your game format</p></li>
+<li><p>scope variable to replays</p></li>
+<li><p>7 mina emotions - ouch, shocked, eyeroll, apologetic, sigh, exasperated, smile cum</p></li>
+<li><p>2 alice emotions - pout, closed</p></li>
+</ul>
+</div>
+<div class="section" id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>gui mode is now defined at -999 init</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="c">
+<h2>0.1.6c<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>characters, and ignored attributes to set_states()</p></li>
+<li><p>stat_sleep to NPCs</p></li>
+<li><p>add_submission() to NPC class</p></li>
+<li><p>stat_bdsm to NPC class</p></li>
+<li><p>optional set attribute to advance_time()</p></li>
+<li><p>emoticon sm/sp screens</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Changed<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>how wallpaper system works, now not all wallpapers are lootable from combat</p></li>
+</ul>
+</div>
+<div class="section" id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>unable to save after using some triggers</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="a">
+<h2>0.1.6a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="major">
+<h3>Major<a class="headerlink" href="#major" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>reworked traders implementation, now changes are made automatically to them, use define</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Added<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>sacrifice option to enemy atk method, deafult False</p></li>
+<li><p>unlocked boolean, needed when adding to replays_list, decided if name is seen from the start</p></li>
+<li><p>four trigger to death</p></li>
+<li><p>being heal method now returns amount healed</p></li>
+<li><p>can make heal method do notification, make_message = True</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Changed<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>how arena animation is determined, now all renpy images work</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>0.1.5c<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>Major<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now your pathways can also be relative to mods folder (<code class="docutils literal notranslate"><span class="pre">myMod/1.png</span></code> instead of <code class="docutils literal notranslate"><span class="pre">mods/myMod/1.png</span></code>)</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Added<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>support for up to 20 dialogue options being displayed at once (previously 9)</p></li>
+<li><p>option to add your own characters to the character menu</p></li>
+<li><p>6 new text tags - love, lust, quiet, small, big, loud</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="b">
+<h2>0.1.5b<a class="headerlink" href="#b" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h3>Added<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>player <code class="docutils literal notranslate"><span class="pre">skills</span></code> dict to Player class</p></li>
+<li><p>Massage skill</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">improve_skill(sk,</span> <span class="pre">amt</span> <span class="pre">=</span> <span class="pre">1)</span></code> method to Player class, it improves or adds a skill to the player, can be used to decrease skill</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>0.1.5a<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Added<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>2 new text tag <code class="docutils literal notranslate"><span class="pre">{trust}</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">{bad}</span></code></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>0.1.5<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h3>Added<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>2 buttons - button_craft_stone &amp; button_craft_steel</p></li>
+<li><p>5 succab emotions</p></li>
+<li><p>1 kiara emotion - sigh</p></li>
+<li><p>can add tabs to the vault</p></li>
+<li><p>can add recipes to the forge and the gunsmith</p></li>
+<li><p>can make new crafting tables using vanilla screen</p></li>
+<li><p>chinatown2 arena</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>0.1.4b<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h3>Added<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>new button displayable <code class="docutils literal notranslate"><span class="pre">button_label</span></code>, can be used with background attribute</p></li>
+<li><p>you can now add your own scenes/categories to replay gallery</p></li>
+<li><p>now you can change vault’s space per level</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">before_shuffle</span></code> trigger</p></li>
+<li><p>option to add code to trigger directly, through appending function like this <code class="docutils literal notranslate"><span class="pre">trigger.before_combat_screen.append(myFunction)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dream_end</span></code> label now ends replay automatically</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">death2</span></code> label now ends replay automatically</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">explore_return</span></code> label now ends replay automatically</p></li>
+<li><p>now <code class="docutils literal notranslate"><span class="pre">fight()</span></code> skips combat automatically if in replay, can be disabled by setting <code class="docutils literal notranslate"><span class="pre">replay_mode</span> <span class="pre">=</span> <span class="pre">False</span></code> when calling <code class="docutils literal notranslate"><span class="pre">fight()</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h3>Fixed<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>error/bug when using console (in freeroam) to jump to a label that ends with return (on this event’s end)</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>0.1.4a<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<h3>Major<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>reworked the whole file structure, severely increasing overwriting vanilla files compatibility with future versions</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h3>Added<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>track of current label, it’s in the _label variable</p></li>
+<li><p>customizable text tags, check text_tags.rpy in functions/qol</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id20">
+<h2>0.1.4<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id21">
+<h3>Added<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>a few new pages to the documentation, changed or expanded a few other</p></li>
+<li><p>support for tweaking characters states (what they do, where they are)</p></li>
+<li><p>a few Alice’s emotions, one Lexi’s emotion</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id22">
+<h2>0.1.3b<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h3>Major<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>reworked triggers, now they can actually use global/local variables, as they are in fact executed in code now, not in the trigger object. You don’t need to compile triggers anymore, I got you covered, it’ll be compiled automatically at game startup.</p></li>
+</ul>
+</div>
+<div class="section" id="removed">
+<h3>Removed<a class="headerlink" href="#removed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>old card methods granting effect, only buff() method should be used to increase or decrease status effects</p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3>Added<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>5 looting triggers and 3 new ones to combat</p></li>
+</ul>
+</div>
+<div class="section" id="id25">
+<h3>Changed<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now cards are reset with load using reset() method (you need to initialize your variables here). __init__() by default calls this method.</p></li>
+</ul>
+</div>
+<div class="section" id="id26">
+<h3>Fixed<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>trigger after_load_start triggering instead of after_load_end</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id27">
+<h2>0.1.3a<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id28">
+<h3>Added<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Sample Mod to mods/ folder, check it, it’s heavily commented to explain everything going on</p></li>
 <li><p>after_load _start &amp; _end triggers</p></li>
 <li><p>triggers during combat initialization</p></li>
 </ul>
 </div>
-<div class="section" id="changed">
-<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id29">
+<h3>Changed<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>for triggers you can now either use a string or (much better for performance) use compiled (at init time) code object (check documentation’s trigger tab)</p></li>
 <li><p>now adding enemies to random combat encounter requires to add them as strings instead of objects</p></li>
 <li><p>now terror tooltip reflects changes to terror chance properly</p></li>
 </ul>
 </div>
-<div class="section" id="fixed">
-<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id30">
+<h3>Fixed<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>spelling mistakes in a few image names, to make it easier for you to not use wrong name</p></li>
 </ul>
@@ -215,8 +529,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id1">
-<h2>0.1.3<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id31">
+<h2>0.1.3<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="released">
 <h3>Released<a class="headerlink" href="#released" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -226,8 +540,8 @@
 <li><p>mod_toolkit script (for now it only enables dev tools &amp; console in AL)</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id32">
+<h3>Added<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>support for adding new status effects &amp; card mechanics, trigger system</p></li>
 <li><p>support for adding your own menus to expanded menu</p></li>
@@ -261,7 +575,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="game.html" class="btn btn-neutral float-right" title="Changelog - Game" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../graphics/emotions.html" class="btn btn-neutral float-left" title="Characters Emotions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="incoming.html" class="btn btn-neutral float-left" title="Incoming Changes and Features, Players’ Suggestions for Mod Features" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

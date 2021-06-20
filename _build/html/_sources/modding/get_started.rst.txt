@@ -1,3 +1,6 @@
+.. role:: strike
+    :class: strike
+
 Get Started - Astral Lust Modding
 =================================
 
@@ -5,6 +8,8 @@ Welcome to Astral Lust modding tutorial! In here I'll explain how to create your
 
 |
 |
+
+.. _tab_tutorial:
 
 Step 1. Preparation for modding
 -------------------------------
@@ -129,7 +134,7 @@ Basically speaking it means that below code belongs to the thing with ``:``.
 Indentation shows the code this belonging.
 In python indentations are the key unlike in most other languages where they are just cosmetic.
 
-Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 & 999, so you should use init 11 to init 998.
+Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 & 995-999, so you should use init 11 to init 994.
 The higher the init the later it loads (and overwrites previous changes if needed). Unless you know what you're doing, don't use reserved init numbers.
 
 Finally, after this sermon comes a time to create our card!
@@ -236,7 +241,7 @@ Now what remains is to check them in-game.
 Load your save and open the console by pressing SHIFT + O
 
 To try our dream -> jump d_Sample_Dream_0
-Change dream label to your label
+Change dream label to your label.
 
 To add our card to hand -> inventory.cards.append(Sample_Slice())
 Again, change Sample_Slice to your card's class name
@@ -244,18 +249,25 @@ Again, change Sample_Slice to your card's class name
 `Developer Tools <https://www.renpy.org/doc/html/developer_tools.html?highlight=console#developer-tools>`_
 
 |
-|
 
 Congratulations!
 You've officially made your first mod for the Astral Lust!
 Even Grace is proud of you!
 
 Now that you know how, you can add more, check the documentation for info how to do that.
-Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)
+Remember - have fun! :strike:`Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)` It was made already by Chuck.
 
 Don't hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.
 
 :ref:`Easy to tweak variables<tab_customize>`
+
+|
+|
+
+Next Step
+---------
+
+While where you should go from now on depends on what you want to make, I would recommend :ref:`Creation Guide<create_guide>` to learn many basic things about Renpy's working.
 
 |
 |
@@ -265,7 +277,8 @@ Final Script - Comments
 
 The same code can be found in ``game/mods/Sample Mod/sample_mod.rpy``.
 
-.. code-block::
+.. code-block:: python
+  :linenos:
 
   # define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p
   image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
@@ -420,7 +433,8 @@ The same code can be found in ``game/mods/Sample Mod/sample_mod.rpy``.
 Final Script - Clean
 --------------------
 
-.. code-block::
+.. code-block:: python
+  :linenos:
 
   image sample movie = Movie(play="mods/Sample Mod/sample_movie.webm", loop = True, size = {gui.game_width, gui.game_height})
 

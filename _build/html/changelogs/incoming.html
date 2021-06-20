@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Incoming Changes and Features, Players’ Suggestions for Mod Features &mdash; Astral Lust  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Changelog - Modding" href="modding.html" />
+    <link rel="prev" title="Init Map" href="../developer/init_map.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Astral Lust
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../modding/get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/creation_guide.html">Creation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/cards.html">Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/dreams.html">Dreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/gui.html">GUI Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/enemies.html">Enemies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/lootlists.html">Lootlists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/triggers.html">Triggers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/prisoners.html">Prisoners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/traders.html">Traders &amp; Items</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Incoming Changes and Features, Players’ Suggestions for Mod Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#next-version">Next version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#undefined">Undefined</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#planned-features">Planned features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suggestions">Suggestions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#working-but-not-in-the-docs">Working, but not in the docs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modding.html">Changelog - Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="game.html">Changelog - Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="full.html">Changelog - Full</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debug.html">Changelog - Debug Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dreams.html">Changelog - Dreams Mode</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astral Lust</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Incoming Changes and Features, Players’ Suggestions for Mod Features</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/changelogs/incoming.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="incoming-changes-and-features-players-suggestions-for-mod-features">
+<h1>Incoming Changes and Features, Players’ Suggestions for Mod Features<a class="headerlink" href="#incoming-changes-and-features-players-suggestions-for-mod-features" title="Permalink to this headline">¶</a></h1>
+<p>This is designed for modders.
+It describes planned changes to the way AL works so that you can prepare your mod or start working on new features.
+It also describes what modding support I want to implement.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="next-version">
+<h2>Next version<a class="headerlink" href="#next-version" title="Permalink to this headline">¶</a></h2>
+<p>These things are planned for the next alpha release.</p>
+<ul class="simple">
+<li><p>Card crafting at the forge</p></li>
+<li><p>Store cards at the forge</p></li>
+<li><p>Sorting deck</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="undefined">
+<h2>Undefined<a class="headerlink" href="#undefined" title="Permalink to this headline">¶</a></h2>
+<p>I have no idea when these changes will come live.
+They are not planned, I’ll be implementing them after doing planned content for given version.
+So the speed of their implementation depends on my speed of making planned content.</p>
+<ul class="simple">
+<li><p>give your own dialogue choices when speaking with vanilla characters and using items</p></li>
+<li><p>Adding your own pc apps</p></li>
+<li><p>adding your own choices to the lobby doors (make new expansions, new outside content)</p></li>
+<li><p>using your own screens in rooms (add interactable items, people)</p></li>
+<li><p>add new enemy actions tags (if you need more than 6 images per enemy)</p></li>
+<li><p>add new girls to the wardrobe</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="planned-features">
+<h3>Planned features<a class="headerlink" href="#planned-features" title="Permalink to this headline">¶</a></h3>
+<p>Feel free to implement these stuff in your mods, who knows when these will be in the game, or if they ever be:</p>
+<ul class="simple">
+<li><p>artifacts</p></li>
+<li><p>characteristics (abilities and traits, something like a class)</p></li>
+<li><p>card upgrades</p></li>
+<li><p>card memory (keep cards after death, select unique cards to be in the deck)</p></li>
+<li><p>factions - relationships, bases, quests</p></li>
+<li><p>strip club expansion</p></li>
+<li><p>bar expansion</p></li>
+<li><p>currency creation</p></li>
+<li><p>advanced economics system</p></li>
+<li><p>card trading</p></li>
+<li><p>rework of GUI</p></li>
+<li><p>new gallery screen, with images</p></li>
+<li><p>two more succubi</p></li>
+<li><p>catching pets</p></li>
+<li><p>battle aid by pets and girls</p></li>
+<li><p>second and third hotel floor</p></li>
+<li><p>advanced enemies’ AI</p></li>
+<li><p>support for many enemies in combat</p></li>
+<li><p>drag/drop cards in battle</p></li>
+<li><p>dungeons, classical reguelite deckbuilder experience</p></li>
+<li><p>outpost creation and management (hub for other factions, lead a force of your own)</p></li>
+<li><p>faction creation</p></li>
+<li><p>SFW mode</p></li>
+<li><p>translations</p></li>
+<li><p>android version</p></li>
+<li><p>rework ironman mode, one save, autosaves, no loading, save on exit</p></li>
+<li><p>mod manager</p></li>
+<li><p>automatic updates</p></li>
+<li><p>AL website, optional integration with Patreon, server working with updates and mod manager</p></li>
+<li><p>rework of codex, so it’s faster, supports showing how many entries you don’t have, etc.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="suggestions">
+<h3>Suggestions<a class="headerlink" href="#suggestions" title="Permalink to this headline">¶</a></h3>
+<p>I don’t know if they ever make it to the game, these are some of the better suggestions, fell free to implement them in your mod:</p>
+<ul class="simple">
+<li><p>upgrade playroom into a harem, so that succubi are not kept in the cold, dark dungeon</p></li>
+<li><p>card fusion - Where you can fuse say five of the same type(attack, power etc.) and rarity of card and receive a random card from the next level of rarity of the same type. Either in forge or new Alchemy room.</p></li>
+<li><p>A thief girl you random encounter that steals one of your cards. If you have enough agility ~5-7 you can catch her and get a lil bj scene. If you cant catch here the card ist lost</p></li>
+<li><p>hypnotize the girls into a trance and having sex with them, or coming across female rouges and after beating them hypnotizing them to be placed into the dungeon all kind of stuff.</p></li>
+<li><p>it would be nice to be able to buy the trader’s daughter and take her to the hotel.</p></li>
+<li><p>once an achievements system is in place, make it so the back of the cards is customizable. As in, you can unlock what to see instead of just the current default (the one with the kabbalah tree of life)</p></li>
+<li><p>Basically, whenever we destroy a card, there is a chance of some material dropping, essentially making them the middleman to transform coal into something else. Said chances will increase depending on the tier of the cards, with the gray ones being the most unlikely to leave anything behind.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="working-but-not-in-the-docs">
+<h2>Working, but not in the docs<a class="headerlink" href="#working-but-not-in-the-docs" title="Permalink to this headline">¶</a></h2>
+<p>These things can be already done without altering vanilla game files and hurting compatibility.
+The thing is these things aren’t described in the documentation yet.</p>
+<ul class="simple">
+<li><p>Adding your own collectibles</p></li>
+<li><p>Displaying help screen with your own custom messages</p></li>
+<li><p>Adding your own cheat codes</p></li>
+<li><p>Adding and tweaking character states</p></li>
+<li><p>Adding your own outfits to the girls and the wardrobe</p></li>
+<li><p>Adding enemy flags, using alternative action methods, using ultimate abilities after reaching some hp (see dragon)</p></li>
+<li><p>Adding your scenes to replay gallery</p></li>
+<li><p>Adding new prostitutes to the wanderers’ hideout brothel</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modding.html" class="btn btn-neutral float-right" title="Changelog - Modding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../developer/init_map.html" class="btn btn-neutral float-left" title="Init Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Victorius.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
 
   
   
@@ -88,7 +90,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creation_guide.html">Creation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
@@ -102,7 +106,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="traders.html">Traders &amp; Items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/full.html">Changelog - Full</a></li>
@@ -183,6 +192,10 @@ It also allows us to visit the prisoner in the dungeon.</p>
 <p>This system has safety features enabled, if you use the mod that adds prisoners, but delete it, your save will work.
 Even more! It’ll save your prisoner, so that when you install the mod again, your prisoner will be waiting for you in the dungeon.
 No need to catch him/her/it again.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 <div class="section" id="add-new-prisoner">
 <h2>Add new prisoner<a class="headerlink" href="#add-new-prisoner" title="Permalink to this headline">¶</a></h2>
 <p>You need to add your prisoner to <code class="docutils literal notranslate"><span class="pre">available_prisoners</span></code> at the init time.
@@ -207,7 +220,8 @@ It’s here so that mods which adds them can be safely removed.</p>
 It should end with return, you can also jump somewhere if you know what you’re doing.
 If you jump remember to make sure player ends in a freeroam mode, also remember to change the music.
 You need to add prisoner to the <code class="docutils literal notranslate"><span class="pre">prisoners</span></code> dictionary as <code class="docutils literal notranslate"><span class="pre">{&quot;MyPrisoner&quot;:</span> <span class="pre">NPC_Object}</span></code>.</p>
-<p>You don’t need this label if you don’t want your prisoner to be caught after winning a fight.</p>
+<p>You don’t need this label if you don’t want your prisoner to be caught after winning a fight,
+still if it’s an enemy you should make this label even if it only returns.</p>
 <p><a class="reference external" href="https://www.renpy.org/doc/html/dialogue.html?highlight=dialogues#dialogue-and-narration">Dialogue and Narration</a></p>
 <div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2

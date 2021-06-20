@@ -3,8 +3,8 @@ Traders & Items
 
 .. _new_items:
 
-Adding & changing new items
----------------------------
+Adding & changing items
+-----------------------
 
 Adding new item is simple, we need to add our item to a dictionary ``goods_list``.
 

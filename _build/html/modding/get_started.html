@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
 
   
   
@@ -39,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Customize Astral Lust" href="customize.html" />
+    <link rel="next" title="Creation Guide" href="creation_guide.html" />
     <link rel="prev" title="Welcome to Astral Lust’s documentation!" href="../index.html" /> 
 </head>
 
@@ -93,11 +95,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#step-3-adding-animated-dream">Step 3. Adding animated dream</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-4-adding-a-card">Step 4. Adding a card</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-5-test-with-console">Step 5. Test with console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-step">Next Step</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#final-script-comments">Final Script - Comments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#final-script-clean">Final Script - Clean</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="creation_guide.html">Creation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
@@ -107,7 +112,12 @@
 <li class="toctree-l1"><a class="reference internal" href="triggers.html">Triggers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="prisoners.html">Prisoners</a></li>
 <li class="toctree-l1"><a class="reference internal" href="traders.html">Traders &amp; Items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs/incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/game.html">Changelog - Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/full.html">Changelog - Full</a></li>
@@ -188,7 +198,7 @@
 <div class="line"><br /></div>
 </div>
 <div class="section" id="step-1-preparation-for-modding">
-<h2>Step 1. Preparation for modding<a class="headerlink" href="#step-1-preparation-for-modding" title="Permalink to this headline">¶</a></h2>
+<span id="tab-tutorial"></span><h2>Step 1. Preparation for modding<a class="headerlink" href="#step-1-preparation-for-modding" title="Permalink to this headline">¶</a></h2>
 <p>To get started with modding AL (Astral Lust) you don’t need programming knowledge, you don’t even need to know basics about <code class="docutils literal notranslate"><span class="pre">Ren'Py</span></code>.</p>
 <p>Of course to do more advanced stuff, you’ll need to know them, but there are many things you can do by following this documentation, without any other requirements.</p>
 <p>You should start by downloading <a class="reference external" href="https://www.renpy.org/latest.html">RenPy</a>. It’s needed to compile your mod, in other words - make it work. Once you launch RenPy it’ll ask you for text editor, I personally use Atom, you can check in google what they look like, and choose the one that you like the most.</p>
@@ -275,7 +285,7 @@ As you might have noticed, when we use <code class="docutils literal notranslate
 Basically speaking it means that below code belongs to the thing with <code class="docutils literal notranslate"><span class="pre">:</span></code>.
 Indentation shows the code this belonging.
 In python indentations are the key unlike in most other languages where they are just cosmetic.</p>
-<p>Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 &amp; 999, so you should use init 11 to init 998.
+<p>Alright, enough about other things, other thing you should remember is that AL reserves init -999 to 10 &amp; 995-999, so you should use init 11 to init 994.
 The higher the init the later it loads (and overwrites previous changes if needed). Unless you know what you’re doing, don’t use reserved init numbers.</p>
 <p>Finally, after this sermon comes a time to create our card!
 We need to start by defining class like this <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">OurClassName(Card):</span></code> of course change OurClassName to your name.
@@ -364,21 +374,28 @@ The best for a job like this would probably be Corel or PhotoShop.</p>
 Now what remains is to check them in-game.</p>
 <p>Load your save and open the console by pressing SHIFT + O</p>
 <p>To try our dream -&gt; jump d_Sample_Dream_0
-Change dream label to your label</p>
+Change dream label to your label.</p>
 <p>To add our card to hand -&gt; inventory.cards.append(Sample_Slice())
 Again, change Sample_Slice to your card’s class name</p>
 <p><a class="reference external" href="https://www.renpy.org/doc/html/developer_tools.html?highlight=console#developer-tools">Developer Tools</a></p>
 <div class="line-block">
-<div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 <p>Congratulations!
 You’ve officially made your first mod for the Astral Lust!
 Even Grace is proud of you!</p>
 <p>Now that you know how, you can add more, check the documentation for info how to do that.
-Remember - have fun! Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)</p>
+Remember - have fun! <span class="strike">Will you be the first to change the Dragon images to Thomas the Tank Engine? ;)</span> It was made already by Chuck.</p>
 <p>Don’t hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.</p>
 <p><a class="reference internal" href="customize.html#tab-customize"><span class="std std-ref">Easy to tweak variables</span></a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="next-step">
+<h2>Next Step<a class="headerlink" href="#next-step" title="Permalink to this headline">¶</a></h2>
+<p>While where you should go from now on depends on what you want to make, I would recommend <a class="reference internal" href="creation_guide.html#create-guide"><span class="std std-ref">Creation Guide</span></a> to learn many basic things about Renpy’s working.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -387,7 +404,152 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
 <div class="section" id="final-script-comments">
 <h2>Final Script - Comments<a class="headerlink" href="#final-script-comments" title="Permalink to this headline">¶</a></h2>
 <p>The same code can be found in <code class="docutils literal notranslate"><span class="pre">game/mods/Sample</span> <span class="pre">Mod/sample_mod.rpy</span></code>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p</span>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># define the movie used in a dream, you need to define all movies, size = {gui.game_width, gui.game_height} makes the movie play fullscreen no matter of its size or game version, 4K or 1080p</span>
 <span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
 
 <span class="c1"># define new character with name Stickman and light blue colored name - Hex(#216ba2)</span>
@@ -534,7 +696,7 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
     <span class="c1">#</span>
     <span class="c1"># Don&#39;t hesitate to ask me questions on official Astral Lust Discord server. You can also post your mods there, in #mods-releases channel.</span>
 </pre></div>
-</div>
+</td></tr></table></div>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -542,7 +704,55 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
 </div>
 <div class="section" id="final-script-clean">
 <h2>Final Script - Clean<a class="headerlink" href="#final-script-clean" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="n">sample</span> <span class="n">movie</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="n">play</span><span class="o">=</span><span class="s2">&quot;mods/Sample Mod/sample_movie.webm&quot;</span><span class="p">,</span> <span class="n">loop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="p">{</span><span class="n">gui</span><span class="o">.</span><span class="n">game_width</span><span class="p">,</span> <span class="n">gui</span><span class="o">.</span><span class="n">game_height</span><span class="p">})</span>
 
 <span class="n">define</span> <span class="n">sample_stickman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="s2">&quot;Stickman&quot;</span><span class="p">,</span> <span class="n">who_color</span> <span class="o">=</span> <span class="s2">&quot;#216ba2&quot;</span><span class="p">)</span>
 
@@ -592,7 +802,7 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
 <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandit_melee&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
 <span class="n">lootlist</span><span class="p">[</span><span class="s2">&quot;bandit_melee_girl&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Sample_Slice</span><span class="p">())</span>
 </pre></div>
-</div>
+</td></tr></table></div>
 </div>
 </div>
 
@@ -602,7 +812,7 @@ Remember - have fun! Will you be the first to change the Dragon images to Thomas
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="customize.html" class="btn btn-neutral float-right" title="Customize Astral Lust" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="creation_guide.html" class="btn btn-neutral float-right" title="Creation Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Astral Lust’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

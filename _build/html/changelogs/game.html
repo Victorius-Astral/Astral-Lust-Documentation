@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
 
   
   
@@ -88,7 +90,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../modding/get_started.html">Get Started - Astral Lust Modding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/creation_guide.html">Creation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/customize.html">Customize Astral Lust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../console/basics.html">In-game Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/cards.html">Cards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/dreams.html">Dreams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../graphics/images.html">Images and wallpapers</a></li>
@@ -98,66 +102,154 @@
 <li class="toctree-l1"><a class="reference internal" href="../modding/triggers.html">Triggers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/prisoners.html">Prisoners</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modding/traders.html">Traders &amp; Items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Characters Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/emotions.html">Character Emotions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphics/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/codex.html">Codex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/init_map.html">Init Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="incoming.html">Incoming Changes and Features, Players’ Suggestions for Mod Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modding.html">Changelog - Modding</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog - Game</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#a">0.1.3a</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.1.7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#major">Major</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.1.3</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#major">Major</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#c">0.1.6c</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#d">0.1.2d</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Major</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#b">0.1.6b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#c">0.1.2c</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a">0.1.6a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Added</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id9">Changed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id10">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#b">0.1.2b</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id11">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">0.1.6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id13">0.1.2a</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id14">Major</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id15">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">0.1.5c</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removed">Removed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id16">0.1.2</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id17">Major</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id18">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id19">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id20">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">0.1.5b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id21">0.1.1</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id22">Major</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id23">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id24">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id25">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id25">0.1.5a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id26">0.1.0a</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id27">Major</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id28">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id29">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id30">Fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">0.1.5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Fixed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id31">0.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id32">0.1.4b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id34">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id36">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id37">Removed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id38">0.1.4a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id39">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id40">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id41">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id42">0.1.4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id43">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id44">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id45">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id46">0.1.3b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id47">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id48">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id49">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id50">0.1.3a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id51">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id52">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id53">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id54">0.1.3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id55">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id56">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id57">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id58">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#d">0.1.2d</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id59">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id60">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id61">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id62">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id63">0.1.2c</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id64">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id65">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id66">0.1.2b</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id67">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id68">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id69">0.1.2a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id70">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id71">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id72">0.1.2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id73">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id74">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id75">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id76">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id77">0.1.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id78">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id79">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id80">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id81">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id82">0.1.0a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id83">Major</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id84">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id85">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id86">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id87">0.1.0</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="full.html">Changelog - Full</a></li>
@@ -232,10 +324,642 @@
             
   <div class="section" id="changelog-game">
 <h1>Changelog - Game<a class="headerlink" href="#changelog-game" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="a">
-<h2>0.1.3a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>0.1.7<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="major">
+<h3>Major<a class="headerlink" href="#major" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>added 650 images</p></li>
+<li><p>added 80 animations</p></li>
+<li><p>added 35 events &amp; scenes + 14 additional variants</p></li>
+<li><p>added Savenia Dorack, new main girl (biker girl)</p></li>
+<li><p>added SFW mode, you can stream AL now! Check settings.</p></li>
+</ul>
+</div>
 <div class="section" id="added">
 <h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>SFW mode</p></li>
+<li><p>Lexi 10th event</p></li>
+<li><p>Lexi 11th event</p></li>
+<li><p>expanded Lexi shower scene</p></li>
+<li><p>H scene to Lexi shower</p></li>
+<li><p>sex, thighjob counter to Lexi</p></li>
+<li><p>Main 12th event</p></li>
+<li><p>Alice 13th event</p></li>
+<li><p>Alice 14th event</p></li>
+<li><p>can sleep with Alice in player bed (5 variants)</p></li>
+<li><p>we can now find Alice sleeping in our bed</p></li>
+<li><p>4 scenes with Alice in our bed (8 variants)</p></li>
+<li><p>repeatable BDSM H for Alice (7 variants)</p></li>
+<li><p>submission, sleep sex, bdsm, massage counter to Alice</p></li>
+<li><p>you can build next hotel floor now</p></li>
+<li><p>Savenia 1st event</p></li>
+<li><p>Savenia 2nd event</p></li>
+<li><p>Savenia to girl stats</p></li>
+<li><p>Savenia to the journal</p></li>
+<li><p>Grace 10th event</p></li>
+<li><p>Grace repeatable H</p></li>
+<li><p>boobjob, outside counter to Grace</p></li>
+<li><p>Mina 16th event</p></li>
+<li><p>Mina’s route to her stats</p></li>
+<li><p>treasure hunt event (1 medium event, 8 mini events)</p></li>
+<li><p>expanded warehouse scene</p></li>
+<li><p>Little Fox to girl stats</p></li>
+<li><p>Little Fox to journal</p></li>
+<li><p>suicide</p></li>
+<li><p>bad ending - corruption</p></li>
+<li><p>bad ending - sanity</p></li>
+<li><p>bad ending - “His” influence</p></li>
+<li><p>new enemy</p></li>
+<li><p>new arena</p></li>
+<li><p>new music</p></li>
+<li><p>wallpaper</p></li>
+<li><p>one replay category</p></li>
+<li><p>14 replays</p></li>
+<li><p>message when clicking locked collectible</p></li>
+</ul>
+</div>
+<div class="section" id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now if you leave when Lexi is taking a shower, she would finish it, and do something else</p></li>
+<li><p>characteristics note</p></li>
+<li><p>orc group loot</p></li>
+<li><p>tips now shown name only after completing first event</p></li>
+<li><p>default hotel music</p></li>
+<li><p>improved fade_slow transition</p></li>
+</ul>
+</div>
+<div class="section" id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>recurring nightmare not showing prior image in replay/dreams mode</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="c">
+<h2>0.1.6c<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>support for animated scenes option to explore/return scenes</p></li>
+<li><p>time flowing in secret scene</p></li>
+<li><p>bdsm, denial counter to succubi</p></li>
+<li><p>wooden horse now adds to bdsm counter</p></li>
+<li><p>reminder to mina’s 15th event</p></li>
+<li><p>1 audio file</p></li>
+<li><p>2 emoticons</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Changed<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>bandits with guns now deal a little more damage</p></li>
+<li><p>increased hovered card size in the vault</p></li>
+<li><p>now not all wallpapers are lootable (eq. secret wallpapers)</p></li>
+<li><p>balanced wallpaper drop chance</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Fixed<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>trader discount not saving</p></li>
+<li><p>trader items reset after game exit</p></li>
+<li><p>player massage skills not saving</p></li>
+<li><p>bandits dealing negative amount of damage if weakened</p></li>
+<li><p>block increasing from enemy attacks</p></li>
+<li><p>respectful referral not triggering</p></li>
+<li><p>fireball exhausting</p></li>
+<li><p>dragon starting combat with ultimate ability</p></li>
+<li><p>possibly weird looking buttons</p></li>
+<li><p>spelling mistakes</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="b">
+<h2>0.1.6b<a class="headerlink" href="#b" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>Changed<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>how unique story events are triggered, now it’s much more open</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Fixed<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>missing words when watching series</p></li>
+<li><p>fire breath exhausting</p></li>
+<li><p>exploit at Lola’s pilediver scene</p></li>
+<li><p>using destroying through forge results in a bugged screen</p></li>
+<li><p>weird things happening after pyjamas party event</p></li>
+<li><p>Alice clothes changing sometimes in her 10th and 11th events</p></li>
+<li><p>not full notification in 5th main story event</p></li>
+<li><p>some spelling mistakes</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="a">
+<h2>0.1.6a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>Major<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>added 48 images</p></li>
+<li><p>added 17 animations</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Added<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>a new line to Combat tutorial</p></li>
+<li><p>new items to the traders</p></li>
+<li><p>Quick Save/ Quick Load keybindings, F5 to save, F9 to load</p></li>
+<li><p>percentage of unlocked events to the gallery</p></li>
+<li><p>card destroying to the storage/crafting menus</p></li>
+<li><p>new item, Coal, it’s used to destroy cards</p></li>
+<li><p>coal to sentient enemies lootlists</p></li>
+<li><p>new hidden deal to the devil, to resist hidden corruption</p></li>
+<li><p>263 flags to game files</p></li>
+<li><p>Alice’s tv</p></li>
+<li><p>2 discord codes, for people with 10th level there</p></li>
+<li><p>secret scene</p></li>
+<li><p>2 secret wallpapers</p></li>
+<li><p>Lola to journal</p></li>
+<li><p>Lola event (by Osamabeenfappin)</p></li>
+<li><p>Lola repeatable H</p></li>
+<li><p>tutorial to character menu</p></li>
+<li><p>2 replays, Secret category</p></li>
+<li><p>Lexi’s laptop</p></li>
+<li><p>now you can eat bananas :)</p></li>
+<li><p>f1 cupboard</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>Changed<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>lowered requirements for helping Mina with Alice</p></li>
+<li><p>‘Q’ now also closes new tutorials</p></li>
+<li><p>one wallpaper code</p></li>
+<li><p>increased chance to drop wallpaper after win (2.5% -&gt; 10.0%)</p></li>
+<li><p>now training after maxing stats doesn’t advance time</p></li>
+<li><p>reworked card destroying menu</p></li>
+<li><p>various menus will now close when you click outside them</p></li>
+<li><p>when you find cat, the time advances now</p></li>
+<li><p>improved some exploration loot</p></li>
+<li><p>cards are now destroyed with coal</p></li>
+<li><p>how much corruption you get during some scenes</p></li>
+<li><p>now whispers stop during H outside</p></li>
+<li><p>optimized replay gallery loading time</p></li>
+<li><p>now some replays categories will have name before completing any events</p></li>
+<li><p>removed most story events from replay dreams/exploration categories</p></li>
+<li><p>moved some replay categories</p></li>
+<li><p>journal tips are now sorted</p></li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>Fixed<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>whispers not stopping in wanderer’s hideout discover event</p></li>
+<li><p>foxy camera control reversed</p></li>
+<li><p>sukki having one animation in lifting H repeated</p></li>
+<li><p>Stranded outfit needing 5 Cloth instead of 4</p></li>
+<li><p>perspective resetting on moving items during trade, and in vault</p></li>
+<li><p>getting 0 amount of items</p></li>
+<li><p>grace sometimes disappearing from the hotel</p></li>
+<li><p>restore my clarity devil option, working like remove corruption</p></li>
+<li><p>error on game over from hidden corruption</p></li>
+<li><p>exploit with life steal and sacrificing hp</p></li>
+<li><p>notifications in third main event, now all are displayed</p></li>
+<li><p>getting over max in luck throw for hiding from chimera</p></li>
+<li><p>Grace losing trust instead of Mina in “spin the bottle” game</p></li>
+<li><p>Alice gym outfit footjob using default outfit</p></li>
+<li><p>12th Alice event not regaining hp/sanity</p></li>
+<li><p>Alice’s bored expression, being not sharp</p></li>
+<li><p>some notifications being too quick to see</p></li>
+<li><p>error on being mean to Mina</p></li>
+<li><p>teleport after first Lola event</p></li>
+<li><p>replay gallery being over toolbar</p></li>
+<li><p>few pyjamas party renders clipping</p></li>
+<li><p>leaving Lola room leading to hideout square</p></li>
+<li><p>possible errors during loading (“KeyError: u’movie_Obj/PC/a’”)</p></li>
+<li><p>now you can’t use Lexi laptop if girls are using it</p></li>
+<li><p>many spelling/grammar mistakes</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>0.1.6<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h3>Major<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>added new goth side character Lola, she lives in the wanderer’s hideout (by Osamabeenfappin)</p></li>
+<li><p>added 171 images</p></li>
+<li><p>added 16 animations</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Added<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Meeting Lola (by Osamabeenfappin)</p></li>
+<li><p>pyjamas party event with Mina, Grace, and Alice (by DarrDorack)</p></li>
+<li><p>dream - Millionaire</p></li>
+<li><p>new H to Mina’s massage</p></li>
+<li><p>3 replays</p></li>
+<li><p>2 replay categories</p></li>
+<li><p>Lola to characters menu</p></li>
+<li><p>monthly (5) wallpapers</p></li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h3>Fixed<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>whispers not disappearing sometimes</p></li>
+<li><p>dream, Dekesha not having replay image</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id15">
+<h2>0.1.5c<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id16">
+<h3>Major<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>added tutorial menu, and a few tutorials (default key: Q)</p></li>
+<li><p>reworked character, and choice menus</p></li>
+<li><p>can add your own custom music to the game! Check settings for instruction.</p></li>
+<li><p>can make music playlists in the settings!</p></li>
+<li><p>added 40 images</p></li>
+<li><p>added 5 animations</p></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h3>Added<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>intro</p></li>
+<li><p>starting image</p></li>
+<li><p>game icon reimplemented</p></li>
+<li><p>logo to the main menu</p></li>
+<li><p>new cheat codes for all tiers</p></li>
+<li><p>a few tutorials</p></li>
+<li><p>tutorial menu, to the quick menu (default key: Q) (test)</p></li>
+<li><p>Grace now also takes bath, additional H (decided by poll)</p></li>
+<li><p>show/reset tutorials options to the settings</p></li>
+<li><p>tutorials to the quick menu</p></li>
+<li><p>options to toggle sound notifications</p></li>
+<li><p>custom menus to the characters</p></li>
+<li><p>Succubi to the character menu</p></li>
+<li><p>statistics to the character menu</p></li>
+<li><p>improved error recovery, might help if you’ve corrupted your game playing with console</p></li>
+<li><p>1 replay</p></li>
+<li><p>a few transitions</p></li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h3>Changed<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Preferences renamed to Settings</p></li>
+<li><p>choice menu, now it looks better</p></li>
+<li><p>characters menu</p></li>
+<li><p>replay of Grace’s shower now allows to choose her attitude</p></li>
+<li><p>increased prices of girls at the hideout</p></li>
+<li><p>balanced loot a little</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h3>Fixed<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Grace standing breasts massage missing image</p></li>
+<li><p>statistics not increasing in Kiara scenes</p></li>
+<li><p>statistics not increasing in Mina cunnilingus scene</p></li>
+<li><p>not advancing time in Grace’s shower scene</p></li>
+<li><p>blocked Kiara’s 2nd event in some cases</p></li>
+<li><p>giving Grace rose, without having any</p></li>
+<li><p>a lot of grammar and spelling errors (thanks to Strectmar)</p></li>
+<li><p>rare error on game load</p></li>
+<li><p>misplaced masks in the vault</p></li>
+</ul>
+</div>
+<div class="section" id="removed">
+<h3>Removed<a class="headerlink" href="#removed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>help icon from the pc</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id20">
+<h2>0.1.5b<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id21">
+<h3>Major<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>added 88 images</p></li>
+<li><p>added 19 animations</p></li>
+<li><p>The first side activity for Mina! Improve you massage skill, and get a treat ;)</p></li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h3>Added<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>dream - Dekesha by Darrdorack (check)</p></li>
+<li><p>vault can now be scrolled or dragged to move</p></li>
+<li><p>Mina’s side quest - feet massage (test)</p></li>
+<li><p>7 images to Mina’s 5th event, and different enemies</p></li>
+<li><p>(Coming soon) to the notification about reaching stat cap</p></li>
+<li><p>a few tips to Alice’s question game, now it’s stated clearly that you don’t need to answer all questions to win, only three of eight</p></li>
+<li><p>button to fix gallery to the pc</p></li>
+</ul>
+</div>
+<div class="section" id="id23">
+<h3>Changed<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now there is no infinite combat loop at mina’s 5th event, there are 4 waves.</p></li>
+<li><p>Act of Creation card, now it produces random materials, it has a chance to drop most new items.</p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3>Fixed<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>vault items getting off window</p></li>
+<li><p>trader menu items getting off window</p></li>
+<li><p>gunsmith station mask being off placed</p></li>
+<li><p>Mina &amp; Lexi using pc being off placed</p></li>
+<li><p>collectible image having hard time closing sometimes</p></li>
+<li><p>when trying to close collectible image, opening another image</p></li>
+<li><p>sound not stopping when facing Chimera during exploration</p></li>
+<li><p>chimera steps being too rushed</p></li>
+<li><p>cat “Found” replay not ending properly</p></li>
+<li><p>not getting a kiss in Mina’s “Concerned Friend” replay, also you can give her ice cream now</p></li>
+<li><p>exploit allowing to get many Shot cards from Alice’s shelf, even though you’ve had Shot card already</p></li>
+<li><p>in replay Alice’s Q&amp;A having no items to pay</p></li>
+<li><p>some weird sounding lines</p></li>
+<li><p>some spelling mistakes</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id25">
+<h2>0.1.5a<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id26">
+<h3>Fixed<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>forge description still saying crafting is work-in-progress</p></li>
+<li><p>(all fixes from 0.1.4c)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id27">
+<h2>0.1.5<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id28">
+<h3>Major<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>first wakeup scenes, tell your girls to fuck your brains out before getting up!</p></li>
+<li><p>now you can store cards in the vault! Also you can upgrade it further with two new expansions!</p></li>
+<li><p>card crafting was implemented with two crafting tables, and 6 new cards. 20 recipes await.</p></li>
+<li><p>25 new items to loot from enemies will be used to craft cards. Generally this should reduce grind a lot.</p></li>
+<li><p>reworked vault screen, now you can change its tabs, to card storage, crafting stations.</p></li>
+<li><p>added over 500 images</p></li>
+<li><p>added 97 animations</p></li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h3>Added<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>6 cards, can be obtained only through crafting</p></li>
+<li><p>25 new items</p></li>
+<li><p>20 crafting recipes</p></li>
+<li><p>8 new events to the gallery, one new category</p></li>
+<li><p>2 Alice’s wakeup scenes</p></li>
+<li><p>Alice story event</p></li>
+<li><p>2 vault expansions</p></li>
+<li><p>3 Mina’s story events</p></li>
+<li><p>2 new together H for succubi</p></li>
+<li><p>wanderer hideout, and brothel with four prostitutes (make pedestrians)</p></li>
+<li><p>storing cards in vault</p></li>
+<li><p>crafting cards</p></li>
+<li><p>one render and dialogue line to the 10th main story event</p></li>
+<li><p>Kiara’s story event</p></li>
+<li><p>Kiara’s threesome repeatable H</p></li>
+</ul>
+</div>
+<div class="section" id="id30">
+<h3>Changed<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>most lootlists</p></li>
+<li><p>replay gallery labels, added padding</p></li>
+<li><p>first help screen text a little</p></li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h3>Fixed<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>not likely, yet possible error when saving in trade/vault</p></li>
+<li><p>Mysterious Trader never appearing if you were unlucky (or started new game)</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id32">
+<h2>0.1.4b<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id33">
+<h3>Major<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>reworked replay gallery, now it shows preview images, added dozens of scenes and a few new categories</p></li>
+<li><p>added 92 images</p></li>
+</ul>
+</div>
+<div class="section" id="id34">
+<h3>Added<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>background to replays that contains ‘talks’</p></li>
+<li><p>turn to Mina option when peeking at sleeping Lexi</p></li>
+<li><p>monthly (5) wallpapers, which are preview for 0.1.5</p></li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h3>Changed<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now if you peek at girls under shower for too long, time will advance</p></li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h3>Fixed<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Alice’s toilet H menu not triggering</p></li>
+<li><p>error after sleepover at Alice’s bed</p></li>
+<li><p>many spelling mistakes</p></li>
+<li><p>continuity error in mina’s 4th event</p></li>
+<li><p>no image bug when trying to see Alice’s Training event replay before building a gym in a new game</p></li>
+<li><p>can look for enemy and do a succubus hunt at night</p></li>
+</ul>
+</div>
+<div class="section" id="id37">
+<h3>Removed<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>friendly reminder when using console/developer mode, it was annoying</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id38">
+<h2>0.1.4a<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id39">
+<h3>Added<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Succubus hunt option to the entrance doors</p></li>
+<li><p>option to look for enemies to entrance door</p></li>
+</ul>
+</div>
+<div class="section" id="id40">
+<h3>Changed<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Cease Fire Treaty card - removed destroy and thorns, added exhaust, cost 1 -&gt; 2</p></li>
+<li><p>decreased chance for random combat encounter during exploration 45% -&gt; 15%</p></li>
+<li><p>increased items received from helping Kiara and Lexi 1-2 -&gt; 2-4</p></li>
+<li><p>some transitions in lexi’s 8th event</p></li>
+</ul>
+</div>
+<div class="section" id="id41">
+<h3>Fixed<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>cards spelling mistakes</p></li>
+<li><p>pink succubus not requiring the white one for the threesome scene</p></li>
+<li><p>wrong name when asking for threesome with white succubus</p></li>
+<li><p>error when trying to trade stats without having that much</p></li>
+<li><p>some weird bug one player had, freeze on Alice’s question, according to the game all questions were answered, which shouldn’t be possible, still it will progress if that happens to someone</p></li>
+<li><p>Lexi’s laptop mask being off</p></li>
+<li><p>Grace’s 7th event not unlocking in the replay gallery</p></li>
+<li><p>using Freedom card causing error</p></li>
+<li><p>animations not ending in many repeatable H scenes</p></li>
+<li><p>lexi not covered in cum after hj</p></li>
+<li><p>grace maid fingering showing images in incorrect order</p></li>
+<li><p>toggling animated scenes mid scene making one animation to run for the whole scene</p></li>
+<li><p>alice footjob in gym outfit showing animations in casual outfit instead</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id42">
+<h2>0.1.4<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id43">
+<h3>Major<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>added over 350 images</p></li>
+<li><p>added over 30 animations</p></li>
+<li><p>added new Patron’s cheat codes</p></li>
+<li><p>added 17 events</p></li>
+</ul>
+</div>
+<div class="section" id="id44">
+<h3>Added<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>2 Lexi events</p></li>
+<li><p>2 Alice events</p></li>
+<li><p>2 Mina events</p></li>
+<li><p>all main girls’ toilet events</p></li>
+<li><p>Grace’s change event</p></li>
+<li><p>all main girls’ sleep events</p></li>
+<li><p>2 sleepover events</p></li>
+<li><p>8 Alice’s repeatable H scenes, 3 unique + 5 variants</p></li>
+<li><p>Book of Secrets book</p></li>
+<li><p>Introduction to Vampires book</p></li>
+<li><p>Kain’s Diary book</p></li>
+<li><p>Astral Etiquette book</p></li>
+<li><p>4 main story events</p></li>
+<li><p>10 cheat codes</p></li>
+</ul>
+</div>
+<div class="section" id="id45">
+<h3>Changed<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now if you use antibiotics you need to wait a few days for Alice to get better</p></li>
+<li><p>Lexi’s and wc renders redone</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id46">
+<h2>0.1.3b<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id47">
+<h3>Added<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>quick rest/sleep button</p></li>
+<li><p>option to change max memory size, increase performance by using more memory</p></li>
+<li><p>option to use only RAM as image cache if you don’t have enough Graphical Memory</p></li>
+<li><p>more transitions to Alice’s shower scene</p></li>
+<li><p>new images in selecting prisoner choice menu</p></li>
+<li><p>one audio to the dream</p></li>
+<li><p>3 events to the gallery</p></li>
+</ul>
+</div>
+<div class="section" id="id48">
+<h3>Changed<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>now you have much higher chance to find rose when you need it</p></li>
+<li><p>succubus help</p></li>
+<li><p>made Reccuring Nightmare’s text no longer being too long in some lines</p></li>
+</ul>
+</div>
+<div class="section" id="id49">
+<h3>Fixed<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>many typos, improved flow, thanks to Strectmar</p></li>
+<li><p>random combat encounter taking two time periods</p></li>
+<li><p>some cards’ effects not working with immunities</p></li>
+<li><p>Fireborn card causing error</p></li>
+<li><p>now you can’t enter playroom before building it</p></li>
+<li><p>now you won’t need to rollback after trying to talk to the prisoners when having no prisoners</p></li>
+<li><p>dragon not using ultimate abilities (not that someone actually get so far with it)</p></li>
+<li><p>bug with AL keymap help</p></li>
+<li><p>sleep with dream advancing time by two days</p></li>
+<li><p>About menu, now Ren’Py updates won’t be able to mess it up</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="id50">
+<h2>0.1.3a<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id51">
+<h3>Added<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>around 20 images</p></li>
 <li><p>You can check drawers in player’s room now</p></li>
@@ -246,8 +970,8 @@
 <li><p>transitions to praying and mirror</p></li>
 </ul>
 </div>
-<div class="section" id="changed">
-<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id52">
+<h3>Changed<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>noon -&gt; afternoon</p></li>
 <li><p>succubus threesome talk renders</p></li>
@@ -258,8 +982,8 @@
 <li><p>improved animation of some scenes</p></li>
 </ul>
 </div>
-<div class="section" id="fixed">
-<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id53">
+<h3>Fixed<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>over a hundred spelling mistakes or improved the dialogue’s flow, thanks to Strectmar’s initial screening</p></li>
 <li><p>error on trying to save the woman</p></li>
@@ -285,10 +1009,10 @@
 </div>
 </div>
 </div>
-<div class="section" id="id1">
-<h2>0.1.3<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="major">
-<h3>Major<a class="headerlink" href="#major" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id54">
+<h2>0.1.3<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id55">
+<h3>Major<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>added dreams, there is a chance every time you sleep for a dream, dreams mode released</p></li>
 <li><p>implemented prisoners system</p></li>
@@ -299,8 +1023,8 @@
 <li><p>added 49 events/scenes</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id56">
+<h3>Added<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>dreams mode (Patrons)</p></li>
 <li><p>6 dreams, one with 5 variants</p></li>
@@ -329,8 +1053,8 @@
 <li><p>Mina’s repeatable H scene, 3 variants</p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h3>Changed<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id57">
+<h3>Changed<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>now generic combat has flat 45% chance of happening</p></li>
 <li><p>notification assumes different position if in combat</p></li>
@@ -343,8 +1067,8 @@
 <li><p>Alice’s schedule</p></li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h3>Fixed<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id58">
+<h3>Fixed<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>lowered size of old animations (4K: 1.58GB -&gt; 0.88GB, 1080P: 604MB -&gt; 320MB)</p></li>
 <li><p>overlapping tooltip in character screen</p></li>
@@ -357,24 +1081,24 @@
 </div>
 <div class="section" id="d">
 <h2>0.1.2d<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>Major<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id59">
+<h3>Major<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Improved/Changed/Fixed over 1000 dialogue lines. All thanks to Strectmar - new editor</p></li>
 <li><p>added story mode - disables generic combat event (toggled in preferences)</p></li>
 <li><p>now you can spare human enemies to stop corruption from increasing (no materials)</p></li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>Added<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id60">
+<h3>Added<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>new audio track</p></li>
 <li><p>few new images</p></li>
 <li><p>Now you can seal pinky promise with a kiss if she trusts you enough</p></li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h3>Changed<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id61">
+<h3>Changed<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>some dialogue &amp; renders in Alice’s 8th event to make it better</p></li>
 <li><p>Mina’s 4th journal tip is now much more clear on what you need to do</p></li>
@@ -386,8 +1110,8 @@
 <li><p>a few status effect tooltips, to make them more clear</p></li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h3>Fixed<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id62">
+<h3>Fixed<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>wheel of fortune &amp; lycanthropy &amp; healing card mistakes</p></li>
 <li><p>wandering trader intro playing out every time</p></li>
@@ -404,16 +1128,16 @@
 </div>
 </div>
 </div>
-<div class="section" id="c">
-<h2>0.1.2c<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id9">
-<h3>Changed<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id63">
+<h2>0.1.2c<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id64">
+<h3>Changed<a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>now sleeping with a girl increases sanity by additional 3%, there is 50% chance for corruption to decrease by 2%</p></li>
 </ul>
 </div>
-<div class="section" id="id10">
-<h3>Fixed<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id65">
+<h3>Fixed<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>cat name changing after using a vault, load game and the name will be back</p></li>
 <li><p>some repeatable events (like trust events) being hidden</p></li>
@@ -426,17 +1150,17 @@
 </div>
 </div>
 </div>
-<div class="section" id="b">
-<h2>0.1.2b<a class="headerlink" href="#b" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id11">
-<h3>Changed<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id66">
+<h2>0.1.2b<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id67">
+<h3>Changed<a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>now you need to only answer 3 of Alice questions</p></li>
 <li><p>trader now by default doesn’t keep (when restocking) items given to him by the player</p></li>
 </ul>
 </div>
-<div class="section" id="id12">
-<h3>Fixed<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id68">
+<h3>Fixed<a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>traders not restocking correctly</p></li>
 <li><p>traders not using randomized goods</p></li>
@@ -447,16 +1171,16 @@
 </ul>
 </div>
 </div>
-<div class="section" id="id13">
-<h2>0.1.2a<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id14">
-<h3>Major<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id69">
+<h2>0.1.2a<a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id70">
+<h3>Major<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>fixed false positive virus detection (this time for real) by removing custom game icon</p></li>
 </ul>
 </div>
-<div class="section" id="id15">
-<h3>Fixed<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id71">
+<h3>Fixed<a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Faceless card not exhausting and often costing spirit</p></li>
 <li><p>Hypnotise stunning player instead of enemy</p></li>
@@ -469,10 +1193,10 @@
 </div>
 </div>
 </div>
-<div class="section" id="id16">
-<h2>0.1.2<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id17">
-<h3>Major<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id72">
+<h2>0.1.2<a class="headerlink" href="#id72" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id73">
+<h3>Major<a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>new location for freeroam - library</p></li>
 <li><p>implemented complex trading system along with a few traders</p></li>
@@ -492,8 +1216,8 @@
 <li><p>new tags/fetishes - feet, anal</p></li>
 </ul>
 </div>
-<div class="section" id="id18">
-<h3>Added<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id74">
+<h3>Added<a class="headerlink" href="#id74" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>new location - library</p></li>
 <li><p>talk with Kiara</p></li>
@@ -530,8 +1254,8 @@
 <li><p>sleepover with Mina, 3 variations depending on trust and rng</p></li>
 </ul>
 </div>
-<div class="section" id="id19">
-<h3>Changed<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id75">
+<h3>Changed<a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>death on Mina’s 5th event no longer resets your deck</p></li>
 <li><p>now the same things when looted are summed up</p></li>
@@ -552,8 +1276,8 @@
 <li><p>refreshed about page</p></li>
 </ul>
 </div>
-<div class="section" id="id20">
-<h3>Fixed<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id76">
+<h3>Fixed<a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>enemy still hitting you after dying from thorns</p></li>
 <li><p>attacking a few times after enemy health hits 0 no longer triggers thorn damage</p></li>
@@ -571,10 +1295,10 @@
 </div>
 </div>
 </div>
-<div class="section" id="id21">
-<h2>0.1.1<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id22">
-<h3>Major<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id77">
+<h2>0.1.1<a class="headerlink" href="#id77" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id78">
+<h3>Major<a class="headerlink" href="#id78" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>added 7 story events</p></li>
 <li><p>added over 200 images</p></li>
@@ -584,8 +1308,8 @@
 <li><p>added 2 outfits</p></li>
 </ul>
 </div>
-<div class="section" id="id23">
-<h3>Added<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id79">
+<h3>Added<a class="headerlink" href="#id79" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Lexi’s 6th and 7th story events</p></li>
 <li><p>Mina’s 6th and 7th story events</p></li>
@@ -603,15 +1327,15 @@
 <li><p>6 outfits to wardrobe</p></li>
 </ul>
 </div>
-<div class="section" id="id24">
-<h3>Changed<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id80">
+<h3>Changed<a class="headerlink" href="#id80" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>now you can’t have fun with girls if their trust is zero or negative</p></li>
 <li><p>now fights with giants take place in designated arena which emphasizes their size</p></li>
 </ul>
 </div>
-<div class="section" id="id25">
-<h3>Fixed<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id81">
+<h3>Fixed<a class="headerlink" href="#id81" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>hp bar shows full hp before taking damage / healing</p></li>
 <li><p>emoticons not disappearing after rollback</p></li>
@@ -622,10 +1346,10 @@
 </div>
 </div>
 </div>
-<div class="section" id="id26">
-<h2>0.1.0a<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id27">
-<h3>Major<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id82">
+<h2>0.1.0a<a class="headerlink" href="#id82" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id83">
+<h3>Major<a class="headerlink" href="#id83" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>implemented journal and help (press ‘Q’)</p></li>
 <li><p>you can now escape generic combat</p></li>
@@ -636,8 +1360,8 @@
 <li><p>bugfixes and QoL features</p></li>
 </ul>
 </div>
-<div class="section" id="id28">
-<h3>Added<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id84">
+<h3>Added<a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>transitions to all events that didn’t have them</p></li>
 <li><p>Critic effect (deal x times the damage next time you deal damage)</p></li>
@@ -664,8 +1388,8 @@
 <li><p>Astral Lust keymap in Help menu</p></li>
 </ul>
 </div>
-<div class="section" id="id29">
-<h3>Changed<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id85">
+<h3>Changed<a class="headerlink" href="#id85" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>enemy battle animations are now slower</p></li>
 <li><p>starting player max hp 100 -&gt; 50</p></li>
@@ -698,8 +1422,8 @@
 <li><p>other minor changes</p></li>
 </ul>
 </div>
-<div class="section" id="id30">
-<h3>Fixed<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id86">
+<h3>Fixed<a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>card destroying in forge</p></li>
 <li><p>re-rendered grace massage animation to delete artifacts</p></li>
@@ -737,8 +1461,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id31">
-<h2>0.1.0<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id87">
+<h2>0.1.0<a class="headerlink" href="#id87" title="Permalink to this headline">¶</a></h2>
 <p>Initial Release</p>
 </div>
 </div>

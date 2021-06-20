@@ -1,13 +1,753 @@
 Changelog - Full
 ================
 
-0.1.3b
+0.1.7
 ------
+
+Major
+~~~~~
+
+* added 650 images
+* added 80 animations
+* added 35 events & scenes + 14 additional variants
+* added Savenia Dorack, new main girl (biker girl)
+* added SFW mode, you can stream AL now! Check settings.
+
+Added
+~~~~~
+
+* SFW mode
+* Lexi 10th event
+* Lexi 11th event
+* expanded Lexi shower scene
+* H scene to Lexi shower
+* sex, thighjob counter to Lexi
+* Main 12th event
+* Alice 13th event
+* Alice 14th event
+* can sleep with Alice in player bed (5 variants)
+* we can now find Alice sleeping in our bed
+* 4 scenes with Alice in our bed (8 variants)
+* repeatable BDSM H for Alice (7 variants)
+* submission, sleep sex, bdsm, massage counter to Alice
+* you can build next hotel floor now
+* Savenia 1st event
+* Savenia 2nd event
+* Savenia to girl stats
+* Savenia to the journal
+* Grace 10th event
+* Grace repeatable H
+* boobjob, outside counter to Grace
+* Mina 16th event
+* Mina's route to her stats
+* treasure hunt event (1 medium event, 8 mini events)
+* expanded warehouse scene
+* Little Fox to girl stats
+* Little Fox to journal
+* suicide
+* bad ending - corruption
+* bad ending - sanity
+* bad ending - "His" influence
+* new enemy
+* new arena
+* new music
+* wallpaper
+* one replay category
+* 14 replays
+* message when clicking locked collectible
+
+Changed
+~~~~~~~
+
+* now if you leave when Lexi is taking a shower, she would finish it, and do something else
+* characteristics note
+* orc group loot
+* tips now shown name only after completing first event
+* default hotel music
+* improved fade_slow transition
+
+Fixed
+~~~~~
+
+* recurring nightmare not showing prior image in replay/dreams mode
+
+Mods - Added
+~~~~~~~~~~~~
+
+* optional days attribute to NPC.check() method
+* calc_gui(pixels) - quick way to calculate pixels to your game format
+* scope variable to replays
+* 7 mina emotions - ouch, shocked, eyeroll, apologetic, sigh, exasperated, smile cum
+* 2 alice emotions - pout, closed
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* gui mode is now defined at -999 init
+
+
+|
+|
+
+0.1.6c
+------
+
+Added
+~~~~~
+
+* support for animated scenes option to explore/return scenes
+* time flowing in secret scene
+* bdsm, denial counter to succubi
+* wooden horse now adds to bdsm counter
+* reminder to mina's 15th event
+* 1 audio file
+* 2 emoticons
+
+Changed
+~~~~~~~
+
+* bandits with guns now deal a little more damage
+* increased hovered card size in the vault
+* now not all wallpapers are lootable (eq. secret wallpapers)
+* balanced wallpaper drop chance
+
+Fixed
+~~~~~
+
+* trader discount not saving
+* trader items reset after game exit
+* player massage skills not saving
+* bandits dealing negative amount of damage if weakened
+* block increasing from enemy attacks
+* respectful referral not triggering
+* fireball exhausting
+* dragon starting combat with ultimate ability
+* possibly weird looking buttons
+* spelling mistakes
+
+Mods - Added
+~~~~~~~~~~~~
+
+* characters, and ignored attributes to set_states()
+* stat_sleep to NPCs
+* add_submission() to NPC class
+* stat_bdsm to NPC class
+* optional set attribute to advance_time()
+* emoticon sm/sp screens
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* how wallpaper system works, now not all wallpapers are lootable from combat
 
 Mods - Fixed
 ~~~~~~~~~~~~
 
-* at the end of after_load triggered after_load_start the second time, now after_load_end triggers properly
+* unable to save after using some triggers
+
+|
+|
+
+0.1.6b
+------
+
+Changed
+~~~~~~~
+
+* how unique story events are triggered, now it's much more open
+
+Fixed
+~~~~~
+
+* missing words when watching series
+* fire breath exhausting
+* exploit at Lola's pilediver scene
+* using destroying through forge results in a bugged screen
+* weird things happening after pyjamas party event
+* Alice clothes changing sometimes in her 10th and 11th events
+* not full notification in 5th main story event
+* some spelling mistakes
+
+|
+|
+
+0.1.6a
+------
+
+Major
+~~~~~
+
+* added 48 images
+* added 17 animations
+
+Added
+~~~~~
+
+* a new line to Combat tutorial
+* new items to the traders
+* Quick Save/ Quick Load keybindings, F5 to save, F9 to load
+* percentage of unlocked events to the gallery
+* card destroying to the storage/crafting menus
+* new item, Coal, it's used to destroy cards
+* coal to sentient enemies lootlists
+* new hidden deal to the devil, to resist hidden corruption
+* 263 flags to game files
+* Alice's tv
+* 2 discord codes, for people with 10th level there
+* secret scene
+* 2 secret wallpapers
+* Lola to journal
+* Lola event (by Osamabeenfappin)
+* Lola repeatable H
+* tutorial to character menu
+* 2 replays, Secret category
+* Lexi's laptop
+* now you can eat bananas :)
+* f1 cupboard
+
+Changed
+~~~~~~~
+
+* lowered requirements for helping Mina with Alice
+* 'Q' now also closes new tutorials
+* one wallpaper code
+* increased chance to drop wallpaper after win (2.5% -> 10.0%)
+* now training after maxing stats doesn't advance time
+* reworked card destroying menu
+* various menus will now close when you click outside them
+* when you find cat, the time advances now
+* improved some exploration loot
+* cards are now destroyed with coal
+* how much corruption you get during some scenes
+* now whispers stop during H outside
+* optimized replay gallery loading time
+* now some replays categories will have name before completing any events
+* removed most story events from replay dreams/exploration categories
+* moved some replay categories
+* journal tips are now sorted
+
+Fixed
+~~~~~
+
+* whispers not stopping in wanderer's hideout discover event
+* foxy camera control reversed
+* sukki having one animation in lifting H repeated
+* Stranded outfit needing 5 Cloth instead of 4
+* perspective resetting on moving items during trade, and in vault
+* getting 0 amount of items
+* grace sometimes disappearing from the hotel
+* restore my clarity devil option, working like remove corruption
+* error on game over from hidden corruption
+* exploit with life steal and sacrificing hp
+* notifications in third main event, now all are displayed
+* getting over max in luck throw for hiding from chimera
+* Grace losing trust instead of Mina in "spin the bottle" game
+* Alice gym outfit footjob using default outfit
+* 12th Alice event not regaining hp/sanity
+* Alice's bored expression, being not sharp
+* some notifications being too quick to see
+* error on being mean to Mina
+* teleport after first Lola event
+* replay gallery being over toolbar
+* few pyjamas party renders clipping
+* leaving Lola room leading to hideout square
+* possible errors during loading ("KeyError: u'movie_Obj/PC/a'")
+* now you can't use Lexi laptop if girls are using it
+* many spelling/grammar mistakes
+
+Mods - Major
+~~~~~~~~~~~~
+
+* reworked traders implementation, now changes are made automatically to them, use define
+
+Mods - Added
+~~~~~~~~~~~~
+
+* sacrifice option to enemy atk method, deafult False
+* unlocked boolean, needed when adding to replays_list, decided if name is seen from the start
+* four trigger to death
+* being heal method now returns amount healed
+* can make heal method do notification, make_message = True
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* how arena animation is determined, now all renpy images work
+
+|
+|
+
+0.1.6
+-----
+
+Major
+~~~~~
+
+* added new goth side character Lola, she lives in the wanderer's hideout (by Osamabeenfappin)
+* added 171 images
+* added 16 animations
+
+Added
+~~~~~
+
+* Meeting Lola (by Osamabeenfappin)
+* pyjamas party event with Mina, Grace, and Alice (by DarrDorack)
+* dream - Millionaire
+* new H to Mina's massage
+* 3 replays
+* 2 replay categories
+* Lola to characters menu
+* monthly (5) wallpapers
+
+Fixed
+~~~~~
+
+* whispers not disappearing sometimes
+* dream, Dekesha not having replay image
+
+|
+|
+
+0.1.5c
+------
+
+Major
+~~~~~
+
+* added tutorial menu, and a few tutorials (default key: Q)
+* reworked character, and choice menus
+* can add your own custom music to the game! Check settings for instruction.
+* can make music playlists in the settings!
+* added 40 images
+* added 5 animations
+
+Added
+~~~~~
+
+* intro
+* starting image
+* game icon reimplemented
+* logo to the main menu
+* new cheat codes for all tiers
+* a few tutorials
+* tutorial menu, to the quick menu (default key: Q) (test)
+* Grace now also takes bath, additional H (decided by poll)
+* show/reset tutorials options to the settings
+* tutorials to the quick menu
+* options to toggle sound notifications
+* custom menus to the characters
+* Succubi to the character menu
+* statistics to the character menu
+* improved error recovery, might help if you've corrupted your game playing with console
+* 1 replay
+* a few transitions
+
+Changed
+~~~~~~~
+
+* Preferences renamed to Settings
+* choice menu, now it looks better
+* characters menu
+* replay of Grace's shower now allows to choose her attitude
+* increased prices of girls at the hideout
+* balanced loot a little
+
+Fixed
+~~~~~
+
+* Grace standing breasts massage missing image
+* statistics not increasing in Kiara scenes
+* statistics not increasing in Mina cunnilingus scene
+* not advancing time in Grace's shower scene
+* blocked Kiara's 2nd event in some cases
+* giving Grace rose, without having any
+* a lot of grammar and spelling errors (thanks to Strectmar)
+* rare error on game load
+* misplaced masks in the vault
+
+Removed
+~~~~~~~
+
+* help icon from the pc
+
+Mods - Major
+~~~~~~~~~~~~
+
+* now your pathways can also be relative to mods folder (``myMod/1.png`` instead of ``mods/myMod/1.png``)
+
+Mods - Added
+~~~~~~~~~~~~
+
+* support for up to 20 dialogue options being displayed at once (previously 9)
+* option to add your own characters to the character menu
+* 6 new text tags - love, lust, quiet, small, big, loud
+
+|
+|
+
+0.1.5b
+------
+
+Major
+~~~~~
+
+* added 88 images
+* added 19 animations
+* The first side activity for Mina! Improve you massage skill, and get a treat ;)
+
+
+Added
+~~~~~
+
+* dream - Dekesha by Darrdorack (check)
+* vault can now be scrolled or dragged to move
+* Mina's side quest - feet massage (test)
+* 7 images to Mina's 5th event, and different enemies
+* (Coming soon) to the notification about reaching stat cap
+* a few tips to Alice's question game, now it's stated clearly that you don't need to answer all questions to win, only three of eight
+* button to fix gallery to the pc
+
+Changed
+~~~~~~~
+
+* now there is no infinite combat loop at mina's 5th event, there are 4 waves.
+* Act of Creation card, now it produces random materials, it has a chance to drop most new items.
+
+Fixed
+~~~~~
+
+* vault items getting off window
+* trader menu items getting off window
+* gunsmith station mask being off placed
+* Mina & Lexi using pc being off placed
+* collectible image having hard time closing sometimes
+* when trying to close collectible image, opening another image
+* sound not stopping when facing Chimera during exploration
+* chimera steps being too rushed
+* cat "Found" replay not ending properly
+* not getting a kiss in Mina's "Concerned Friend" replay, also you can give her ice cream now
+* exploit allowing to get many Shot cards from Alice's shelf, even though you've had Shot card already
+* in replay Alice's Q&A having no items to pay
+* some weird sounding lines
+* some spelling mistakes
+
+Mods - Added
+~~~~~~~~~~~~
+
+* player ``skills`` dict to Player class
+* Massage skill
+* ``improve_skill(sk, amt = 1)`` method to Player class, it improves or adds a skill to the player, can be used to decrease skill
+
+|
+|
+
+0.1.5a
+------
+
+Fixed
+~~~~~
+
+* forge description still saying crafting is work-in-progress
+* (all fixes from 0.1.4c)
+
+Mods - Added
+~~~~~~~~~~~~
+
+* 2 new text tag ``{trust}`` & ``{bad}``
+
+|
+|
+
+0.1.5
+-----
+
+Major
+~~~~~
+
+* first wakeup scenes, tell your girls to fuck your brains out before getting up!
+* now you can store cards in the vault! Also you can upgrade it further with two new expansions!
+* card crafting was implemented with two crafting tables, and 6 new cards. 20 recipes await.
+* 25 new items to loot from enemies will be used to craft cards. Generally this should reduce grind a lot.
+* reworked vault screen, now you can change its tabs, to card storage, crafting stations.
+* added over 500 images
+* added 97 animations
+
+Added
+~~~~~
+
+* 6 cards, can be obtained only through crafting
+* 25 new items
+* 20 crafting recipes
+* 8 new events to the gallery, one new category
+* 2 Alice's wakeup scenes
+* Alice story event
+* 2 vault expansions
+* 3 Mina's story events
+* 2 new together H for succubi
+* wanderer hideout, and brothel with four prostitutes (make pedestrians)
+* storing cards in vault
+* crafting cards
+* one render and dialogue line to the 10th main story event
+* Kiara's story event
+* Kiara's threesome repeatable H
+
+Changed
+~~~~~~~
+
+* most lootlists
+* replay gallery labels, added padding
+* first help screen text a little
+
+Fixed
+~~~~~
+
+* not likely, yet possible error when saving in trade/vault
+* Mysterious Trader never appearing if you were unlucky (or started new game)
+
+Mods - Added
+~~~~~~~~~~~~
+
+* 2 buttons - button_craft_stone & button_craft_steel
+* 5 succab emotions
+* 1 kiara emotion - sigh
+* can add tabs to the vault
+* can add recipes to the forge and the gunsmith
+* can make new crafting tables using vanilla screen
+* chinatown2 arena
+
+|
+|
+
+0.1.4c
+------
+
+Changed
+~~~~~~~
+
+* first help screen text a little
+
+Fixed
+~~~~~
+
+* error on sleepover with Mina
+* Mysterious Trader never appearing if you were unlucky (or started new game)
+* Lexi not being topless, she has nice tits, let them out!
+* null chance of Grace being at the wc, now it's ~16% every morning
+* spelling mistake in Regrow Limbs card
+* not being able to fuck in warehouse replay scene
+
+|
+|
+
+0.1.4b
+------
+
+Major
+~~~~~
+
+* reworked replay gallery, now it shows preview images, added dozens of scenes and a few new categories
+* added 92 images
+
+Added
+~~~~~
+
+* background to replays that contains 'talks'
+* turn to Mina option when peeking at sleeping Lexi
+* monthly (5) wallpapers, which are preview for 0.1.5
+
+Changed
+~~~~~~~
+
+* now if you peek at girls under shower for too long, time will advance
+
+Fixed
+~~~~~
+
+* Alice's toilet H menu not triggering
+* error after sleepover at Alice's bed
+* many spelling mistakes
+* continuity error in mina's 4th event
+* no image bug when trying to see Alice's Training event replay before building a gym in a new game
+* can look for enemy and do a succubus hunt at night
+
+Removed
+~~~~~~~
+
+* friendly reminder when using console/developer mode, it was annoying
+
+Mods - Added
+~~~~~~~~~~~~
+
+* new button displayable ``button_label``, can be used with background attribute
+* you can now add your own scenes/categories to replay gallery
+* now you can change vault's space per level
+* ``before_shuffle`` trigger
+* option to add code to trigger directly, through appending function like this ``trigger.before_combat_screen.append(myFunction)``
+* ``dream_end`` label now ends replay automatically
+* ``death2`` label now ends replay automatically
+* ``explore_return`` label now ends replay automatically
+* now ``fight()`` skips combat automatically if in replay, can be disabled by setting ``replay_mode = False`` when calling ``fight()``
+
+Mods - Fixed
+~~~~~~~~~~~~
+
+* error/bug when using console (in freeroam) to jump to a label that ends with return (on this event's end)
+
+|
+|
+
+0.1.4a
+------
+
+Added
+~~~~~
+
+* Succubus hunt option to the entrance doors
+* option to look for enemies to entrance door
+
+Changed
+~~~~~~~
+
+* Cease Fire Treaty card - removed destroy and thorns, added exhaust, cost 1 -> 2
+* decreased chance for random combat encounter during exploration 45% -> 15%
+* increased items received from helping Kiara and Lexi 1-2 -> 2-4
+* some transitions in lexi's 8th event
+
+Fixed
+~~~~~
+
+* cards spelling mistakes
+* pink succubus not requiring the white one for the threesome scene
+* wrong name when asking for threesome with white succubus
+* error when trying to trade stats without having that much
+* some weird bug one player had, freeze on Alice's question, according to the game all questions were answered, which shouldn't be possible, still it will progress if that happens to someone
+* Lexi's laptop mask being off
+* Grace's 7th event not unlocking in the replay gallery
+* using Freedom card causing error
+* animations not ending in many repeatable H scenes
+* lexi not covered in cum after hj
+* grace maid fingering showing images in incorrect order
+* toggling animated scenes mid scene making one animation to run for the whole scene
+* alice footjob in gym outfit showing animations in casual outfit instead
+
+Mods - Major
+~~~~~~~~~~~~
+
+* reworked the whole file structure, severely increasing overwriting vanilla files compatibility with future versions
+
+Mods - Added
+~~~~~~~~~~~~
+
+* track of current label, it's in the _label variable
+* customizable text tags, check text_tags.rpy in functions/qol
+
+|
+|
+
+0.1.4
+-----
+
+Major
+~~~~~
+
+* added over 350 images
+* added over 30 animations
+* added new Patron's cheat codes
+* added 17 events
+
+Added
+~~~~~
+
+* 2 Lexi events
+* 2 Alice events
+* 2 Mina events
+* all main girls' toilet events
+* Grace's change event
+* all main girls' sleep events
+* 2 sleepover events
+* 8 Alice's repeatable H scenes, 3 unique + 5 variants
+* Book of Secrets book
+* Introduction to Vampires book
+* Kain's Diary book
+* Astral Etiquette book
+* 4 main story events
+* 10 cheat codes
+
+Changed
+~~~~~~~
+
+* now if you use antibiotics you need to wait a few days for Alice to get better
+* Lexi's and wc renders redone
+
+Mods - Added
+~~~~~~~~~~~~
+
+* a few new pages to the documentation, changed or expanded a few other
+* support for tweaking characters states (what they do, where they are)
+* a few Alice's emotions, one Lexi's emotion
+
+|
+|
+
+0.1.3b
+------
+
+Added
+~~~~~
+
+* quick rest/sleep button
+* option to change max memory size, increase performance by using more memory
+* option to use only RAM as image cache if you don't have enough Graphical Memory
+* more transitions to Alice's shower scene
+* new images in selecting prisoner choice menu
+* one audio to the dream
+* 3 events to the gallery
+
+Changed
+~~~~~~~
+
+* now you have much higher chance to find rose when you need it
+* succubus help
+* made Recurring Nightmare's text no longer being too long in some lines
+
+Fixed
+~~~~~
+
+* many typos, improved flow, thanks to Strectmar
+* random combat encounter taking two time periods
+* some cards' effects not working with immunities
+* Fireborn card causing error
+* now you can't enter playroom before building it
+* now you won't need to rollback after trying to talk to the prisoners when having no prisoners
+* dragon not using ultimate abilities (not that someone actually get so far with it)
+* bug with AL keymap help
+* sleep with dream advancing time by two days
+* About menu, now Ren'Py updates won't be able to mess it up
+
+Mods - Major
+~~~~~~~~~~~~
+
+* reworked triggers, now they can actually use global/local variables, as they are in fact executed in code now, not in the trigger object. You don't need to compile triggers anymore, I got you covered, it'll be compiled automatically at game startup.
+
+Mods - Removed
+~~~~~~~~~~~~~~
+
+* old card methods granting effect, only buff() method should be used to increase or decrease status effects
+
+Mods - Added
+~~~~~~~~~~~~
+
+* 5 looting triggers and 3 new ones to combat
+
+Mods - Changed
+~~~~~~~~~~~~~~
+
+* now cards are reset with load using reset() method (you need to initialize your variables here). __init__() by default calls this method.
+
+Mods - Fixed
+~~~~~~~~~~~~
+
+* trigger after_load_start triggering instead of after_load_end
 
 |
 |
