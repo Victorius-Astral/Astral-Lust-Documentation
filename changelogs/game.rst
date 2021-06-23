@@ -1,6 +1,87 @@
 Changelog - Game
 ================
 
+0.1.7a
+------
+
+Major
+~~~~~
+
+* map mechanic implemented, it shows where girls and story events are, and allows insta-travel
+* new gui to inventory/character/journal menus
+* added 168 images
+* added 24 animations
+
+Added
+~~~~~
+
+* help in case game's not working to main folder
+* notifications to bad endings
+* nicknames to some girl stats
+* 6 wallpapers
+* lexi event
+* lexi repeatable H
+* cunnilingus to Lexi stats
+* one replay
+* new little fox stats image
+* little fox image is changed in full sfw mode
+* can get a dream when sleeping with a girl
+* craftable lexi outfit
+* Savenia to wardrobe
+* 8 outfits to wardrobe
+* optimized long game performance
+* sanity 'safety belt' for main 12th event
+* if you can get unique event on exploration it will be shown
+
+Changed
+~~~~~~~
+
+* during suicide you no longer lose items
+* now sacrifice damage won't be affected by buffs/debuffs
+* now music changes entirely in H scenes outside
+* characteristics menu was hidden till mechanic is implemented
+* increased size of destroy cost
+* regeneration buff - now it decreases when burning, and negates with poison
+* now quick sleep button will take you back to where you were before using it
+
+Fixed
+~~~~~
+
+* Alice 13th event stuck at the end sometimes
+* Alice animation in waking up cunnilingus skipping
+* black screen when choosing if to cum inside or outside in Alice scene
+* whispers not disappearing in new outside H scenes
+* Lexi handjob last animation ending awkwardly fast, now it loops
+* grace no image bug in standing massage without animations
+* 12th main quest can end with weird jump
+* empower effect giving one less strength than it should
+* item overflow out of bag
+* card preview in crafting/destroy
+* clipping in one lil fox render
+* mina feet massage can't be done in sfw mode
+* error on Mina's feet massage
+* some enemy action text in sfw mode being to explicit
+* amanda picture (nipples) could be seen in full sfw mode
+* secret H scene showing in in sfw mode
+* Kiara showing up in the gallery before unlocking library
+* trader discount not loading
+* can leave pc when writing code
+* Grace can have pyjamas scenes without unlocking this outfit
+* could trigger Alice's 14th event without playroom
+* can give Lexi ice cream before she tells us she like them
+* could check at f2 shelf at night, and it would have day renders
+* wakeup from Mina sleepover only to find Alice sleeping there
+* Alice can be sleeping in our bed after we slept in hers
+* Alice can be sleeping in our bed after Lexi 11th event and Mina 15th event
+* wandering trader's daughter didn't get her father discount
+* not all buttons showing in trade screen
+* price wrapping sometimes
+* reading books taking time if it's capped and not taking otherwise
+* many typos
+
+|
+|
+
 0.1.7
 ------
 
