@@ -1,6 +1,31 @@
 Changelog - Game
 ================
 
+0.1.7b
+------
+
+Added
+~~~~~
+
+* map find events support for events triggered with dialogue options
+
+Changed
+~~~~~~~
+
+* now you need to met Grace first before using map
+* removed one line in beginner guide
+
+Fixed
+~~~~~
+
+* map showed available events even if you already improved relations with girl that day
+* error due to having more story progress than intended, be it after using console, cheats or possibly game bug
+* map event finder not updating after some events not progressing time
+* error on opening wardrobe after new game
+
+|
+|
+
 0.1.7a
 ------
 
