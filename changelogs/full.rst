@@ -1,6 +1,105 @@
 Changelog - Full
 ================
 
+0.1.8
+-----
+
+Added
+~~~~~
+
+* 460 images
+* 36 animations
+* 3rd savenia event
+* 4th savenia event
+* 5th savenia event
+* repeatable savenia H scene
+* boobjob, blowjob, outside, inside to savenia stats
+* footjob to Mina's stats
+* new dialogue option with Little Fox
+* patting cat - bedroom/lobby/kitchen
+* patting dog - bedroom/lobby/corridor
+* pats to cat & dog stats
+* kissing lexi - bedroom
+* kissing alice - bedroom/gym
+* kissing grace - bedroom/lobby/kitchen/corridor/goodnight/corrupted goodnight
+* kissing mina - love/friend/competition
+* kisses to Alice, Mina, Lexi & Grace stats
+* submission, blowjob, thighjob, handjob, anal, came inside to Grace stats
+* new bad ending (secret)
+* sex positions to girls stats
+* masturbation & boobjob to Alice stats
+* 5 new wallpapers (patrons)
+* 4th vault expansion - +25/+2 space
+* 5th vault expansion - +25/+2 space, Currency no longer takes space
+* 6th vault expansion - +25/+2 space, Space for materials per level +100% (+175/0)
+* 7th vault expansion - +25/+2 space, Space for materials & cards per level +100% (+200/+16)
+* several text & textbox related settings
+* settings to change main menu images
+* new characters icons to the map
+* recover (fix) gallery button support for new and all future story events
+* scrollbar to crafting screen
+* Always Display Masks option to game settings
+* masks opacity sliders to settings (for now only in forced mode)
+* new font for madness lines
+* map support for savenia events
+* wallpaper code input window
+* allowed copy-paste wallpaper code
+* 'what's new' screen on the first time launching new version
+
+Changed
+~~~~~~~
+
+* drastically improved performance of wallpaper and collectibles tabs
+* Savenia's first event tip, now it clarifies need for the next hotel floor
+* main menu has new looks
+* text is now outlined by default
+* now main menu shows girls
+* now finding treasure map doesn't end exploration
+* increased chance of finding map 30 -> 35
+* increased blur for sfw mode in 4k
+* story dialogue options now are highlighted
+* dialogue options (repeatable) show what they increase
+* now characters in the map are outlined
+* renamed 'fix gallery' button to 'recover gallery'
+* removed patreon icon from PC
+* improved card destroying screen
+* increased vault/crafting menu size
+* increased card size in vault
+* increased vault (materials) space per level to 50
+* bad endings now block rollback
+* when training after reaching the cap, you no longer tire yourself
+* one line in Alice's 5th event
+* building/upgrading hotel now checks vault for the items too
+* increased card size in the deck view
+* setting tabs are now always displayed
+
+Fixed
+~~~~~
+
+* some clipping in renders when finding cat
+* SFW mode not blocking Alice masturbation/ass in Mina's 3rd event
+* weird light reflection in Mina's 3rd event
+* unable to finish SFW mode because of lack of lust increasing options for girls
+* SFW mode not working in Little Fox meeting
+* card destroying tab selecting vault tab
+* treasure hunt won't reset if defeated in ambush
+* Alice's 5th event animations not changing
+* sfw skipped notification not showing in many events
+* alice's anal wc not raising statistics
+* missing image in Grace bath massage
+* Kiara story sex not increasing creampie counter
+* Alice story events not increasing creampie counter
+* Mina's 3rd event not increasing Alice's masturbation counter
+* Mina's 13th event not increasing cunnilingus counter
+* Mina's footjob not increasing statistics counter
+* Succubus (Pink) getting Threesome counter for both succubi in one scene
+* possible tutorial overflow beyond screen on some displays
+* image not updated when expanding hotel
+* some grammar/spelling mistakes
+
+|
+|
+
 0.1.7b
 ------
 
