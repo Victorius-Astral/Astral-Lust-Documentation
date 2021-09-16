@@ -1,6 +1,46 @@
 Changelog - Full
 ================
 
+0.1.9
+-----
+
+Major
+~~~~~
+
+* reworked combat (saves in the middle of an old fight will give error)
+* reworked cards
+
+Added
+~~~~~
+
+* end turn keybind (spacebar)
+* powersave & frameskip to video settings
+* 5 status effects - Dragon Might, Persistence, Illusive, Venomous & Fury
+* new card - Dragonborn (orange, from dragon)
+* option to toggle rollback block after version upgrade
+* Midnight Kiss event
+* 10 wallpapers
+* templates to mods folder
+
+Changed
+~~~~~~~
+
+* added tabs to what's new screen
+* powersave by deafult is now off (was auto)
+* optimized save load code
+* now game by default is launched in fullscreen
+* balanced many enemies
+* balanced many cards
+
+Fixed
+~~~~~
+* life steal doesn't work on the last hit
+* error on Grace changing clothes
+* 97 other issues, both design flaws and bugs
+
+|
+|
+
 0.1.8
 -----
 
