@@ -1,6 +1,31 @@
 Changelog - Game
 ================
 
+0.1.9a
+------
+
+Added
+~~~~~
+
+* strength & agility add buffs in combat again
+* wallpapers looting in the fight again
+* animated hp bar
+
+Fixed
+~~~~~
+
+* X cost cards couldn't be played
+* overlapping indications
+* Flirtatious Look not changing enemy intent
+* error on Faceless using debuff
+* looting exploit
+* card descriptions not updating after killing enemy
+* unable to skip if loaded from inside of combat
+* hp bar not reflecting actual hp at the start
+
+|
+|
+
 0.1.9
 -----
 
