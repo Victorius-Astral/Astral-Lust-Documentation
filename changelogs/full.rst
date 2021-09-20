@@ -1,6 +1,14 @@
 Changelog - Full
 ================
 
+0.1.9c
+------
+
+Fixed
+~~~~~
+
+* errors on loading save prior to 0.1.9 if shortly before fought enemy group
+
 0.1.9b
 ------
 
