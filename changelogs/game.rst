@@ -1,6 +1,26 @@
 Changelog - Game
 ================
 
+0.1.9b
+------
+
+Changed
+~~~~~~~
+
+* Burning and Poison tooltips
+
+Fixed
+~~~~~
+
+* Sweep description
+* The Sun tooltip
+* strength decreases to 1 with max strength on the second turn
+* burning immunity not working
+* immunities not decreasing effects on receiving them
+
+|
+|
+
 0.1.9a
 ------
 
