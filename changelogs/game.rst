@@ -1,6 +1,43 @@
 Changelog - Game
 ================
 
+0.1.9e
+------
+
+Fixed
+~~~~~
+
+* error when using Cease Fire Treaty
+
+|
+|
+
+0.1.9d
+------
+
+Added
+~~~~~
+
+* new deck images
+* health bar size is dependent on enemy width
+* supporters to the main menu
+
+Changed
+~~~~~~~
+
+* battle gui placement
+* now you can only rollback to battle start, not each move
+
+Fixed
+~~~~~
+
+* error after answering all Alice questions without taking her items
+* (possibly) rollback after death not returning items if died in combat sometimes
+* error when using Cease Fire Treaty card
+
+|
+|
+
 0.1.9c
 ------
 
