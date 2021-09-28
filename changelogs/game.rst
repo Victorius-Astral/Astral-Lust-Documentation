@@ -1,6 +1,44 @@
 Changelog - Game
 ================
 
+0.1.10
+------
+
+Added
+~~~~~
+
+* Mina can appear at the vault
+* 2 H scenes with Mina at the vault
+* one topic to talk about with Mina in the vault
+* new status effect Heart of Flames
+* new card: Heart of Flames
+* damsel in distress event series
+* damsel in distress - brunette
+* damsel in distress - soldier
+* damsel in distress - bimbo
+* damsel in distress - milf
+* damsel in distress - short
+* Main Story side event - Past Lives
+
+Changed
+~~~~~~~
+
+* the rest of status effects icons
+* Dragon now has Heart of Flames buff/card
+* many event lootlists
+* arena park2 rerendered
+* enchanced RNG mechanic of exploring
+
+Fixed
+~~~~~
+
+* supporters overlapping if in game menu inside main menu
+* after Grace change, Grace position is not updated
+* supporters weird display on 4K branch
+
+|
+|
+
 0.1.9e
 ------
 
