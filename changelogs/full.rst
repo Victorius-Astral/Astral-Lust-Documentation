@@ -1,6 +1,18 @@
 Changelog - Full
 ================
 
+0.1.10a
+-------
+
+Fixed
+~~~~~
+
+* 0.1.10 what's new
+* all 0.1.9f fixes
+
+|
+|
+
 0.1.10
 ------
 
@@ -39,6 +51,38 @@ Fixed
 |
 |
 
+0.1.9f
+------
+
+Changed
+~~~~~~~
+
+* death on mina's event has no side effects now
+
+Fixed
+~~~~~
+
+* item loss on rollback
+* vault exploit
+* Freedom in Death & Death cards not ending combat
+* supporters overlapping if in game menu inside main menu
+* after Grace change, Grace position is not updated
+* supporters weird display on 4K branch
+
+|
+|
+
+0.1.9e
+------
+
+Fixed
+~~~~~
+
+* error when using Cease Fire Treaty
+
+|
+|
+
 0.1.9d
 ------
 
@@ -60,7 +104,6 @@ Fixed
 
 * error after answering all Alice questions without taking her items
 * (possibly) rollback after death not returning items if died in combat sometimes
-* error when using Cease Fire Treaty card
 
 |
 |

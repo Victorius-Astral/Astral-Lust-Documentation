@@ -1,6 +1,18 @@
 Changelog - Game
 ================
 
+0.1.10a
+-------
+
+Fixed
+~~~~~
+
+* 0.1.10 what's new
+* all 0.1.9f fixes
+
+|
+|
+
 0.1.10
 ------
 
@@ -32,6 +44,27 @@ Changed
 Fixed
 ~~~~~
 
+* supporters overlapping if in game menu inside main menu
+* after Grace change, Grace position is not updated
+* supporters weird display on 4K branch
+
+|
+|
+
+0.1.9f
+------
+
+Changed
+~~~~~~~
+
+* death on mina's event has no side effects now
+
+Fixed
+~~~~~
+
+* item loss on rollback
+* vault exploit
+* Freedom in Death & Death cards not ending combat
 * supporters overlapping if in game menu inside main menu
 * after Grace change, Grace position is not updated
 * supporters weird display on 4K branch
