@@ -4,11 +4,20 @@ Changelog - Game
 0.1.10b
 -------
 
+Changed
+~~~~~~~
+
+* now strength bonus is not calculated when defining relative card attack
+
 Fixed
 ~~~~~
 
 * error after exploring 129 times in a single session
 * past lives not advancing time
+* true damage not bypassing block
+* unavoidable attack being avoidable
+* sacrifice damage being affected by the buffs
+* error on using Ritual card
 
 |
 |
