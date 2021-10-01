@@ -1,6 +1,18 @@
 Changelog - Game
 ================
 
+0.1.10b
+-------
+
+Fixed
+~~~~~
+
+* error after exploring 129 times in a single session
+* past lives not advancing time
+
+|
+|
+
 0.1.10a
 -------
 
