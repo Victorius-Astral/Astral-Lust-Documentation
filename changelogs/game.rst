@@ -1,6 +1,18 @@
 Changelog - Game
 ================
 
+0.1.10c
+-------
+
+Fixed
+~~~~~
+
+* spikes not granting thorns
+* resurrect not working
+
+|
+|
+
 0.1.10b
 -------
 
