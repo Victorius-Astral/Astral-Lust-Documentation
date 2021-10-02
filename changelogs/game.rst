@@ -84,6 +84,19 @@ Fixed
 |
 |
 
+0.1.9g
+------
+
+Fixed
+~~~~~
+
+* error on opening settings after 0.1.9e patch
+* card tooltip not closing after using a card when behind is another card
+* added various fixes from 0.1.10 patches
+
+|
+|
+
 0.1.9f
 ------
 
