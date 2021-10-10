@@ -72,7 +72,7 @@ Changed
 * Dragon now has Heart of Flames buff/card
 * many event lootlists
 * arena park2 rerendered
-* enchanced RNG mechanic of exploring
+* enhanced RNG mechanic of exploring
 
 Fixed
 ~~~~~
