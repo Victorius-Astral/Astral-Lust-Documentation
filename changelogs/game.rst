@@ -1,6 +1,48 @@
 Changelog - Game
 ================
 
+0.1.10d
+-------
+
+Added
+~~~~~
+
+* attempt at running away costs 2 energy
+* caps to hollow market
+
+Changed
+~~~~~~~
+
+* sacrifice is no longer affected by most debuffs
+* nerfed cultists a little
+* nerfed one dragon ultimate ability
+* nerfed manticore stunning abilities
+* increased cooldown of manticore critic buff
+* decreased strength from werewolf "empower" action 5 -> 3
+* decreased werewolf hp 132 -> 98
+* nerfed orcs a little, lowered their hp, changed critic to strength
+* Headbutt cost to 2, increased base damage to 4
+
+Fixed
+~~~~~
+
+* mousetooltip not disappearing sometimes
+* error when using Faceless card
+* error when using Slice (provided by Alex250)
+* Slice from sample mod not in bandit lootlists (provided by Alex250)
+* spit poison tooltip size
+* card description not updated when drawing cards mid-turn
+* removed placeholder mod settings
+* stun immunity doing nothing
+* card tooltip not closing after using a card when behind is another card
+* enemy action cooldowns resetting each turn
+* Stunning the same enemy on successive turns will not change its intent but will still stun them
+* After winning against the Dragon on Volcanic Fumes from the code in the PC, the Wallpaper of the PC is not closed and hides the scene
+* if an enemy starts with Strength their Intent does not take it into account initially
+
+|
+|
+
 0.1.10c
 -------
 
