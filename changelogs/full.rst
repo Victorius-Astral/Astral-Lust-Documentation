@@ -1,6 +1,132 @@
 Changelog - Full
 ================
 
+0.2.0
+-----
+
+Added
+~~~~~
+
+* Decks system
+* choosing deck before combat
+* 8 deck sorting algorithms
+* 5 deck display options
+* buffs system
+* buffs to character menu
+* 2 buffs - Well Fed, Reinforced Armor
+* Tasks system
+* Tasks silent mode
+* Tasks auto repeat option
+* Task settings
+* Tasks to Lexi
+* Tasks to Grace
+* Tasks to Alice
+* Tasks to Mina
+* 2 cards - Snipe & Frag Grenade
+* new status effect - Hunter's Mark
+* 3 new enemies - Bandit with wakizashi & Bandit with a knife & Bandit Captain
+* generic combat to exploration events
+* a real combat tutorial
+* Allies system - story based only
+* Lexi 13th story event - Trouble at the Market
+* easter egg to Lexi's laptop
+* Grace can appear at the first floor corridor cleaning
+* Grace cleaning 1st floor activity - 2 variants
+* Grace cleaning 2nd floor activity - 2 variants
+* Grace cleaning lobby activity - 2 variants
+* Grace cooking activity - 3 variants
+* Grace play house activity
+* asking Mina about Jack - previous hotel owner
+* asking Alice about Jack - previous hotel owner
+* asking Grace about Jack - previous hotel owner
+* Fox Shrine expansion
+* Rachel - new catchable fox girl
+* Rachel events support to the map
+* Rachel appears at the lobby
+* Rachel appears at the shrine
+* Rachel to the journal
+* Rachel to the girls menu
+* Rachel 1st story event - Saving the Fox
+* Rachel 2nd-6th story events - Building Shrine
+* Rachel 7th story event - Magical Outfit
+* Rachel 8th story event - The Arrival
+* Savenia 6th story event - Recovery
+* Savenia 7th story event - Return
+* Savenia 8th story event - A Surprise
+* Little Fox category to replays
+* Little Fox can live at the hotel
+* Little Fox 2nd story event - At the Hotel
+* Little Fox hunger mechanic
+* Little Fox Thief outfit
+* Little Fox appears at the shrine
+* Little Fox events support to the map
+* Little Fox 3rd story event - Little Thief
+* Little Fox 4th story event - Treasure Hunt
+* Little Fox feeding - handjob - 2 outfits
+* Little Fox feeding - blowjob - 2 outfits
+* Little Fox feeding - footjob - 2 outfits
+* dialogue lines to the Little Fox at the treasure hunt exploration event
+* kissing Little Fox at the treasure hunt exploration event
+* dialogue line to Friendly Wanderers event
+* Injured Dragon exploration event
+* Chased Trader's Daughter exploration event
+* Life with Alice dream event
+* Damsel in Distress - Traitor exploration event
+* Damsel in Distress - Pregnant exploration event
+* 10 Patron wallpapers
+* cheat code to all tiers
+
+Changed
+~~~~~~~
+
+* added Take Cover and Stab to the starting deck, removed Dodge
+* tooltips in character menu now follow mouse
+* optimized menus code
+* balanced trade with the devil
+* random combat will no longer give the same bandits in one fight
+* generic combat event beginning
+* now all facilities at the forge open crafting
+* Cards can no longer be kept in the vault (infinite card storage with decks system)
+* Skill change message now follows new format: 'x improved (x level)'
+* Alice trade in questions game now uses her nickname if set
+* empty card selections will no longer display
+* forge help message
+* crafting now can take vault materials
+* Bandits Rape to Bandits - assault event name in replays
+* different naming style in replay menu
+* improved replay gallery recovery
+* journal/codex GUI improved, increased readability
+* battles are now skipped in replay
+* Little Fox is now considered a side girl
+* Expanded wallpaper adding by code message
+* removed Guard, Healing, Retaliate cards from dragon loot
+
+Fixed
+~~~~~
+
+* looking at draw pile shows which cards will be drawn in order
+* Lexi love above maximum for some players
+* Despair tooltip
+* one intent image for Devourer Giant
+* Looking for Powerful enemies found Strong enemies instead
+* Birthday Gift part 2 replay not playing the whole event
+* notification showing even if no items were looted
+* crafting cards resets slider to the top
+* vault space being permanently filled after using vault materials
+* can't progress with Little Fox in SFW mode
+* narrator used instead of Grace in one line
+* no shadows in Little Fox smile image
+* enemies waiting for deceased turn
+* replay gallery category buttons highlights
+* now it's impossible to start battle with dead being, instead it will have 1 hp
+* affection notify messages in replay
+* messages with 0 increase in trust/lust/affection/submission
+* map showing story events available when characters were in the toilet or outside
+* typos
+
+|
+|
+
 0.1.10d
 -------
 
