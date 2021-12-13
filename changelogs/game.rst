@@ -1,6 +1,33 @@
 Changelog - Game
 ================
 
+0.2.0a
+------
+
+Added
+~~~~~
+
+* Savenia can now go out after her leg healed
+* shortcut to open/close map "m"
+
+Fixed
+~~~~~
+
+* skipping tutorial was not permanent
+* error when using Slice card
+* Patron display for long names
+* save/load bug with disappearing allies
+* Wheel of Fortune card doing nothing in some cases
+* Savenia being at the hotel after leaving
+* bike displays when looking for upgrading hotel when it should not
+* Grace outfit changes in the cooking task
+* task could be finished at night, let the girls sleep!
+* a few characters could be at the bathroom/wc at once
+* girls still asking what you want them to do even if task in auto mode
+
+|
+|
+
 0.2.0
 -----
 
