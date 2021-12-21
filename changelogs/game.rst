@@ -1,6 +1,33 @@
 Changelog - Game
 ================
 
+0.2.0b
+------
+
+Added
+~~~~~
+
+* now map will glow if story event is available
+
+Changed
+~~~~~~~
+
+* improved exploration rng generator, improved story even chance
+* removed character menu help window as it caused issues
+
+Fixed
+~~~~~
+
+* bathing/shower exploit
+* savenia's map event support
+* error when trying to destroy a card (right click)
+* able to leave deck menu without 11 cards
+* exhaustible deck exploit
+* previous patches were run when loading new game
+
+|
+|
+
 0.2.0a
 ------
 
