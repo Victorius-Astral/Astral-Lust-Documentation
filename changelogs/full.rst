@@ -1,6 +1,31 @@
 Changelog - Full
 ================
 
+0.2.1
+-----
+
+Added
+~~~~~
+
+* Lexi feet massage activity
+* Christmas event - Beginning
+* Christmas event - Alice the Christmas Elf
+* Christmas event - Santa Lexi
+* Christmas event - Deer Gracie
+* Christmas event - Kitty
+* Christmas event - Sober
+* Christmas event - Holy Night
+* December Patron wallpapers
+* Christmas 2021 Postcard wallpaper
+
+Changed
+~~~~~~~
+
+* improved map event flickering mechanism
+
+|
+|
+
 0.2.0b
 ------
 
