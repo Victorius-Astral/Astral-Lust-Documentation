@@ -1,6 +1,41 @@
 Changelog - Full
 ================
 
+0.2.1b
+------
+
+Changed
+~~~~~~~
+
+* increased trade icons/text for android
+* on android clicking outside the menu when choosing deck will toggle showing enemies
+* on android clicking a card will make it bigger and clicking it again will use it, clicking outside will return the card
+* Tower has no side effect, armor 5 - 3, empower 2 - 1
+* removed few strong enemies from average combat difficulty
+* story exploration events now have lower chance
+
+Fixed
+~~~~~
+
+* Judgment card dealing damage only to one enemy
+* out of place Hollow Market on android
+* destroying/moving cards between decks counting as interaction
+* error when checking combat tutorial in help menu
+* card related checks
+* encountering the most powerful enemies if not defeated average enemies before (no more masochist mode)
+* typos
+
+|
+|
+
+0.2.1a
+------
+
+* 0.2.0c fixes
+
+|
+|
+
 0.2.1
 -----
 
@@ -22,6 +57,28 @@ Changed
 ~~~~~~~
 
 * improved map event flickering mechanism
+
+|
+|
+
+0.2.0c
+------
+
+Added
+~~~~~
+
+* Christmas event will now reset each year
+
+Fixed
+~~~~~
+
+* being able to trigger Christmas without any story progress
+* the first deck resetting after load
+* unable to pick up two collectibles
+* error when opening a vault on new saves
+* other save loading related bugs
+* healing Alice required all possible cards
+* error when task completed at wanderers hideout
 
 |
 |
