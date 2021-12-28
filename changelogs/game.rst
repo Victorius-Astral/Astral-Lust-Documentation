@@ -23,6 +23,7 @@ Fixed
 * error when checking combat tutorial in help menu
 * card related checks
 * encountering the most powerful enemies if not defeated average enemies before (no more masochist mode)
+* error on Alice's Get Combat Gear task
 * typos
 
 |
