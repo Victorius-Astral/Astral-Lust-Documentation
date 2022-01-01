@@ -1,6 +1,25 @@
 Changelog - Game
 ================
 
+0.2.1c
+------
+
+Changed
+~~~~~~~
+
+* decreased chance of Roars in the Sky event
+
+Fixed
+~~~~~
+
+* injured dragon event not triggering
+* savenia & lexi not disappearing from map after 7th Savenia event
+* errors on tasks - TypeError: loot() argument after ** must be a mapping, not tuple
+* error on option I want to be master of my own destiny from the devil
+
+|
+|
+
 0.2.1b
 ------
 
