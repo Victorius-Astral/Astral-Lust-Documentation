@@ -1,6 +1,63 @@
 Changelog - Game
 ================
 
+0.2.1d
+------
+
+Added
+~~~~~
+
+* footjob to Lexi stats
+* new threesome position stats
+* new setting - Game - Show interaction menu (I key)
+* new setting - Game - Show tasks menu (T key)
+* new setting - Game - Choice menu position
+* new chinatown region arena
+* Patreon and Discord links to the what's new
+* scrollbars to sex positions counter if too many entries
+* 3 unique cards for January 2022 Patrons - Blood Diamond, Delusions, The Last Journey
+* unique card for everyone - Fireworks
+* Lifesteal attack icon to combat
+* summoning allies (for now Delusions card only)
+* Interactions menu
+
+Changed
+~~~~~~~
+
+* moved choice buttons to the right
+* optimized wardrobe
+* animated hovering over intractable items
+* Christmas is now available only till 6th January
+* devourer leech attack icon
+* optimized all cards view
+* made what's new footer italic
+
+Fixed
+~~~~~
+
+* error when seeing Alice get combat gears task completion
+* Lexi's 8th event showing incorrectly on the map
+* injured dragon not showing on old versions
+* error in wardrobe
+* Lexi's footjob not increasing stats
+* Mina's 3rd event animations not playing
+* Faceless not exhausting
+* combat tutorial doesn't reset
+* cards displaying wrong attributes in decks after battle
+* odd game settings placement
+* story mode not preventing random combat encounter
+* Alice Get Combat Gear task
+* hundreds of typos and grammar mistakes
+* xmas without time limits before completion
+* Mina and Lexi 8th event is shown on map but can't be triggered
+* mysterious trader exploit - rolling back after seeing cards
+* alice sexpos menu could overflow beyond screen if you were bad boy
+* arrow in lola room being offscreen
+* ',' at the end of sentence when getting multiple unique cards at once
+
+|
+|
+
 0.2.1c
 ------
 
