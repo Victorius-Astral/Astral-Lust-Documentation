@@ -1,6 +1,32 @@
 Changelog - Game
 ================
 
+0.2.1e
+------
+
+Changed
+~~~~~~~
+
+* Now by default the show mask option will be turned off on Android
+* Stickman Dream was disabled
+* Blood Diamond uses 3 Coal instead of 12 Stone now
+
+Fixed
+~~~~~
+
+* Savenia bike in the interactions menu before finding her
+* Sample Mod settings showing in settings before being fully implemented
+* changes in event rarity not being reflected immediately on new saves
+* new events not being triggerable immediately on new saves
+* before first meeting the girl, her outfits were not showing in wardrobe correctly
+* card tooltip staying after selecting a card
+* card tooltip staying after using a card
+* card tooltip staying after destroying a card
+* affection and time of day not updating visual bug
+
+|
+|
+
 0.2.1d
 ------
 
