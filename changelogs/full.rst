@@ -1,6 +1,69 @@
 Changelog - Full
 ================
 
+0.2.2
+-----
+
+Added
+~~~~~
+
+* Difficulty settings - change at PC
+* Grace coming for a sleepover after having a nightmare
+* Lexi x Grace interaction in the kitchen - 5 variants
+* 3rd Kitsune to the game - Rhainda
+* 1st Rhainda story event - Hunter
+* 2nd Rhainda story event - New Home
+* Little Fox kissing with Rhainda (can be toggled off)
+* Threesome with Little Fox & Rhainda
+* sex event with Rhainda - Fighter
+* 4th Kiara story event - Myth of Creation
+* Kiara repeatable sex scene - 5 outfits, 225 animations
+* New Kiara sex scene - 5 outfits
+* footjob, cunnilingus to Kiara stats
+* new outfits crafting menu
+* Kiara Angel outfit
+* Kiara Nympho outfit
+* Kiara Party Girl outfit
+* message to unlocking outfits
+* support for multiple notifications
+* apps in the pc now have description labels
+* Resume to the main menu, it will allow to resume game where you ended it
+* new erotic scene to Alice shower event
+* increasing vitality heals for increase in max health
+* Mod Settings for Sample Mod, it allows to toggle Stickman dream
+* new secret (bad) ending
+* credits to game over
+
+Changed
+~~~~~~~
+
+* reversed required/owned item count in the crafting menu
+* optimized card crafting menu
+* Craft button to Create button
+* debug mode app is shown only if debug mode is on
+* added outlines to bottom part of PC
+* decreased Flirtatious Look cost to 1, and changed vulnerable 1 to 2
+* improved and optimized state selection
+* Player stats no longer give buffs, instead they work passively
+* Moved story mode from game settings to difficulty settings
+* size of tooltip for interactions menu
+* You can no longer dream when sleeping with girls
+* expanded Fireworks tooltip
+* chance for girl night party occurring to controlled 1/14 chance.
+
+Fixed
+~~~~~
+
+* Orc with halberd saying it'll attack five times instead of four
+* tutorial saying Rubik cube will increase spirituality
+* error when trying to destroy cards with Destroy that were used in battle
+* Destroy cards not being destroyed
+* possible no image when escaping in event Chased Trader Daughter
+* hp being above max if vitality decreased
+
+|
+|
+
 0.2.1e
 ------
 
