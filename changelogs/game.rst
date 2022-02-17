@@ -7,6 +7,7 @@ Changelog - Game
 Added
 ~~~~~
 
+* Spanish and Vietnamese translations
 * Difficulty settings - change at PC
 * Grace coming for a sleepover after having a nightmare
 * Lexi x Grace interaction in the kitchen - 5 variants
