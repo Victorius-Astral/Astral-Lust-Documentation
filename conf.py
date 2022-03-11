@@ -60,3 +60,4 @@ html_static_path = ['_static']
 # Inject CSS #
 def setup(app):
     app.add_css_file('width_fix.css')
+    app.add_css_file('custom.css')

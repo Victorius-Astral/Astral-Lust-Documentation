@@ -1,6 +1,19 @@
 Changelog - Modding
 ===================
 
+0.1.7a
+------
+
+Added
+~~~~~
+
+* support for adding new wardrobe outfits/people
+* 6 lexi emotions
+* new frames - minimap_frame_player, minimap_frame_event
+
+|
+|
+
 0.1.7
 ------
 

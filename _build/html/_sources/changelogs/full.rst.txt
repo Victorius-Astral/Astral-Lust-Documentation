@@ -1,6 +1,1066 @@
 Changelog - Full
 ================
 
+0.2.2a
+------
+
+Added
+~~~~~
+
+* Alice valentine wallpapers
+* bright hover to wallpaper menu
+* tooltips to wallpapers menu with wallpaper name
+* disable animation support to all animations that didn't have it
+* Animations ON/OFF setting to Video tab replacing old settings
+* Notifications style settings to Game tab
+* icons to the items
+* crafting to the character screen
+* updated translations for Spanish and Vietnamese
+* a model info to Rhainda relations tab
+* move items slider to vault and trade
+* Even out function to the trading menu
+* Good Profit mechanic to the traders
+* preview of increased relations to the traders + relations counter
+* Disable Fredericka font setting to the game settings
+* scrollbar to the relations tab
+* some more stuff from 0.2.2 (and 0.2.2a) to what's new
+* notification to the trader's relations increase outside of a trade deal
+* option to chose defeat in Rhainda's 1st event replay
+
+Changed
+~~~~~~~
+
+* Supporters about/credits font
+* Now wallpapers will be sorted, and unlocked wallpapers will show before locked ones
+* HP bars image
+* removed cumming animations from the most events that had them
+* minor dialogue changes in a few events
+* removed continue option from most prostitute sex scenes
+* notifications window
+* reworked the whole inventory system
+* interact 'Interact' font to Fredericka
+* interact menu buttons to follow new GUI style
+* merged character and inventory menus
+* inventory + character menu follows new GUI style
+* vault follows new GUI style
+* crafting menu to follow the new GUI style
+* optimized crafting menu performance
+* increased Mysterious Coin worth 10 -> 60
+* decreased chance to drop Mysteries Coin for most enemies (by 50%)
+* chance when looting treasure trove to obtain Mysterious Coin 100% -> 40%
+* removed obsolete tooltips from character menu
+* relations menu to follow new GUI style
+* help menu to follow new GUI style
+* story menu to follow new GUI style
+* decks menu to follow new GUI style
+* expanded menu icons to follow the new GUI style
+* outfit crafting menu to follow the new GUI style
+* outfit crafting will now happen on clicking the outfit
+* now you can use items in vault for all quests
+* now the items you gave to girls in event previously will not be there next time
+* now wandering trader's daughter trade will clean up bought things
+* wandering trader now will offer some items only after some relations reached
+* increased maximum Hollow Market discount 10% -> 20%, it's harder to increase relations
+* Hollow Market now allow to pay with everything, it restocks weekly
+* Hollow Market can now have more different items to buy, some require higher relations with them
+* default name for new players will be John now
+* notification side for code insertion
+* dream with the devil animation to the moving image
+* Patrons settings category will no longer show for non Patrons
+* what's new frame to more readable one
+* one dialogue line in the Grace's nightmare event
+* wandering trader's daughter is now not separate trader
+* Mysterious Trader will restock everyday
+* You can no longer continue Alice's Q&A game in replay after losing all caps
+* music in first Rhainda event is now positive after the fight
+* Sample Mod stickman dream is now off by default for new players
+* now Warehouse event replay will always have people inside the warehouse
+* In Roars in the Sky event you can now shot at the sky in replay, this option is no longer usable in normal gameplay without a shotting card
+* Prostitutes can now be priced at not full values
+* Madam Hof will display prices in caps now
+* Wandering Trader will display prices in caps now
+* discount from relations no longer applies to the wandering trader daughter services
+
+Fixed
+~~~~~
+
+* previous scene seen after battle when picking a card
+* interaction menu's Lobby (view B) button, taking player to his room
+* multiple healing notifications after sleep
+* error on Treasure Chest events
+* error on exploration on old saves under some circumstances
+* a possibility of patches not applying correctly between some versions
+* Alice's WC anal having an odd image with animations OFF
+* wrong image after animation ends in Grace's 2nd massage event
+* second Grace massage in clothes not raising stats
+* a few weird transitions in Succubi events
+* possible error at midnight kiss event
+* suicide saying you lost cards
+* Alice task error if it was taken before 0.2.1e
+* Astral Lust dream triggering before meeting Kiara
+* tooltip staying after clicking continue in the tutorial
+* rare error at the tutorial end
+* listed cards in deck were aligned to the left side
+* Alice stranded outfit weaving not working
+* could enter playroom before building it with the interactions menu
+* Alice, Lexi and Grace showing in their room while being somewhere else after some events
+* error at replays of midnight kiss event
+* Alice sleeping in player's bed after Grace coming for a sleepover
+* some translations not appearing due to \% and %% translation generation conversion
+* trade save/load exploit
+* Spanish translation sleep being smaller in bed dialogue menu
+* in Spanish Rest icon text is no longer off icon
+* Relations tab one person being hidden under the image
+* updated/added entry not being translated
+* weird spacing at the end of 0.2.2 what's new
+* black screen in replay in warehouse exploration event
+* Alice task related errors for people that didn't cancel her task since before 0.2.1e
+* Alice not showing up first in the replay of Q&A event
+* Alice changing outfit in Q&A replay
+* some rare, latent problems with Alice's Q&A event involving not taking item rewards from her
+* possible errors in building shrine replays
+* items in Alice Q&A shared between saves on one playthrough
+* no background in Mina's Good Ol' Bootle replay
+* no background in Lexi's Trouble at the Market & Feet Massage replays
+* no background in Grace's Play House event replay
+* no background in Lola's event replays
+* no background in the first three secret endings replays
+* black/checker background in skip mode if animation didn't decode first frame before displaying them with some animations
+* Amanda's default way of calling player not translating
+* typos
+
+|
+|
+
+0.2.2
+-----
+
+Added
+~~~~~
+
+* Spanish and Vietnamese translations
+* Difficulty settings - change at PC
+* Grace coming for a sleepover after having a nightmare
+* Lexi x Grace interaction in the kitchen - 5 variants
+* 3rd Kitsune to the game - Rhainda
+* 1st Rhainda story event - Hunter
+* 2nd Rhainda story event - New Home
+* Little Fox kissing with Rhainda (can be toggled off)
+* Threesome with Little Fox & Rhainda
+* sex event with Rhainda - Fighter
+* 4th Kiara story event - Myth of Creation
+* Kiara repeatable sex scene - 5 outfits, 225 animations
+* New Kiara sex scene - 5 outfits
+* footjob, cunnilingus to Kiara stats
+* new outfits crafting menu
+* Kiara Angel outfit
+* Kiara Nympho outfit
+* Kiara Party Girl outfit
+* message to unlocking outfits
+* support for multiple notifications
+* apps in the pc now have description labels
+* Resume to the main menu, it will allow to resume game where you ended it
+* new erotic scene to Alice shower event
+* increasing vitality heals for increase in max health
+* Mod Settings for Sample Mod, it allows to toggle Stickman dream
+* new secret (bad) ending
+* credits to game over
+
+Changed
+~~~~~~~
+
+* reversed required/owned item count in the crafting menu
+* optimized card crafting menu
+* Craft button to Create button
+* debug mode app is shown only if debug mode is on
+* added outlines to bottom part of PC
+* decreased Flirtatious Look cost to 1, and changed vulnerable 1 to 2
+* improved and optimized state selection
+* Player stats no longer give buffs, instead they work passively
+* Moved story mode from game settings to difficulty settings
+* size of tooltip for interactions menu
+* You can no longer dream when sleeping with girls
+* expanded Fireworks tooltip
+* chance for girl night party occurring to controlled 1/14 chance.
+
+Fixed
+~~~~~
+
+* Orc with halberd saying it'll attack five times instead of four
+* tutorial saying Rubik cube will increase spirituality
+* error when trying to destroy cards with Destroy that were used in battle
+* Destroy cards not being destroyed
+* possible no image when escaping in event Chased Trader Daughter
+* hp being above max if vitality decreased
+
+|
+|
+
+0.2.1e
+------
+
+Changed
+~~~~~~~
+
+* Now by default the show mask option will be turned off on Android
+* Stickman Dream was disabled
+* Blood Diamond uses 3 Coal instead of 12 Stone now
+
+Fixed
+~~~~~
+
+* Savenia bike in the interactions menu before finding her
+* Sample Mod settings showing in settings before being fully implemented
+* changes in event rarity not being reflected immediately on new saves
+* new events not being triggerable immediately on new saves
+* before first meeting the girl, her outfits were not showing in wardrobe correctly
+* card tooltip staying after selecting a card
+* card tooltip staying after using a card
+* card tooltip staying after destroying a card
+* affection and time of day not updating visual bug
+
+|
+|
+
+0.2.1d
+------
+
+Added
+~~~~~
+
+* footjob to Lexi stats
+* new threesome position stats
+* new setting - Game - Show interaction menu (I key)
+* new setting - Game - Show tasks menu (T key)
+* new setting - Game - Choice menu position
+* new chinatown region arena
+* Patreon and Discord links to the what's new
+* scrollbars to sex positions counter if too many entries
+* 3 unique cards for January 2022 Patrons - Blood Diamond, Delusions, The Last Journey
+* unique card for everyone - Fireworks
+* Lifesteal attack icon to combat
+* summoning allies (for now Delusions card only)
+* Interactions menu
+
+Changed
+~~~~~~~
+
+* moved choice buttons to the right
+* optimized wardrobe
+* animated hovering over intractable items
+* Christmas is now available only till 6th January
+* devourer leech attack icon
+* optimized all cards view
+* made what's new footer italic
+
+Fixed
+~~~~~
+
+* error when seeing Alice get combat gears task completion
+* Lexi's 8th event showing incorrectly on the map
+* injured dragon not showing on old versions
+* error in wardrobe
+* Lexi's footjob not increasing stats
+* Mina's 3rd event animations not playing
+* Faceless not exhausting
+* combat tutorial doesn't reset
+* cards displaying wrong attributes in decks after battle
+* odd game settings placement
+* story mode not preventing random combat encounter
+* Alice Get Combat Gear task
+* hundreds of typos and grammar mistakes
+* xmas without time limits before completion
+* Mina and Lexi 8th event is shown on map but can't be triggered
+* mysterious trader exploit - rolling back after seeing cards
+* alice sexpos menu could overflow beyond screen if you were bad boy
+* arrow in lola room being offscreen
+* ',' at the end of sentence when getting multiple unique cards at once
+
+|
+|
+
+0.2.1c
+------
+
+Changed
+~~~~~~~
+
+* decreased chance of Roars in the Sky event
+
+Fixed
+~~~~~
+
+* injured dragon event not triggering
+* savenia & lexi not disappearing from map after 7th Savenia event
+* errors on tasks - TypeError: loot() argument after ** must be a mapping, not tuple
+* error on option I want to be master of my own destiny from the devil
+
+|
+|
+
+0.2.1b
+------
+
+Changed
+~~~~~~~
+
+* increased trade icons/text for android
+* on android clicking outside the menu when choosing deck will toggle showing enemies
+* on android clicking a card will make it bigger and clicking it again will use it, clicking outside will return the card
+* Tower has no side effect, armor 5 - 3, empower 2 - 1
+* removed few strong enemies from average combat difficulty
+* story exploration events now have lower chance
+
+Fixed
+~~~~~
+
+* Judgment card dealing damage only to one enemy
+* out of place Hollow Market on android
+* destroying/moving cards between decks counting as interaction
+* error when checking combat tutorial in help menu
+* card related checks
+* encountering the most powerful enemies if not defeated average enemies before (no more masochist mode)
+* error on Alice's Get Combat Gear task
+* typos
+
+|
+|
+
+0.2.1a
+------
+
+* 0.2.0c fixes
+
+|
+|
+
+0.2.1
+-----
+
+Added
+~~~~~
+
+* Lexi feet massage activity
+* Christmas event - Beginning
+* Christmas event - Alice the Christmas Elf
+* Christmas event - Santa Lexi
+* Christmas event - Deer Gracie
+* Christmas event - Kitty
+* Christmas event - Sober
+* Christmas event - Holy Night
+* December Patron wallpapers
+* Christmas 2021 Postcard wallpaper
+
+Changed
+~~~~~~~
+
+* improved map event flickering mechanism
+
+|
+|
+
+0.2.0c
+------
+
+Added
+~~~~~
+
+* Christmas event will now reset each year
+
+Fixed
+~~~~~
+
+* being able to trigger Christmas without any story progress
+* the first deck resetting after load
+* unable to pick up two collectibles
+* error when opening a vault on new saves
+* other save loading related bugs
+* healing Alice required all possible cards
+* error when task completed at wanderers hideout
+
+|
+|
+
+0.2.0b
+------
+
+Added
+~~~~~
+
+* now map will glow if story event is available
+
+Changed
+~~~~~~~
+
+* improved exploration rng generator, improved story even chance
+* removed character menu help window as it caused issues
+
+Fixed
+~~~~~
+
+* bathing/shower exploit
+* savenia's map event support
+* error when trying to destroy a card (right click)
+* able to leave deck menu without 11 cards
+* exhaustible deck exploit
+* previous patches were run when loading new game
+
+|
+|
+
+0.2.0a
+------
+
+Added
+~~~~~
+
+* Savenia can now go out after her leg healed
+* shortcut to open/close map "m"
+
+Fixed
+~~~~~
+
+* skipping tutorial was not permanent
+* error when using Slice card
+* Patron display for long names
+* save/load bug with disappearing allies
+* Wheel of Fortune card doing nothing in some cases
+* Savenia being at the hotel after leaving
+* bike displays when looking for upgrading hotel when it should not
+* Grace outfit changes in the cooking task
+* task could be finished at night, let the girls sleep!
+* a few characters could be at the bathroom/wc at once
+* girls still asking what you want them to do even if task in auto mode
+
+|
+|
+
+0.2.0
+-----
+
+Added
+~~~~~
+
+* Decks system
+* choosing deck before combat
+* 8 deck sorting algorithms
+* 5 deck display options
+* buffs system
+* buffs to character menu
+* 2 buffs - Well Fed, Reinforced Armor
+* Tasks system
+* Tasks silent mode
+* Tasks auto repeat option
+* Task settings
+* Tasks to Lexi
+* Tasks to Grace
+* Tasks to Alice
+* Tasks to Mina
+* 2 cards - Snipe & Frag Grenade
+* new status effect - Hunter's Mark
+* 3 new enemies - Bandit with wakizashi & Bandit with a knife & Bandit Captain
+* generic combat to exploration events
+* a real combat tutorial
+* Allies system - story based only
+* Lexi 13th story event - Trouble at the Market
+* easter egg to Lexi's laptop
+* Grace can appear at the first floor corridor cleaning
+* Grace cleaning 1st floor activity - 2 variants
+* Grace cleaning 2nd floor activity - 2 variants
+* Grace cleaning lobby activity - 2 variants
+* Grace cooking activity - 3 variants
+* Grace play house activity
+* asking Mina about Jack - previous hotel owner
+* asking Alice about Jack - previous hotel owner
+* asking Grace about Jack - previous hotel owner
+* Fox Shrine expansion
+* Rachel - new catchable fox girl
+* Rachel events support to the map
+* Rachel appears at the lobby
+* Rachel appears at the shrine
+* Rachel to the journal
+* Rachel to the girls menu
+* Rachel 1st story event - Saving the Fox
+* Rachel 2nd-6th story events - Building Shrine
+* Rachel 7th story event - Magical Outfit
+* Rachel 8th story event - The Arrival
+* Savenia 6th story event - Recovery
+* Savenia 7th story event - Return
+* Savenia 8th story event - A Surprise
+* Little Fox category to replays
+* Little Fox can live at the hotel
+* Little Fox 2nd story event - At the Hotel
+* Little Fox hunger mechanic
+* Little Fox Thief outfit
+* Little Fox appears at the shrine
+* Little Fox events support to the map
+* Little Fox 3rd story event - Little Thief
+* Little Fox 4th story event - Treasure Hunt
+* Little Fox feeding - handjob - 2 outfits
+* Little Fox feeding - blowjob - 2 outfits
+* Little Fox feeding - footjob - 2 outfits
+* dialogue lines to the Little Fox at the treasure hunt exploration event
+* kissing Little Fox at the treasure hunt exploration event
+* dialogue line to Friendly Wanderers event
+* Injured Dragon exploration event
+* Chased Trader's Daughter exploration event
+* Life with Alice dream event
+* Damsel in Distress - Traitor exploration event
+* Damsel in Distress - Pregnant exploration event
+* 10 Patron wallpapers
+* cheat code to all tiers
+
+Changed
+~~~~~~~
+
+* added Take Cover and Stab to the starting deck, removed Dodge
+* tooltips in character menu now follow mouse
+* optimized menus code
+* balanced trade with the devil
+* random combat will no longer give the same bandits in one fight
+* generic combat event beginning
+* now all facilities at the forge open crafting
+* Cards can no longer be kept in the vault (infinite card storage with decks system)
+* Skill change message now follows new format: 'x improved (x level)'
+* Alice trade in questions game now uses her nickname if set
+* empty card selections will no longer display
+* forge help message
+* crafting now can take vault materials
+* Bandits Rape to Bandits - assault event name in replays
+* different naming style in replay menu
+* improved replay gallery recovery
+* journal/codex GUI improved, increased readability
+* battles are now skipped in replay
+* Little Fox is now considered a side girl
+* Expanded wallpaper adding by code message
+* removed Guard, Healing, Retaliate cards from dragon loot
+
+Fixed
+~~~~~
+
+* looking at draw pile shows which cards will be drawn in order
+* Lexi love above maximum for some players
+* Despair tooltip
+* one intent image for Devourer Giant
+* Looking for Powerful enemies found Strong enemies instead
+* Birthday Gift part 2 replay not playing the whole event
+* notification showing even if no items were looted
+* crafting cards resets slider to the top
+* vault space being permanently filled after using vault materials
+* can't progress with Little Fox in SFW mode
+* narrator used instead of Grace in one line
+* no shadows in Little Fox smile image
+* enemies waiting for deceased turn
+* replay gallery category buttons highlights
+* now it's impossible to start battle with dead being, instead it will have 1 hp
+* affection notify messages in replay
+* messages with 0 increase in trust/lust/affection/submission
+* map showing story events available when characters were in the toilet or outside
+* typos
+
+|
+|
+
+0.1.10d
+-------
+
+Added
+~~~~~
+
+* attempt at running away costs 2 energy
+* caps to hollow market
+
+Changed
+~~~~~~~
+
+* sacrifice is no longer affected by most debuffs
+* nerfed cultists a little
+* nerfed one dragon ultimate ability
+* nerfed manticore stunning abilities
+* increased cooldown of manticore critic buff
+* decreased strength from werewolf "empower" action 5 -> 3
+* decreased werewolf hp 132 -> 98
+* nerfed orcs a little, lowered their hp, changed critic to strength
+* Headbutt cost to 2, increased base damage to 4
+
+Fixed
+~~~~~
+
+* mousetooltip not disappearing sometimes
+* error when using Faceless card
+* error when using Slice (provided by Alex250)
+* Slice from sample mod not in bandit lootlists (provided by Alex250)
+* spit poison tooltip size
+* card description not updated when drawing cards mid-turn
+* removed placeholder mod settings
+* stun immunity doing nothing
+* card tooltip not closing after using a card when behind is another card
+* enemy action cooldowns resetting each turn
+* Stunning the same enemy on successive turns will not change its intent but will still stun them
+* After winning against the Dragon on Volcanic Fumes from the code in the PC, the Wallpaper of the PC is not closed and hides the scene
+* if an enemy starts with Strength their Intent does not take it into account initially
+
+|
+|
+
+0.1.10c
+-------
+
+Fixed
+~~~~~
+
+* spikes not granting thorns
+* resurrect not working
+
+|
+|
+
+0.1.10b
+-------
+
+Changed
+~~~~~~~
+
+* now strength bonus is not calculated when defining relative card attack
+
+Fixed
+~~~~~
+
+* error after exploring 129 times in a single session
+* past lives not advancing time
+* true damage not bypassing block
+* unavoidable attack being avoidable
+* sacrifice damage being affected by the buffs
+* error on using Ritual card
+
+|
+|
+
+0.1.10a
+-------
+
+Fixed
+~~~~~
+
+* 0.1.10 what's new
+* all 0.1.9f fixes
+
+|
+|
+
+0.1.10
+------
+
+Added
+~~~~~
+
+* Mina can appear at the vault
+* 2 H scenes with Mina at the vault
+* one topic to talk about with Mina in the vault
+* new status effect Heart of Flames
+* new card: Heart of Flames
+* damsel in distress event series
+* damsel in distress - brunette
+* damsel in distress - soldier
+* damsel in distress - bimbo
+* damsel in distress - milf
+* damsel in distress - short
+* Main Story side event - Past Lives
+
+Changed
+~~~~~~~
+
+* the rest of status effects icons
+* Dragon now has Heart of Flames buff/card
+* many event lootlists
+* arena park2 rerendered
+* enchanced RNG mechanic of exploring
+
+Fixed
+~~~~~
+
+* supporters overlapping if in game menu inside main menu
+* after Grace change, Grace position is not updated
+* supporters weird display on 4K branch
+
+|
+|
+
+0.1.9g
+------
+
+Fixed
+~~~~~
+
+* error on opening settings after 0.1.9e patch
+* card tooltip not closing after using a card when behind is another card
+* added various fixes from 0.1.10 patches
+
+|
+|
+
+0.1.9f
+------
+
+Changed
+~~~~~~~
+
+* death on mina's event has no side effects now
+
+Fixed
+~~~~~
+
+* item loss on rollback
+* vault exploit
+* Freedom in Death & Death cards not ending combat
+* supporters overlapping if in game menu inside main menu
+* after Grace change, Grace position is not updated
+* supporters weird display on 4K branch
+
+|
+|
+
+0.1.9e
+------
+
+Fixed
+~~~~~
+
+* error when using Cease Fire Treaty
+
+|
+|
+
+0.1.9d
+------
+
+Added
+~~~~~
+
+* new deck images
+* health bar size is dependent on enemy width
+* supporters to the main menu
+
+Changed
+~~~~~~~
+
+* battle gui placement
+* now you can only rollback to battle start, not each move
+
+Fixed
+~~~~~
+
+* error after answering all Alice questions without taking her items
+* (possibly) rollback after death not returning items if died in combat sometimes
+
+|
+|
+
+0.1.9c
+------
+
+Fixed
+~~~~~
+
+* errors on loading save prior to 0.1.9 if shortly before fought enemy group
+
+0.1.9b
+------
+
+Changed
+~~~~~~~
+
+* Burning and Poison tooltips
+
+Fixed
+~~~~~
+
+* Sweep description
+* The Sun tooltip
+* strength decreases to 1 with max strength on the second turn
+* burning immunity not working
+* immunities not decreasing effects on receiving them
+
+|
+|
+
+0.1.9a
+------
+
+Added
+~~~~~
+
+* strength & agility add buffs in combat again
+* wallpapers looting in the fight again
+* animated hp bar
+
+Fixed
+~~~~~
+
+* X cost cards couldn't be played
+* overlapping indications
+* Flirtatious Look not changing enemy intent
+* error on Faceless using debuff
+* looting exploit
+* card descriptions not updating after killing enemy
+* unable to skip if loaded from inside of combat
+* hp bar not reflecting actual hp at the start
+
+|
+|
+
+0.1.9
+-----
+
+Major
+~~~~~
+
+* reworked combat (saves in the middle of an old fight will give error)
+* reworked cards
+
+Added
+~~~~~
+
+* end turn keybind (spacebar)
+* powersave & frameskip to video settings
+* 5 status effects - Dragon Might, Persistence, Illusive, Venomous & Fury
+* new card - Dragonborn (orange, from dragon)
+* option to toggle rollback block after version upgrade
+* Midnight Kiss event
+* 10 wallpapers
+* templates to mods folder
+
+Changed
+~~~~~~~
+
+* added tabs to what's new screen
+* powersave by deafult is now off (was auto)
+* optimized save load code
+* now game by default is launched in fullscreen
+* balanced many enemies
+* balanced many cards
+
+Fixed
+~~~~~
+* life steal doesn't work on the last hit
+* error on Grace changing clothes
+* 97 other issues, both design flaws and bugs
+
+|
+|
+
+0.1.8
+-----
+
+Added
+~~~~~
+
+* 460 images
+* 36 animations
+* 3rd savenia event
+* 4th savenia event
+* 5th savenia event
+* repeatable savenia H scene
+* boobjob, blowjob, outside, inside to savenia stats
+* footjob to Mina's stats
+* new dialogue option with Little Fox
+* patting cat - bedroom/lobby/kitchen
+* patting dog - bedroom/lobby/corridor
+* pats to cat & dog stats
+* kissing lexi - bedroom
+* kissing alice - bedroom/gym
+* kissing grace - bedroom/lobby/kitchen/corridor/goodnight/corrupted goodnight
+* kissing mina - love/friend/competition
+* kisses to Alice, Mina, Lexi & Grace stats
+* submission, blowjob, thighjob, handjob, anal, came inside to Grace stats
+* new bad ending (secret)
+* sex positions to girls stats
+* masturbation & boobjob to Alice stats
+* 5 new wallpapers (patrons)
+* 4th vault expansion - +25/+2 space
+* 5th vault expansion - +25/+2 space, Currency no longer takes space
+* 6th vault expansion - +25/+2 space, Space for materials per level +100% (+175/0)
+* 7th vault expansion - +25/+2 space, Space for materials & cards per level +100% (+200/+16)
+* several text & textbox related settings
+* settings to change main menu images
+* new characters icons to the map
+* recover (fix) gallery button support for new and all future story events
+* scrollbar to crafting screen
+* Always Display Masks option to game settings
+* masks opacity sliders to settings (for now only in forced mode)
+* new font for madness lines
+* map support for savenia events
+* wallpaper code input window
+* allowed copy-paste wallpaper code
+* 'what's new' screen on the first time launching new version
+
+Changed
+~~~~~~~
+
+* drastically improved performance of wallpaper and collectibles tabs
+* Savenia's first event tip, now it clarifies need for the next hotel floor
+* main menu has new looks
+* text is now outlined by default
+* now main menu shows girls
+* now finding treasure map doesn't end exploration
+* increased chance of finding map 30 -> 35
+* increased blur for sfw mode in 4k
+* story dialogue options now are highlighted
+* dialogue options (repeatable) show what they increase
+* now characters in the map are outlined
+* renamed 'fix gallery' button to 'recover gallery'
+* removed patreon icon from PC
+* improved card destroying screen
+* increased vault/crafting menu size
+* increased card size in vault
+* increased vault (materials) space per level to 50
+* bad endings now block rollback
+* when training after reaching the cap, you no longer tire yourself
+* one line in Alice's 5th event
+* building/upgrading hotel now checks vault for the items too
+* increased card size in the deck view
+* setting tabs are now always displayed
+
+Fixed
+~~~~~
+
+* some clipping in renders when finding cat
+* SFW mode not blocking Alice masturbation/ass in Mina's 3rd event
+* weird light reflection in Mina's 3rd event
+* unable to finish SFW mode because of lack of lust increasing options for girls
+* SFW mode not working in Little Fox meeting
+* card destroying tab selecting vault tab
+* treasure hunt won't reset if defeated in ambush
+* Alice's 5th event animations not changing
+* sfw skipped notification not showing in many events
+* alice's anal wc not raising statistics
+* missing image in Grace bath massage
+* Kiara story sex not increasing creampie counter
+* Alice story events not increasing creampie counter
+* Mina's 3rd event not increasing Alice's masturbation counter
+* Mina's 13th event not increasing cunnilingus counter
+* Mina's footjob not increasing statistics counter
+* Succubus (Pink) getting Threesome counter for both succubi in one scene
+* possible tutorial overflow beyond screen on some displays
+* image not updated when expanding hotel
+* some grammar/spelling mistakes
+
+|
+|
+
+0.1.7b
+------
+
+Added
+~~~~~
+
+* map find events support for events triggered with dialogue options
+
+Changed
+~~~~~~~
+
+* now you need to met Grace first before using map
+* removed one line in beginner guide
+
+Fixed
+~~~~~
+
+* map showed available events even if you already improved relations with girl that day
+* error due to having more story progress than intended, be it after using console, cheats or possibly game bug
+* map event finder not updating after some events not progressing time
+* error on opening wardrobe after new game
+
+|
+|
+
+0.1.7a
+------
+
+Major
+~~~~~
+
+* map mechanic implemented, it shows where girls and story events are, and allows insta-travel
+* new gui to inventory/character/journal menus
+* added 168 images
+* added 24 animations
+
+Added
+~~~~~
+
+* help in case game's not working to main folder
+* notifications to bad endings
+* nicknames to some girl stats
+* 6 wallpapers
+* lexi event
+* lexi repeatable H
+* cunnilingus to Lexi stats
+* one replay
+* new little fox stats image
+* little fox image is changed in full sfw mode
+* can get a dream when sleeping with a girl
+* craftable lexi outfit
+* Savenia to wardrobe
+* 8 outfits to wardrobe
+* optimized long game performance
+* sanity 'safety belt' for main 12th event
+* if you can get unique event on exploration it will be shown
+
+Changed
+~~~~~~~
+
+* during suicide you no longer lose items
+* now sacrifice damage won't be affected by buffs/debuffs
+* now music changes entirely in H scenes outside
+* characteristics menu was hidden till mechanic is implemented
+* increased size of destroy cost
+* regeneration buff - now it decreases when burning, and negates with poison
+* now quick sleep button will take you back to where you were before using it
+
+Fixed
+~~~~~
+
+* Alice 13th event stuck at the end sometimes
+* Alice animation in waking up cunnilingus skipping
+* black screen when choosing if to cum inside or outside in Alice scene
+* whispers not disappearing in new outside H scenes
+* Lexi handjob last animation ending awkwardly fast, now it loops
+* grace no image bug in standing massage without animations
+* 12th main quest can end with weird jump
+* empower effect giving one less strength than it should
+* item overflow out of bag
+* card preview in crafting/destroy
+* clipping in one lil fox render
+* mina feet massage can't be done in sfw mode
+* error on Mina's feet massage
+* some enemy action text in sfw mode being to explicit
+* amanda picture (nipples) could be seen in full sfw mode
+* secret H scene showing in in sfw mode
+* Kiara showing up in the gallery before unlocking library
+* trader discount not loading
+* can leave pc when writing code
+* Grace can have pyjamas scenes without unlocking this outfit
+* could trigger Alice's 14th event without playroom
+* can give Lexi ice cream before she tells us she like them
+* could check at f2 shelf at night, and it would have day renders
+* wakeup from Mina sleepover only to find Alice sleeping there
+* Alice can be sleeping in our bed after we slept in hers
+* Alice can be sleeping in our bed after Lexi 11th event and Mina 15th event
+* wandering trader's daughter didn't get her father discount
+* not all buttons showing in trade screen
+* price wrapping sometimes
+* reading books taking time if it's capped and not taking otherwise
+* many typos
+
+Mods - Added
+~~~~~~~~~~~~
+
+* support for adding new wardrobe outfits/people
+* 6 lexi emotions
+* new frames - minimap_frame_player, minimap_frame_event
+
+|
+|
+
 0.1.7
 ------
 

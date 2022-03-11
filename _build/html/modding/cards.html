@@ -1,73 +1,37 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Cards &mdash; Astral Lust  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/width_fix.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Dreams" href="dreams.html" />
     <link rel="prev" title="In-game Console" href="../console/basics.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Astral Lust
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -75,19 +39,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started - Astral Lust Modding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creation_guide.html">Creation Guide</a></li>
@@ -125,118 +78,61 @@
 <li class="toctree-l1"><a class="reference internal" href="../changelogs/dreams.html">Changelog - Dreams Mode</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Astral Lust</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Cards</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/modding/cards.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="cards">
-<span id="tab-cards"></span><h1>Cards<a class="headerlink" href="#cards" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="add-new-cards">
-<h2>Add new cards<a class="headerlink" href="#add-new-cards" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="cards">
+<span id="tab-cards"></span><h1>Cards<a class="headerlink" href="#cards" title="Permalink to this headline"></a></h1>
+<section id="add-new-cards">
+<h2>Add new cards<a class="headerlink" href="#add-new-cards" title="Permalink to this headline"></a></h2>
 <p>To add new cards you need to create your cards as a child of Card class. Action to be done on card use is to be contained in <code class="docutils literal notranslate"><span class="pre">play()</span></code> method.</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Take_Cover</span><span class="p">(</span><span class="n">Card</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># card name / .webp image name</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Take Cover&quot;</span>
-        <span class="c1"># spirituality cost</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="c1"># category: Offensive, Defensive, Ability, Power, Tarot</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Defensive&quot;</span>
-        <span class="c1"># rarity: Ordinary, Extraordinary, Mythical, Angelic, Divine, Unique, Tarot</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Extraordinary&quot;</span>
-        <span class="c1"># Help to be displayed when card is hovered</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">=</span> <span class="s1">&#39;&gt;   Block:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s1">&#39;Block&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&gt;   Dodge:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s1">&#39;Dodge&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
-
-    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">block</span><span class="p">(</span><span class="n">amt</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">player</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dodge</span><span class="p">(</span><span class="n">amt</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">player</span><span class="p">)</span>
-        <span class="k">return</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">class</span> <span class="nc">Take_Cover</span><span class="p">(</span><span class="n">Card</span><span class="p">):</span>
+<span class="linenos"> 2</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos"> 3</span>        <span class="c1"># card name / .webp image name</span>
+<span class="linenos"> 4</span>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Take Cover&quot;</span>
+<span class="linenos"> 5</span>        <span class="c1"># spirituality cost</span>
+<span class="linenos"> 6</span>        <span class="bp">self</span><span class="o">.</span><span class="n">sp</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos"> 7</span>        <span class="c1"># category: Offensive, Defensive, Ability, Power, Tarot</span>
+<span class="linenos"> 8</span>        <span class="bp">self</span><span class="o">.</span><span class="n">ca</span> <span class="o">=</span> <span class="s2">&quot;Defensive&quot;</span>
+<span class="linenos"> 9</span>        <span class="c1"># rarity: Ordinary, Extraordinary, Mythical, Angelic, Divine, Unique, Tarot</span>
+<span class="linenos">10</span>        <span class="bp">self</span><span class="o">.</span><span class="n">ra</span> <span class="o">=</span> <span class="s2">&quot;Extraordinary&quot;</span>
+<span class="linenos">11</span>        <span class="c1"># Help to be displayed when card is hovered</span>
+<span class="linenos">12</span>        <span class="bp">self</span><span class="o">.</span><span class="n">tip</span> <span class="o">=</span> <span class="s1">&#39;&gt;   Block:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s1">&#39;Block&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&gt;   Dodge:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">eff</span><span class="p">[</span><span class="s1">&#39;Dodge&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span>    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="linenos">15</span>        <span class="bp">self</span><span class="o">.</span><span class="n">block</span><span class="p">(</span><span class="n">amt</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">player</span><span class="p">)</span>
+<span class="linenos">16</span>        <span class="bp">self</span><span class="o">.</span><span class="n">dodge</span><span class="p">(</span><span class="n">amt</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">player</span><span class="p">)</span>
+<span class="linenos">17</span>        <span class="k">return</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="cards-images">
-<h2>Cards Images<a class="headerlink" href="#cards-images" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="cards-images">
+<h2>Cards Images<a class="headerlink" href="#cards-images" title="Permalink to this headline"></a></h2>
 <p>Start by either creating your own or downloading vanilla card templates:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://mega.nz/file/pEFinb4Z#1oqqwYZDSw-y59x4duEUgZHzy1VJeODrlm5YkPqnmg8">PNG</a></p></li>
@@ -262,92 +158,74 @@
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="status-effects">
-<h2>Status Effects<a class="headerlink" href="#status-effects" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="status-effects">
+<h2>Status Effects<a class="headerlink" href="#status-effects" title="Permalink to this headline"></a></h2>
 <p>Status effects are granted using <code class="docutils literal notranslate"><span class="pre">buff()</span></code>, it takes three arguments:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">buff</span></code> - required, name of status effect - string,</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">amt</span></code> - required, status effect will be changed by this amount - depends on buff, either integer or boolean,</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">minus</span></code> - if status effect can take negative value - boolean, default <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="n">player</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Fire Immunity&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-        <span class="n">enemy</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Ressurect&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="k">return</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>    <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="linenos">2</span>        <span class="n">player</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Fire Immunity&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="linenos">3</span>        <span class="n">enemy</span><span class="o">.</span><span class="n">buff</span><span class="p">(</span><span class="s2">&quot;Ressurect&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="linenos">4</span>        <span class="k">return</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <p><a class="reference internal" href="triggers.html#tab-triggers-effects"><span class="std std-ref">Make new status effect</span></a></p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="exhaust-and-destroy">
-<h2>Exhaust and Destroy<a class="headerlink" href="#exhaust-and-destroy" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="exhaust-and-destroy">
+<h2>Exhaust and Destroy<a class="headerlink" href="#exhaust-and-destroy" title="Permalink to this headline"></a></h2>
 <p>Cards can be destroyed with <code class="docutils literal notranslate"><span class="pre">self.destroy()</span></code>. To exhaust a card you need to return “exhaust” with <code class="docutils literal notranslate"><span class="pre">play()</span></code>. Take note that <code class="docutils literal notranslate"><span class="pre">destroy()</span></code> removes card from your deck not hand/any pile, to make card disappear from combat return <code class="docutils literal notranslate"><span class="pre">&quot;exhaust&quot;</span></code>.</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="o">...</span> <span class="n">card</span> <span class="n">action</span> <span class="o">...</span>
-
-    <span class="bp">self</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
-    <span class="k">return</span> <span class="s2">&quot;exhaust&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="o">...</span> <span class="n">card</span> <span class="n">action</span> <span class="o">...</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span>    <span class="bp">self</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+<span class="linenos">5</span>    <span class="k">return</span> <span class="s2">&quot;exhaust&quot;</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="x-card-cost">
-<h2>X card cost<a class="headerlink" href="#x-card-cost" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="x-card-cost">
+<h2>X card cost<a class="headerlink" href="#x-card-cost" title="Permalink to this headline"></a></h2>
 <p>Set card cost to 0 and execute your action x times, at the end set <code class="docutils literal notranslate"><span class="pre">player.spirit</span></code> to 0:</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="c1"># Attack x times</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">atk</span><span class="p">(</span><span class="n">dmg</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">enemy</span><span class="p">,</span> <span class="n">times</span> <span class="o">=</span> <span class="n">player</span><span class="o">.</span><span class="n">spirit</span><span class="p">)</span>
-
-    <span class="c1"># Do something x times</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">spirit</span><span class="p">):</span>
-        <span class="o">...</span> <span class="n">action</span> <span class="o">...</span>
-
-    <span class="c1"># Set player spirit to 0</span>
-    <span class="n">player</span><span class="o">.</span><span class="n">spirit</span> <span class="o">=</span> <span class="mi">0</span>
-
-    <span class="k">return</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="linenos"> 2</span>    <span class="c1"># Attack x times</span>
+<span class="linenos"> 3</span>    <span class="bp">self</span><span class="o">.</span><span class="n">atk</span><span class="p">(</span><span class="n">dmg</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">enemy</span><span class="p">,</span> <span class="n">times</span> <span class="o">=</span> <span class="n">player</span><span class="o">.</span><span class="n">spirit</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span>    <span class="c1"># Do something x times</span>
+<span class="linenos"> 6</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">spirit</span><span class="p">):</span>
+<span class="linenos"> 7</span>        <span class="o">...</span> <span class="n">action</span> <span class="o">...</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>    <span class="c1"># Set player spirit to 0</span>
+<span class="linenos">10</span>    <span class="n">player</span><span class="o">.</span><span class="n">spirit</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>    <span class="k">return</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="complex-effects">
-<h2>Complex Effects<a class="headerlink" href="#complex-effects" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="complex-effects">
+<h2>Complex Effects<a class="headerlink" href="#complex-effects" title="Permalink to this headline"></a></h2>
 <p>Returning “complex” with play() will skip using card cost and removing it from hand, it can be used with complex card effects that move/exhaust the card before return statement.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="other-card-class-methods">
-<h2>Other Card class methods<a class="headerlink" href="#other-card-class-methods" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="other-card-class-methods">
+<h2>Other Card class methods<a class="headerlink" href="#other-card-class-methods" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">draw()</span></code> - draw x cards:</dt><dd><ul>
@@ -372,9 +250,9 @@
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="list-of-all-status-effects">
-<h2>List of all status effects<a class="headerlink" href="#list-of-all-status-effects" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="list-of-all-status-effects">
+<h2>List of all status effects<a class="headerlink" href="#list-of-all-status-effects" title="Permalink to this headline"></a></h2>
 <p><a class="reference internal" href="triggers.html#tab-triggers-effects"><span class="std std-ref">Add our own status effects</span></a></p>
 <p>Integer:</p>
 <ul class="simple">
@@ -416,55 +294,49 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Burning</span> <span class="pre">Immunity</span></code> - Immune to burning.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Freedom</span></code> - Free from corruption and madness.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="dreams.html" class="btn btn-neutral float-right" title="Dreams" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../console/basics.html" class="btn btn-neutral float-left" title="In-game Console" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dreams.html" class="btn btn-neutral float-right" title="Dreams" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, Victorius.
-
-    </p>
+    <p>&#169; Copyright 2021, Victorius.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
 
-  
-  
-    
-   
 
 </body>
 </html>
