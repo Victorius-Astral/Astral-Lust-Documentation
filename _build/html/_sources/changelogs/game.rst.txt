@@ -4,137 +4,130 @@ Changelog - Game
 0.2.2a
 ------
 
-.. container:: toggle
+Added
+~~~~~
 
-    .. container:: header
+* Alice valentine wallpapers
+* bright hover to wallpaper menu
+* tooltips to wallpapers menu with wallpaper name
+* disable animation support to all animations that didn't have it
+* Animations ON/OFF setting to Video tab replacing old settings
+* Notifications style settings to Game tab
+* icons to the items
+* crafting to the character screen
+* updated translations for Spanish and Vietnamese
+* a model info to Rhainda relations tab
+* move items slider to vault and trade
+* Even out function to the trading menu
+* Good Profit mechanic to the traders
+* preview of increased relations to the traders + relations counter
+* Disable Fredericka font setting to the game settings
+* scrollbar to the relations tab
+* some more stuff from 0.2.2 (and 0.2.2a) to what's new
+* notification to the trader's relations increase outside of a trade deal
+* option to chose defeat in Rhainda's 1st event replay
 
-      **0.2.2a**
+Changed
+~~~~~~~
 
-    .. container::
+* Supporters about/credits font
+* Now wallpapers will be sorted, and unlocked wallpapers will show before locked ones
+* HP bars image
+* removed cumming animations from the most events that had them
+* minor dialogue changes in a few events
+* removed continue option from most prostitute sex scenes
+* notifications window
+* reworked the whole inventory system
+* interact 'Interact' font to Fredericka
+* interact menu buttons to follow new GUI style
+* merged character and inventory menus
+* inventory + character menu follows new GUI style
+* vault follows new GUI style
+* crafting menu to follow the new GUI style
+* optimized crafting menu performance
+* increased Mysterious Coin worth 10 -> 60
+* decreased chance to drop Mysteries Coin for most enemies (by 50%)
+* chance when looting treasure trove to obtain Mysterious Coin 100% -> 40%
+* removed obsolete tooltips from character menu
+* relations menu to follow new GUI style
+* help menu to follow new GUI style
+* story menu to follow new GUI style
+* decks menu to follow new GUI style
+* expanded menu icons to follow the new GUI style
+* outfit crafting menu to follow the new GUI style
+* outfit crafting will now happen on clicking the outfit
+* now you can use items in vault for all quests
+* now the items you gave to girls in event previously will not be there next time
+* now wandering trader's daughter trade will clean up bought things
+* wandering trader now will offer some items only after some relations reached
+* increased maximum Hollow Market discount 10% -> 20%, it's harder to increase relations
+* Hollow Market now allow to pay with everything, it restocks weekly
+* Hollow Market can now have more different items to buy, some require higher relations with them
+* default name for new players will be John now
+* notification side for code insertion
+* dream with the devil animation to the moving image
+* Patrons settings category will no longer show for non Patrons
+* what's new frame to more readable one
+* one dialogue line in the Grace's nightmare event
+* wandering trader's daughter is now not separate trader
+* Mysterious Trader will restock everyday
+* You can no longer continue Alice's Q&A game in replay after losing all caps
+* music in first Rhainda event is now positive after the fight
+* Sample Mod stickman dream is now off by default for new players
+* now Warehouse event replay will always have people inside the warehouse
+* In Roars in the Sky event you can now shot at the sky in replay, this option is no longer usable in normal gameplay without a shotting card
+* Prostitutes can now be priced at not full values
+* Madam Hof will display prices in caps now
+* Wandering Trader will display prices in caps now
+* discount from relations no longer applies to the wandering trader daughter services
 
-      |
-      
-      **Added**
+Fixed
+~~~~~
 
-      * Alice valentine wallpapers
-      * bright hover to wallpaper menu
-      * tooltips to wallpapers menu with wallpaper name
-      * disable animation support to all animations that didn't have it
-      * Animations ON/OFF setting to Video tab replacing old settings
-      * Notifications style settings to Game tab
-      * icons to the items
-      * crafting to the character screen
-      * updated translations for Spanish and Vietnamese
-      * a model info to Rhainda relations tab
-      * move items slider to vault and trade
-      * Even out function to the trading menu
-      * Good Profit mechanic to the traders
-      * preview of increased relations to the traders + relations counter
-      * Disable Fredericka font setting to the game settings
-      * scrollbar to the relations tab
-      * some more stuff from 0.2.2 (and 0.2.2a) to what's new
-      * notification to the trader's relations increase outside of a trade deal
-      * option to chose defeat in Rhainda's 1st event replay
-
-      **Changed**
-
-      * Supporters about/credits font
-      * Now wallpapers will be sorted, and unlocked wallpapers will show before locked ones
-      * HP bars image
-      * removed cumming animations from the most events that had them
-      * minor dialogue changes in a few events
-      * removed continue option from most prostitute sex scenes
-      * notifications window
-      * reworked the whole inventory system
-      * interact 'Interact' font to Fredericka
-      * interact menu buttons to follow new GUI style
-      * merged character and inventory menus
-      * inventory + character menu follows new GUI style
-      * vault follows new GUI style
-      * crafting menu to follow the new GUI style
-      * optimized crafting menu performance
-      * increased Mysterious Coin worth 10 -> 60
-      * decreased chance to drop Mysteries Coin for most enemies (by 50%)
-      * chance when looting treasure trove to obtain Mysterious Coin 100% -> 40%
-      * removed obsolete tooltips from character menu
-      * relations menu to follow new GUI style
-      * help menu to follow new GUI style
-      * story menu to follow new GUI style
-      * decks menu to follow new GUI style
-      * expanded menu icons to follow the new GUI style
-      * outfit crafting menu to follow the new GUI style
-      * outfit crafting will now happen on clicking the outfit
-      * now you can use items in vault for all quests
-      * now the items you gave to girls in event previously will not be there next time
-      * now wandering trader's daughter trade will clean up bought things
-      * wandering trader now will offer some items only after some relations reached
-      * increased maximum Hollow Market discount 10% -> 20%, it's harder to increase relations
-      * Hollow Market now allow to pay with everything, it restocks weekly
-      * Hollow Market can now have more different items to buy, some require higher relations with them
-      * default name for new players will be John now
-      * notification side for code insertion
-      * dream with the devil animation to the moving image
-      * Patrons settings category will no longer show for non Patrons
-      * what's new frame to more readable one
-      * one dialogue line in the Grace's nightmare event
-      * wandering trader's daughter is now not separate trader
-      * Mysterious Trader will restock everyday
-      * You can no longer continue Alice's Q&A game in replay after losing all caps
-      * music in first Rhainda event is now positive after the fight
-      * Sample Mod stickman dream is now off by default for new players
-      * now Warehouse event replay will always have people inside the warehouse
-      * In Roars in the Sky event you can now shot at the sky in replay, this option is no longer usable in normal gameplay without a shotting card
-      * Prostitutes can now be priced at not full values
-      * Madam Hof will display prices in caps now
-      * Wandering Trader will display prices in caps now
-      * discount from relations no longer applies to the wandering trader daughter services
-
-      **Fixed**
-
-      * previous scene seen after battle when picking a card
-      * interaction menu's Lobby (view B) button, taking player to his room
-      * multiple healing notifications after sleep
-      * error on Treasure Chest events
-      * error on exploration on old saves under some circumstances
-      * a possibility of patches not applying correctly between some versions
-      * Alice's WC anal having an odd image with animations OFF
-      * wrong image after animation ends in Grace's 2nd massage event
-      * second Grace massage in clothes not raising stats
-      * a few weird transitions in Succubi events
-      * possible error at midnight kiss event
-      * suicide saying you lost cards
-      * Alice task error if it was taken before 0.2.1e
-      * Astral Lust dream triggering before meeting Kiara
-      * tooltip staying after clicking continue in the tutorial
-      * rare error at the tutorial end
-      * listed cards in deck were aligned to the left side
-      * Alice stranded outfit weaving not working
-      * could enter playroom before building it with the interactions menu
-      * Alice, Lexi and Grace showing in their room while being somewhere else after some events
-      * error at replays of midnight kiss event
-      * Alice sleeping in player's bed after Grace coming for a sleepover
-      * some translations not appearing due to \% and %% translation generation conversion
-      * trade save/load exploit
-      * Spanish translation sleep being smaller in bed dialogue menu
-      * in Spanish Rest icon text is no longer off icon
-      * Relations tab one person being hidden under the image
-      * updated/added entry not being translated
-      * weird spacing at the end of 0.2.2 what's new
-      * black screen in replay in warehouse exploration event
-      * Alice task related errors for people that didn't cancel her task since before 0.2.1e
-      * Alice not showing up first in the replay of Q&A event
-      * Alice changing outfit in Q&A replay
-      * some rare, latent problems with Alice's Q&A event involving not taking item rewards from her
-      * possible errors in building shrine replays
-      * items in Alice Q&A shared between saves on one playthrough
-      * no background in Mina's Good Ol' Bootle replay
-      * no background in Lexi's Trouble at the Market & Feet Massage replays
-      * no background in Grace's Play House event replay
-      * no background in Lola's event replays
-      * no background in the first three secret endings replays
-      * black/checker background in skip mode if animation didn't decode first frame before displaying them with some animations
-      * Amanda's default way of calling player not translating
-      * typos
+* previous scene seen after battle when picking a card
+* interaction menu's Lobby (view B) button, taking player to his room
+* multiple healing notifications after sleep
+* error on Treasure Chest events
+* error on exploration on old saves under some circumstances
+* a possibility of patches not applying correctly between some versions
+* Alice's WC anal having an odd image with animations OFF
+* wrong image after animation ends in Grace's 2nd massage event
+* second Grace massage in clothes not raising stats
+* a few weird transitions in Succubi events
+* possible error at midnight kiss event
+* suicide saying you lost cards
+* Alice task error if it was taken before 0.2.1e
+* Astral Lust dream triggering before meeting Kiara
+* tooltip staying after clicking continue in the tutorial
+* rare error at the tutorial end
+* listed cards in deck were aligned to the left side
+* Alice stranded outfit weaving not working
+* could enter playroom before building it with the interactions menu
+* Alice, Lexi and Grace showing in their room while being somewhere else after some events
+* error at replays of midnight kiss event
+* Alice sleeping in player's bed after Grace coming for a sleepover
+* some translations not appearing due to \% and %% translation generation conversion
+* trade save/load exploit
+* Spanish translation sleep being smaller in bed dialogue menu
+* in Spanish Rest icon text is no longer off icon
+* Relations tab one person being hidden under the image
+* updated/added entry not being translated
+* weird spacing at the end of 0.2.2 what's new
+* black screen in replay in warehouse exploration event
+* Alice task related errors for people that didn't cancel her task since before 0.2.1e
+* Alice not showing up first in the replay of Q&A event
+* Alice changing outfit in Q&A replay
+* some rare, latent problems with Alice's Q&A event involving not taking item rewards from her
+* possible errors in building shrine replays
+* items in Alice Q&A shared between saves on one playthrough
+* no background in Mina's Good Ol' Bootle replay
+* no background in Lexi's Trouble at the Market & Feet Massage replays
+* no background in Grace's Play House event replay
+* no background in Lola's event replays
+* no background in the first three secret endings replays
+* black/checker background in skip mode if animation didn't decode first frame before displaying them with some animations
+* Amanda's default way of calling player not translating
+* typos
 
 |
 |
