@@ -1,6 +1,42 @@
 Changelog - Game
 ================
 
+0.2.2b
+------
+
+Added
+~~~~~
+
+* updated Vietnamese and Spanish translations
+* Fredericka font support for Vietnamese
+* discount for relations with traders
+
+Fixed
+~~~~~
+
+* robin sex scene animations not showing
+* checkered background after credits in the replays
+* some things not translating despite having translation files - eq. item uses
+* no image - sidebar dark 1/2 on Android
+* error when using items in the vault, while not having any of this item in the inventory
+* negative hp when your ally wins the battle or you run after player's defeated
+* Outfit unlocked message appearing even if outfit was already unlocked
+* corruption exploit with sleeping Grace
+* trust/lust exploit with sleeping Lexi
+* corruption exploit with wc peeking
+* corruption exploit with bath peeking
+* stuck at the tutorial after tweaking difficulty settings, and killing werewolf before designed
+* no lust increase from Kiara sex scenes
+* pc buttons being active in replay, wallpaper and collectible menus
+* outfit unlocked messages appearing also in the middle
+* Devotee girl not changing expression after player tells her to fuck off
+* missing item notification using ID instead of item name
+* rare error on save after giving Rachel materials
+* typos & grammar mistakes
+
+|
+|
+
 0.2.2a
 ------
 
@@ -26,6 +62,8 @@ Added
 * some more stuff from 0.2.2 (and 0.2.2a) to what's new
 * notification to the trader's relations increase outside of a trade deal
 * option to chose defeat in Rhainda's 1st event replay
+* community tag to Vietnamese translation
+* hover effect to flags
 
 Changed
 ~~~~~~~

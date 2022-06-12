@@ -29,6 +29,13 @@ Code should look like this:
         "You fell purified."
         jump dream_end
 
+.. code-block::
+    :linenos:
+
+    if True:
+      print("XD")
+
+
 More label examples:
 
 * ``label d_First_Love_2:``

@@ -27,10 +27,10 @@ author = 'Victorius'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-import sphinx_rtd_theme
+#import sphinx_rtd_theme
 
 extensions = [
-    "sphinx_rtd_theme"
+    #"sphinx_rtd_theme"
 ]
 
 pygments_style = 'sphinx'
@@ -57,7 +57,8 @@ html_favicon = 'favicon.ico'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_css_files = ['width_fix.css', 'basic.css', 'renpydoc.css', 'pygments.css', 'bootstrap-3.3.6/css/bootstrap.min.css', 'bootstrap-3.3.6/css/bootstrap-theme.min.css', 'bootstrap-sphinx.css']
+html_js_files = ['jquery.js', 'underscore.js', 'doctools.js', 'js/jquery-1.11.0.min.js', 'js/jquery-fix.js', 'bootstrap-3.3.6/js/bootstrap.min.js', 'bootstrap-sphinx.js']
+
 # Inject CSS #
-def setup(app):
-    app.add_css_file('width_fix.css')
-    app.add_css_file('custom.css')
+#def setup(app):

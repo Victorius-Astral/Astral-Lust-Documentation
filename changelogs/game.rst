@@ -1,6 +1,136 @@
 Changelog - Game
 ================
 
+0.2.3
+-----
+
+Beta
+~~~~
+
+Added
+^^^^^
+
+* Lexi 14th event
+* Lexi 15th event
+* Mina 17th event
+* Mina 18th event
+* repeatable date with Lexi - 'Kitchen Date'
+* Lexi can react to player not attending their date, or not asking her out besides promising to
+* 4 new quest items vodka, wine, old wine, and premium ice cream
+* How many of the given card you have in card selection screen
+* Quick Save/Load to the bottom menu in Android port
+* Mina can get drunk, and have a hangover
+* conditions for tasks to complete and progress, Mina won't do nor complete tasks if she has a hangover
+* you can loot ice creams in a market at most once per day, you can now get premium ice creams, and loot for ice creams always since her 14th event
+* red map frame for planned dates, map icon will be turning to red when Lexi waits for you
+* what's new for 0.2.3
+
+Changed
+^^^^^^^
+
+* you no longer lose deck if you're defeated in Lexi's 13th event
+* removed items not used in crafting from iron chests (2)
+* increased abandoned car loot
+
+Fixed
+^^^^^
+
+* Savenia could be found before Mina's 5th event, which lead to continuity error in the next events
+* card register not removing cards on death
+* error when using deck list when registry is corrupted
+* tasks with not set location sometimes not completing on time (no such task in vanilla)
+* bad outfit for Rachel in her 2nd replay
+* Rachel 9th and Lexi 10th events not triggering
+* cupboard not trigger-able from the map
+* Alice in player bed after Grace 11th event
+* some checks not working in replays
+* Sandwich tooltip saying it heals 35 hp instead of 12
+
+Alpha
+~~~~~
+
+Added
+^^^^^
+
+* new, much better prologue
+* Grace 11th story event
+* Grace 12th story event
+* Merged story event - 13th Grace, 15th Alice, 5th Little Fox
+* Grace night prank event
+* Grace sleep footjob event
+* Grace night footjob event (yeah, two footjobs)
+* Grace revenge secret event
+* talking with Grace about her revenge
+* Grace can be angry at the player
+* option to apologize to Grace with a rose or by being charismatic
+* Footjob, Dildo and Masturbation to Grace statistics
+* Rubbing and dildo to Alice statistics
+* Rhainda 3rd event
+* Rhainda 4th event
+* Rachel 9th event
+* cunnilingus to Rachel stats
+* eating dinner with Grace in her 6th event heals and gives a buff
+* Lesbian to Rhainda stats
+* Masturbation and Lesbian to Little Fox stats
+* Little Fox x Rhainda event now raises their lesbian stat
+* Alice's 8th event raises dildo and masturbation stats
+* action sounds to the manticore, werewolves, spiders
+* 3 new cosmos renders, they'll appear at random
+* Sugar Frenzy buff
+* outros to the last main girl events
+* (2) consumable items
+* (3) pouches, (3) chests & (2) keys used to open them
+* optimized tooltips
+* updated translations, Spanish fully translated
+* option to test sample sound
+* some spacing to the buffs in character menu
+* background to stats tooltips
+* new intro
+* killing human enemies now raises corruption again, up to 20%
+
+Changed
+^^^^^^^
+
+* What's new won't show for first time players anymore
+* Beginner Guide will show for first time players again
+* removed talking with Lexi about boxes
+* optimized image loading in many events
+* left & right character placements are now not on the edges
+* notifications are centered now
+* removed Lexi and Grace first story events, the new prologue takes their place
+* replaced mysterious coin drops from enemies with chests & pouches
+* buffs icons
+* removed rng from triggering two Mina's events
+* Millionaire dream now triggers only after meting Aharon
+
+Fixed
+^^^^^
+
+* Alice shower dildo blowjob didn't raise stats
+* PC wallpaper showing after defeating dragon summoned with Discord veteran's code
+* no transition between two Grace images
+* some things not translating, despite having translation files
+* continuity errors at Rachel and Little Fox outfit events
+* double transition in Lexi's 2nd event
+* getting Life with Alice dream before progressing with Alice
+* error at Lexi's 9th event when using Vietnamese translation
+* many dreams playing at once
+* Lexi could go out again after bringing food
+* Lexi or Alice appearing in weird places after their events that didn't advance the time
+* Savenia could go out often before healing her leg
+* pc icons not disappearing after inserting wallpapers code
+* Tooltips having wrong background size on Android and in translations
+* Grace's ninth event showing on map before its requirements were attained
+* not being able to use all options in Grace bath replay
+* sound volume settings not working for some sounds
+* Lexi appearing in two places at once on map
+* tooltip staying behind from interaction menu when using it or closing it with a key
+* tooltip staying after closing inventory with a key
+* on kill effects not triggering if it's the last enemy
+
+|
+|
+
 0.2.2b
 ------
 
