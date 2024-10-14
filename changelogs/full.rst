@@ -1,6 +1,596 @@
 Changelog - Full
 ================
 
+0.3.1
+-----
+
+added: Lexi 17th event
+added: Mina 20th event
+added: exploration event - Truck (Industrial District), 4 variants
+added: new enemy - Wicked One
+added: Wicked One to random combat encounters
+added: new status effect - Sanity Rending
+added: new conversation topic to Lexi (after her 17th event)
+added: 8 replays
+
+changed: frequency of some Industrial Area exploration events
+
+fixed: bad replay image for event What Happened?
+
+0.3.0
+-----
+
+Alpha-1
+~~~~~~~
+
+added: NSFW sounds to the most of Alice scenes
+added: NSFW sounds to one of Kiara scenes
+added: sex scene with Wanderer's Hideout new trader - Alex
+added: 3 traders to the Wanderer's Hideout
+added: 9 talkable miscellaneous characters to the Wanderer's Hideout
+added: a new way to learn rituals - from The Hunter in the Hideout
+added: Food item category
+added: eating ice cream variants for Sugar Frenzy buff & hp
+added: the second floor can be built at the counter too
+added: 2 new items - cookies & bread
+added: 14 replays
+
+changed: optimized card loading
+changed: hovering over grayed out option will now show red cursor
+changed: now trader's discount by default is maxed at 200 not 100 relations
+changed: default trader's max discount is now 25% instead of 50%
+changed: trader's relations now decrease price of his goods, not increase your items worth.
+changed: increased base item sell value 60% to 70%
+changed: ice cream variants to Food category
+changed: Blind card category to Ability
+changed: text displayed when trying to go out at night
+
+fixed: Death card didn't end combat if it didn't kill the enemy
+fixed: exploit allowing to eat food during combat
+fixed: error in Lola's 3rd event after using girl outfit
+fixed: fredericka font disabler
+fixed: Alice fj animations not playing
+fixed: bandits in random encounter all hurt not only one
+fixed: no background in Alice's shower bj replay
+
+Alpha-2
+~~~~~~~
+
+added: option to look out of the outside door
+added: sex scene with Alex
+added: 2 random events when checking outside door at day
+added: 4 random events when checking outside door at night
+added: Tired debuff and status effect
+added: 10 replays
+added: finished replay categories are golden
+added: victory/defeated screen to combat end
+
+changed: significantly increased image startup initialization speed
+
+Beta-1
+~~~~~~
+
+added: card evolution system
+added: new Alice outfit - Vampire with 2 unique sex scenes
+added: new Grace outfit - Vampire with 2 unique sex scenes
+added: new Lexi outfit - Vampire with 2 unique sex scenes
+added: new Mina outfit - Vampire with 2 unique sex scenes
+added: new scene to Grace's 13th event - Reject Alice's punishment
+added: new scene to Grace's 13th event - Look for dildo outside instead of asking Alice (obtainable in 0.3.1)
+added: setting - Use base card name
+added: setting - Use base card image
+added: rend status effect
+added: Succubi to random fights
+added: NSFW sounds to all Kiara & Lexi events
+added: Massage to Lexi's page
+added: Option to exit Lexi's "Have fun" dialogue menu
+added: Lexi's Tentacles outfit crafted replay
+added: cards are by default sorted by rarity
+added: card sorting will be remembered when you next open your deck
+
+changed: effects of many cards
+changed: balanced most cards
+changed: Retaliate card category to defensive
+changed: the way card loot is chosen
+changed: most card lootlists
+changed: Bite card image
+changed: now date takes priority over story events when deciding map icon blinking color
+changed: decreased event repetition for exploration
+changed: increased loot rate for premium ice creams in market event 15% to 50%
+changed: Grace's 13th event no longer increases Little Fox's & Alice's affection.
+changed: enhanced card tooltips
+
+fixed: 4 replays' miniature weird character placement
+fixed: Hunter's introduction dialogue repeating each conversation
+fixed: Special 2022 cards not working anymore
+fixed: error when looting bandits fought with Little Fox
+fixed: possible error when asking Lexi for a date
+
+Beta-2
+~~~~~~
+
+added: a way to stop succubi from coming to you when their lust is 100% if you have at least two succubi
+
+changed: decreased spirit cost of stab by 1
+changed: Show Hidden cards tooltip to be clear about how to hide cards
+
+fixed: error when opening card crafting
+fixed: freeze during combat tutorial
+fixed: error at the end of a combat tutorial
+fixed: new outfits not showing in wardrobe
+fixed: card loading resetting path chosen
+fixed: card leveling could in a few cases increment card stats each time it was shown
+fixed: error when looking at the cards on Android
+fixed: error when selecting deck on Android
+fixed: deck menu makes the keyboard occupy the whole screen
+fixed: deck menu off the placement of GUI on Android
+fixed: combat tutorial off the placed overlay
+fixed: tutorial text mentioning bandit instead of a werewolf
+fixed: tutorial getting stuck after killing an enemy on old saves (you need to skip a turn)
+fixed: playing a card could open the level-up screen if the card had Destroy property
+fixed: potential error when completing the tutorial on old save
+
+Final
+~~~~~
+
+added: area based exploration
+added: 41 replays
+
+added: 6 location discovery events:
+  ○ Discovery - Slums
+  ○ Discovery - Ruins
+  ○ Discovery - Industrial Area
+  ○ Discovery - Market District
+  ○ Discovery - Business District
+  ○ Carlson, the Pugilist
+
+added: 6 exploration areas:
+  ○ Slums
+  ○ Market District
+  ○ Residential District
+  ○ Business District
+  ○ Industrial Area
+  ○ Ruins
+
+added: new location - Carlson Dojo
+added: new instructor - Carlson (Martial Arts)
+added: new trader - Adam
+
+added: 3 NPC at Carson Dojo:
+  ○ Maric
+  ○ Jill
+  ○ Amber
+
+added: 12 exploration events:
+  ○ exploration event - Car II - I var. (Market District)
+  ○ exploration event - Car II - II var. (Market District)
+  ○ exploration event - Car II - III var. (Market District)
+  ○ exploration event - Car III - I var. (Industrial District)
+  ○ exploration event - Car III - II var. (Industrial District)
+  ○ exploration event - Car III - III var. (Industrial District)
+  ○ exploration event - Clueless (Slums)
+  ○ exploration event - Looter Corpses I (Slums)
+  ○ exploration event - Looter Corpses II (Slums)
+  ○ exploration event - Bandit Corpses I (Slums)
+  ○ exploration event - Bandit Corpses II (Slums)
+  ○ exploration event - Bandit Corpses III (Slums)
+
+added: 16th story event for Lexi
+added: 19th story event for Mina
+added: Lexi sitting in a corridor at night
+added: Mina lying on the bed drunk on evenings
+added: Mina sleeping in bed alone (night)
+added: interaction when checking drunk sleeping Mina
+added: new scene when checking out sleeping Mina when Lexi's not there
+added: new conversation options with Lexi when speaking with her at night
+added: new unlockable conversation with Mina
+added: enemy summoning allies in battle
+added: summoned beings can replace dead beings
+
+added: 9 new battle intent icons:
+  ○ Summoning
+  ○ Debuff & Healing
+  ○ Attack & Block & Buff & Debuff
+  ○ Attack I & Block & Buff
+  ○ Attack II & Block & Buff
+  ○ Attack III & Block & Buff
+  ○ Attack IV & Block & Buff
+  ○ Attack V & Block & Buff
+  ○ Attack VI & Block & Buff
+
+added: 8 new enemies:
+  ○ Screecher
+  ○ Corrupted Matron
+  ○ Young Walker
+  ○ Walker
+  ○ Elder Walker
+  ○ Black Walker
+  ○ Meat Mushroom
+  ○ Blood Mushroom
+
+added: 11 new status effects:
+  ○ Defensive Stance
+  ○ Aggressive Stance
+  ○ Balanced Stance
+  ○ Ironclad Stance
+  ○ Overbearing Stance
+  ○ Inner Stance
+  ○ Inner Energy
+  ○ Counter
+  ○ Split
+  ○ Flammable
+  ○ Innate Regeneration
+
+added: 2 new types of cards:
+  ○ Martial Art
+  ○ Summoning
+
+added: 22 Martial Art cards:
+  ○ Ironclad Stance
+  ○ Overbearing Stance
+  ○ Inner Stance
+  ○ Defensive Stance
+  ○ Aggressive Stance
+  ○ Balanced Stance
+  ○ Inner Harmony
+  ○ Swift Kick
+  ○ Thunderous Blow
+  ○ Counterpunch
+  ○ Iron Palm
+  ○ Flying Kick
+  ○ Bone Breaker
+  ○ Tiger Claw
+  ○ Fist of Fury
+  ○ Crushing Uppercut
+  ○ Slippery Maneuver
+  ○ Feathered Step
+  ○ Martial Reflex
+  ○ Inner Serenity
+  ○ Echoing Deflection
+  ○ Shadow Dance
+
+added: 2 Summoning cards:
+  ○ Hatchling
+  ○ Flock of Birds
+
+added: enhanced AI for enemies & allies
+added: summoned beings are removed on death
+added: explore story event indications to the Wanderer's Hideout main plaza
+added: NSFW sounds to many Grace events
+added: block card description will now reflect status effects
+added: a way to end Dekesha dream early on
+added: a way to stop Mina from kissing Alice in the 4th Mina event
+added: some text to 8th Mina event if Player didn't let her kiss Alice
+added: new enemies to random combat encounter
+added: innate regeneration buff to a werewolf
+added: increased dodge chance when in critical situations
+added: maximum enemy limits per arena (affects ind01, ind02)
+added: Wanderer's Hideout residents to interact menu
+added: Lola to Motel interact menu
+added: Trade icon to Alex conversation option
+added: What's new for 0.3.0
+added: 4 new combat arenas for random combat
+  ○ ind01
+  ○ ind02
+  ○ slums01
+  ○ slums02
+
+changed: you can no longer roll-back before evolving a card (required to fix errors)
+changed: sorted explore replays list by areas
+changed: Delusions card type to Summoning
+changed: treasure hunt event now doesn't need to follow any particular order
+changed: split Treasure Hunt event into 5 separate parts
+changed: seen but not completed story events can now be replayed every 5th game day, not 7th
+changed: fused both PC code input windows into one
+changed: Rose item quality to Ordinary
+changed: Forcing Mina to blow the Player in 3rd event gives -8 trust instead of -5
+changed: all narrator text was made italic now
+changed: improved car backpack loot
+changed: backpack in car has minimum 6 items in its loot instead of 1
+changed: notification for taking damage accounts for hp loss down to minimum hp (def: 0), not below it
+changed: one line in Mina's 15th event
+changed: Dragon's regeneration buff to innate regeneration buff
+changed: updated Regeneration tooltip to accommodate burning weakness
+changed: Regeneration is no longer triggered when HP is full
+changed: version change in what's new to the right side
+
+fixed: error when opening Show All Cards Menu
+fixed: Alice & Little Fox showing they have one event more than they did
+fixed: no summon tooltip on summon cards
+fixed: card error after rollbacking prior to card level-up
+fixed: card picked variants reset after rollback
+fixed: when exploring from the hotel player could return to the Wanderer's Hideout instead
+fixed: Giant card stage 3 effect
+fixed: Mina's 17th event not consuming item
+fixed: triggering Lexi's 4th event during daytime
+fixed: summons could drop loot in some cases
+fixed: rend being taken as negative status effect
+fixed: title in app window name
+fixed: new supporters being downloaded from server but not updated correctly in game files
+fixed: turn counter in Battle not resetting
+fixed: wallpaper name showing without frame
+fixed: seeing old event image after combat end
+fixed: unable to catch succubi
+fixed: random card effects targeting defeated targets
+fixed: antibiotics item description
+fixed: Lola in her room's interact menu when she's not there
+fixed: receiving unique cards error
+fixed: interact menu not updating when quick resting
+fixed: one Wanderer passerby not spawning
+fixed: beggar can spawn overlapping with guard in WH
+
+removed: time consumption from traveling to Wanderer's Hideout
+removed: travel dialogue menu from lobby doors & Wanderer's Hideout exit
+removed: Treasure hunt replay - split it into 4 parts
+removed: version status check
+
+Patch A
+~~~~~~~~
+
+fixed: error loading a save from 0.2.3-Beta or before
+fixed: error in certain rare scenarios when exploring
+fixed: error in certain rare scenarios when sleeping
+fixed: unable to save game after Path of Destiny
+fixed: 2 errors with Alice's get combat gear task
+fixed: collectibles not getting enlarged after clicking on PC
+
+Patch B
+~~~~~~~~
+
+fixed: error in certain rare scenarios when triggering a dream
+fixed: error in certain rare scenarios when looking out the lobby door at day
+fixed: error in certain rare scenarios when looking out the lobby door at night
+fixed: error after dying if videos/animations are enabled
+fixed: possible error after having a nightmare if videos/animations are enabled
+
+Patch C
+~~~~~~~~
+
+fixed: Kiara's threesome scene (FFM) sounds not ceasing
+fixed: Kiara's threesome scene (FMM) sounds not ceasing
+fixed: Use extraordinary abilities choice in Alice's 9th event
+fixed: rare RandomBag's UnboundLocalError (probably)
+fixed: error playing cards stealing status effects
+fixed: rare error when in combat, AttributeError: 'int' object has no attribute 'hp' (probably)
+fixed: possible error when exploring the areas
+fixed: industrial district showing story event that wasn't there
+fixed: ruins not giving Treasure Hunt event
+fixed: Little Fox 1st event couldn't be triggered
+fixed: possible events per area not updating
+fixed: possible events when checking out the lobby doors at night not updating
+fixed: possible events when checking out the lobby doors at day not updating
+fixed: area story bags having assigned wrong update variable
+
+Patch D
+~~~~~~~~
+
+added: locked cards will be removed from decks on load
+
+changed: Meat Mushroom is considered stronger when picking it as an enemy in random combat encounter
+changed: updated Grace's 13th event tip to explain which girls need to have their storylines progressed
+changed: Mina's 19th event now makes it impossible to trigger her next story event within 14 days
+changed: rollback now works at most 15 lines into the past, this should also slightly improve performance on low-end devices
+
+fixed: Grace's 13th event not requiring playroom built
+fixed: Grace's 13th event could proceed without progressing other characters appearing there
+fixed: saves made right after upgrading a card getting corrupted
+fixed: big spacing in History's entries
+fixed: players could add locked cards to the deck
+fixed: could trigger grace's 13th event start again if chosen to find the dildo and not ask Alice
+fixed: card progress not being saved if auto card evolution was enabled
+fixed: card losing a level being reversed after save/load in certain cases
+fixed: error NameError: name 'pointer' is not defined
+fixed: error when upgrading Retaliate to the last stage
+fixed: error when playing Last Journey card
+fixed: error when playing Justice card
+fixed: error when playing Temperance card
+fixed: error when playing The Hermit card
+fixed: error when playing The Magician card
+fixed: error when playing Wheel of Fortune card
+fixed: could receive terror while Stun Immunity was active
+fixed: could receive stun when Stun Immunity was active
+fixed: Stun Immunity not removing Terror on receiving
+fixed: Stun intent showing despite being's immunity to Stun
+fixed: text not showing Demeter name correctly in Spanish translation
+fixed: map showing story events in ruins and market district when looking for Grace's dildo
+fixed: unable to load certain old saves (rare)
+fixed: wrong targeting in AI's finish enemy functionality (rare error)
+fixed: wrong targeting with AI self healing abilities (rare error)
+fixed: wrong targeting with AI healing abilities (rare error)
+fixed: could summon too many allies
+fixed: could play cards after player character is defeated
+fixed: rare error when in combat, AttributeError: 'int' object has no attribute 'hp' (this time for real)
+fixed: battles with a single enemy didn't reward cards or loot
+fixed: the last enemy killed didn't give any item and card loot
+fixed: rollback could decrease card progress and level
+
+removed: SFW mode - this is a porn game after all, it was obsolete already as of 0.2.5, SFW mode left out parts that were referenced later on, leading to continuity problems
+
+0.2.4
+-----
+
+Alpha-1
+~~~~~~~
+
+added: nun outfit to the Alice
+added: footjob for Alice in nun outfit
+added: sex for Alice in nun outfit
+added: 3rd Lola event
+added: Handjob, Outside and Footjob to Lola's stats
+added: Little Fox meeting outside event
+added: asking Little Fox for exploring together
+added: Little Fox exploration event - Nothing
+added: Little Fox exploration event - Treasure
+added: Little Fox exploration event - Stash
+added: Little Fox exploration event - Bandits
+added: Lola can appear outside her room
+added: 10 new wallpapers (1 postcard, 5 Patron, 4 combat)
+added: notifications to getting buffs
+added: downloading new codes and messages from the server
+added: "You died" screen after dying
+added: option in Sound tab - "Play sound when window is minimized", default OFF
+added: amount of cards in deck to the crafting menu
+added: Hints how to get wallpapers to wallpapers menu
+added: Hints where to find collectibles (on hover)
+added: more info to the crafting menu - names of items
+added: Map support for Lola's events
+added: Little Fox as a teammate in combat
+
+changed: collectibles are now kept between saves
+changed: muting volume will now no longer show sound values as 0, it'll instead show actual volumes
+changed: default font to the Itim font
+changed: how item notifications look
+changed: removed "You died" notification
+changed: game title font and color in the main menu
+changed: increased outline for all entries in the main menu
+changed: some Patreon wallpapers that were unlockable
+changed: updated looks of wallpapers menu
+changed: Judgment card now first attacks player
+
+fixed: Alice sprite persisting during her cunnilingus scene
+fixed: possible error when catching succubi
+fixed: using code to catch succubi caused in pc wallpaper remaining on the screen
+fixed: most tasks on repeat not working after the first time
+fixed: cards drawn using other cards not updating their descriptions accounting to status effects
+fixed: wallpaper added notification not translating
+fixed: Justice not stunning the player and enemy instead, bypassing stun immunity
+fixed: Stun immunity could not be granted (not affecting vanilla)
+
+Beta-1
+~~~~~~
+
+added: French translation thanks to the Yoyortx
+added: Rituals system - manipulate your dreams and mind with powerful and dangerous rituals
+added: grace bunny outfit
+added: dream 'I'
+added: dream Sleep Paralysis
+added: consuming more items for buffs - alcohols
+added: Drunk buff - from drinking alcohols
+added: Sex with Succubi now grants a new buff - Succubi Hormones
+added: Calming and Irritating powders - consumable items manipulating dream chance
+added: rubbing & footjob to Grace's stats
+added: play sound to the most cards
+added: buffs can now have several triggers, with different outcomes
+added: 8 new wallpapers - from combat
+added: Grace to Alice's outfit crafting menu
+added: some items can now be unsellable
+added: some items can now remain after death
+added: expanded Devil's Dream - you can now postpone the deal (+ related item & buff)
+added: Learning basic mysticism from Kiara
+added: new dialogues to the 12th main story events
+
+changed: now you need to unlock a character to see their outfit crafting tab
+changed: alcohols type to Consumable from Quest Item
+
+fixed: re-rendered Grace head pat images
+fixed: error while removing deleted items from the inventory
+fixed: item tags working only after loading a save (couldn't use some choices in dialogue menu)
+fixed: June 2022 postcard wallpaper preview being low-res
+
+Beta-2
+~~~~~~
+
+added: beta content to the what's new
+added: most of Alice's events to the replay menu
+added: Pyjamas Party to Grace & Mina replay
+
+changed: redone the replays menu
+changed: renamed buffs to status effects
+changed: optimized gallery fix - save loading
+changed: selected sacrifice will now be highlighted
+changed: what's new scrollbar
+changed: made meeting Little Fox first time much easier
+changed: made explore story event be more likely to trigger
+changed: decreased cool-down between explore story events to 7 days (the same - not completed event)
+changed: you can no longer get a gameover from a dream without choices
+
+fixed: an error on old saves in a few events involving controlled RNG
+fixed: a memory leak related to controlled RNG mechanics
+fixed: Little Fox second event not unlocking with a persistent fix
+fixed: not all replay menus could be seen on android
+fixed: what's new images showing off-frame
+fixed: a bug in SFW mode when kissing Alice in her room
+fixed: some kiara images missing
+fixed: exploit - traders having old save relations & items when starting new game in some cases
+fixed: prologue music staying on after its end
+fixed: explore music not triggering on Lexi's 2nd event
+fixed: notifications of sanity change triggering when the sanity wasn't changed
+
+Beta-3
+~~~~~~
+
+added: Spiritual Infusion sanity loss indicator to the rituals screen
+
+changed: it's now impossible to execute a ritual if you'll lose all sanity because of Spiritual Infusion effect
+
+fixed: Ritual Materials being unobtainable
+fixed: some failed rituals not having a red cross over them
+fixed: rituals not using items
+fixed: most input text being not translateable
+fixed: error with notifications if your name has '[]' signs
+fixed: being able to give too long names, overflowing the screen
+
+Final
+~~~~~
+
+added: Battle sound volume bar to sound settings
+added: Grace & Alice crafting items together at the evening
+added: Alice playmate outfit
+added: a sound setting to disable whispers
+added: animated replay images to the most sex scenes
+added: you can now undress Grace in Massage 2 with affection too
+added: various H scenes to Kiara's sex menu (you can skip footjob now)
+added: the most of Grace's content to the replay menu
+added: the most of Dog & Cat content to replay menu
+added: the most Kiara's events to the replay menu
+added: the most of Lexi's content to the replay menu
+added: the most of Little Fox content to the replay menu
+added: the most of Lola's content to the replay menu
+added: the most of Mina's content to the replay menu
+added: the most of Rachel's content to the replay menu
+added: the most of Rhainda's content to the replay menu
+added: the most of Savenia's content to the replay menu
+added: Succubi content to the replay menu with their own category
+added: many miscellaneous replays, including first time meeting Mysterious Trader
+added: a frame to the replay menu images
+added: sound to the most cards
+added: NSFW sound volume bar to sound settings
+added: a custom cursor
+added: a few NSFW sounds to alice & savenia scenes
+added: Sound warning at the start
+
+changed: downloader now points to the Patreon release posts
+changed: you can now access rituals much earlier, you need to get Kiara's trust for that
+changed: moved many replay items in an alphabetical order
+changed: increased most replay images quality
+changed: replaced part of the replay images
+changed: made most replays accessible without finishing the event
+changed: you'll now have your stats & progress in the replays when appropriate
+changed: replay list text size
+changed: you can now access all replay lists no matter if you've seen the first event
+changed: you no longer need to insert name when replaying prologue
+changed: now when full unlocked the replay gallery's unlocked counter will be golden
+
+fixed: sound issue in a prologue
+fixed: many replay issues
+fixed: grace goodnight kiss having one option lead to a wrong continuation
+fixed: choices destroying cards not working sometimes
+fixed: error when destroying a card in an ending
+fixed: sometimes character not doing what they should after an event
+fixed: bug with deleted persistent and Treasure Hunt replay
+fixed: card sound not playing when using the card that ends combat
+fixed: bad placement of language menu on Android version
+
+Patch A
+~~~~~~~
+
+added: more replay tips
+added: updated Spanish translations
+
+fixed: error in Savenia's replay
+fixed: can't enter menu after using fan translation / release and deleting it without changing language
+fixed: save compatibility for saves before new prologue without starting a new story
+
 0.2.3
 -----
 
